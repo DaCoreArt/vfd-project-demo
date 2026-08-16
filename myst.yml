@@ -1,0 +1,36 @@
+version: 1
+extends: []
+project:
+  id: nyc-vfd-experiential-learning-project
+  title: "The NYC Volunteer Fire Department Project"
+  subtitle: "A Signature Term Experiential Learning Project for MGMT 603 Nonprofit Accounting and Financial Management"
+  description: >
+    A structured experiential learning project placing students in the
+    context of New York City volunteer fire departments to connect
+    nonprofit accounting and financial management theory to real-world
+    practice.
+  authors:
+    - name: "Dr. Joseph Foy, CPA"
+      email: "joseph.foy@cuny.edu"
+      affiliation: "CUNY"
+  keywords:
+    - experiential learning
+    - nonprofit accounting
+    - financial management
+    - MGMT 603
+    - volunteer fire departments
+  toc:
+    - file: index.md
+    - file: chapters/01-introduction.md
+    - file: chapters/02-project-overview-and-objectives.md
+    - file: chapters/03-deliverable-one.md
+    - file: chapters/04-deliverable-two.md
+    - file: chapters/05-deliverable-three.md
+    - file: chapters/06-deliverable-four.md
+    - file: chapters/07-deliverable-five.md
+    - file: chapters/08-rubrics.md
+    - file: chapters/09-appendix-and-references.md
+site:
+  template: book-theme
+  options:
+    logo_text: "CUNY Experiential Learning Repository"
