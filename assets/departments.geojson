@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "letter": "A",
+        "name": "Broad Channel VFD & Ambulance Corp.",
+        "address": "15 Noel Road, Broad Channel, NY 11693"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.818419,
+          40.607926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "letter": "B",
+        "name": "Edgewater Park Volunteer Hose Co. #1",
+        "address": "1 Adee Avenue, Bronx, NY 10465"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.838768,
+          40.870666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "letter": "C",
+        "name": "Gerrittsen Beach VFD",
+        "address": "52 Seba Avenue, Brooklyn, NY 11229"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.922075,
+          40.588222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "letter": "D",
+        "name": "Point Breeze VFD",
+        "address": "29 Point Breeze Avenue, Breezy Point, NY 11697"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.920191,
+          40.560093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "letter": "E",
+        "name": "Richmond Engine Co. #1",
+        "address": "3664 Richmond Road, Staten Island, NY 10306"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.143529,
+          40.571959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "letter": "F",
+        "name": "Rockaway Point VFD",
+        "address": "204-26 Rockaway Point Boulevard, Breezy Point, NY 11697"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.886303,
+          40.566658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "letter": "G",
+        "name": "Roxbury VFD",
+        "address": "42 State Road, Breezy Point, NY 11697"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.891126,
+          40.566311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "letter": "H",
+        "name": "West Hamilton Beach VFD",
+        "address": "102-33 Davenport Court, Howard Beach, NY 11414"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.828403,
+          40.653769
+        ]
+      }
+    }
+  ]
+}

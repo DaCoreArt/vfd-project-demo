@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC Volunteer Fire Departments — Response Area Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  :root{
+    --ink:#16191D;
+    --paper:#F7F5F2;
+    --steel:#6B7280;
+    --ember:#C8322B;
+    --brass:#B8860B;
+    --rule:#DCD7CF;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;
+  }
+  .wrap{max-width:900px;margin:0 auto;padding:0 4px 24px;}
+
+  #map{
+    height:460px;
+    width:100%;
+    border:1px solid var(--rule);
+    border-radius:2px;
+  }
+  @media (max-width:640px){ #map{height:340px;} }
+
+  .cap{
+    font-size:.8rem;
+    color:var(--steel);
+    margin:10px 2px 22px;
+  }
+
+  h2{
+    font-size:.72rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--steel);
+    font-weight:700;
+    margin:0 0 12px;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--rule);
+  }
+
+  ol.key{list-style:none;margin:0;padding:0;}
+  ol.key li{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    padding:13px 2px;
+    border-bottom:1px solid var(--rule);
+  }
+  ol.key li:last-child{border-bottom:0;}
+
+  .badge{
+    flex:0 0 auto;
+    width:30px;height:30px;
+    display:grid;place-items:center;
+    background:var(--ember);
+    color:#fff;
+    font-weight:800;
+    font-size:.85rem;
+    border-radius:50%;
+    box-shadow:inset 0 0 0 2px rgba(255,255,255,.55), 0 0 0 1px var(--ember);
+  }
+
+  .meta{min-width:0;}
+  .name{font-weight:650;font-size:.97rem;}
+  .addr{font-size:.85rem;color:var(--steel);margin-top:2px;}
+  .links{margin-top:5px;font-size:.85rem;}
+  .links a{
+    color:var(--ember);
+    text-decoration:none;
+    border-bottom:1px solid rgba(200,50,43,.35);
+  }
+  .links a:hover,.links a:focus{border-bottom-color:var(--ember);}
+  .links span.sep{color:var(--rule);margin:0 7px;}
+
+  .marker-badge{
+    width:28px;height:28px;
+    display:grid;place-items:center;
+    background:var(--ember);
+    color:#fff;
+    font:800 .8rem/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    border-radius:50%;
+    box-shadow:inset 0 0 0 2px #fff, 0 1px 4px rgba(0,0,0,.4);
+  }
+  .leaflet-popup-content{font-family:inherit;font-size:.88rem;margin:11px 13px;}
+  .leaflet-popup-content strong{display:block;margin-bottom:3px;}
+  .leaflet-popup-content a{color:var(--ember);}
+
+  a:focus-visible,.leaflet-container a:focus-visible{outline:2px solid var(--brass);outline-offset:2px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="map" role="region" aria-label="Map of NYC volunteer fire departments"></div>
+  <p class="cap">Response areas of the volunteer fire departments serving New York City. Select a marker for details, or use the reference list below.</p>
+
+  <h2>Reference list</h2>
+  <ol class="key" id="key"></ol>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+/* ─────────────────────────────────────────────────────────────
+   DEPARTMENT DATA
+   lat/lng marked null must be filled in — see geocode_departments.py
+   ───────────────────────────────────────────────────────────── */
+const DEPARTMENTS = [
+  { letter:"A", name:"Broad Channel VFD & Ambulance Corp.",
+    address:"15 Noel Road, Broad Channel, NY 11693",
+    lat:40.607926, lng:-73.818419,
+    vfanyc:"https://vfanyc.org/broad-channel-volunteer-fire-department/",
+    site:"https://broadchannelvfd.org/", siteLabel:"Department site" },
+
+  { letter:"B", name:"Edgewater Park Volunteer Hose Co. #1",
+    address:"1 Adee Avenue, Bronx, NY 10465",
+    lat:40.870666, lng:-73.838768,
+    vfanyc:"https://vfanyc.org/edgewater-park-volunteer-hose-company-no-1/",
+    site:null, siteLabel:null },
+
+  { letter:"C", name:"Gerrittsen Beach VFD",
+    address:"52 Seba Avenue, Brooklyn, NY 11229",
+    lat:40.588222, lng:-73.922075,
+    vfanyc:"https://vfanyc.org/gerrittsen-beach-volunteer-fire-department/",
+    site:"https://gbfd.net", siteLabel:"Department site" },
+
+  { letter:"D", name:"Point Breeze VFD",
+    address:"29 Point Breeze Avenue, Breezy Point, NY 11697",
+    lat:40.560093, lng:-73.920191,
+    vfanyc:"https://vfanyc.org/point-breeze-volunteer-fire-department/",
+    site:"https://www.facebook.com/PointBreezeVFD/", siteLabel:"Official Facebook" },
+
+  { letter:"E", name:"Richmond Engine Co. #1",
+    address:"3664 Richmond Road, Staten Island, NY 10306",
+    lat:40.571959, lng:-74.143529,
+    vfanyc:"https://vfanyc.org/richmond-engine-company-1/",
+    site:"https://richmondengine.org", siteLabel:"Department site" },
+
+  { letter:"F", name:"Rockaway Point VFD",
+    address:"204-26 Rockaway Point Boulevard, Breezy Point, NY 11697",
+    lat:40.566658, lng:-73.886303,
+    vfanyc:"https://vfanyc.org/rockaway-point-volunteer-fire-department/",
+    site:"https://rpfdny.org", siteLabel:"Department site" },
+
+  { letter:"G", name:"Roxbury VFD",
+    address:"42 State Road, Breezy Point, NY 11697",
+    lat:40.566311, lng:-73.891126,
+    vfanyc:"https://vfanyc.org/roxbury-volunteer-fire-department/",
+    site:"https://www.facebook.com/RoxburyVolunteerFD/", siteLabel:"Official Facebook" },
+
+  { letter:"H", name:"West Hamilton Beach VFD",
+    address:"102-33 Davenport Court, Howard Beach, NY 11414",
+    lat:40.653769, lng:-73.828403,
+    vfanyc:"https://vfanyc.org/west-hamilton-beach-volunteer-fire-department/",
+    site:"https://www.whbvfd.org", siteLabel:"Department site" }
+];
+
+/* ── Map ── */
+const map = L.map("map", { scrollWheelZoom:false }).setView([40.62, -73.86], 11);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom:19,
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+const located = DEPARTMENTS.filter(d => d.lat !== null && d.lng !== null);
+const markers = {};
+
+located.forEach(d => {
+  const icon = L.divIcon({
+    className:"",
+    html:`<div class="marker-badge" aria-hidden="true">${d.letter}</div>`,
+    iconSize:[28,28],
+    iconAnchor:[14,14],
+    popupAnchor:[0,-15]
+  });
+  const links = [
+    `<a href="${d.vfanyc}" target="_blank" rel="noopener">VFANYC profile</a>`,
+    d.site ? `<a href="${d.site}" target="_blank" rel="noopener">${d.siteLabel}</a>` : null
+  ].filter(Boolean).join(" &middot; ");
+
+  markers[d.letter] = L.marker([d.lat, d.lng], { icon, title:d.name })
+    .addTo(map)
+    .bindPopup(`<strong>${d.letter}. ${d.name}</strong>${d.address}<br>${links}`);
+});
+
+if (located.length) {
+  map.fitBounds(L.latLngBounds(located.map(d => [d.lat, d.lng])).pad(0.18));
+}
+
+/* ── Reference list ── */
+const key = document.getElementById("key");
+DEPARTMENTS.forEach(d => {
+  const li = document.createElement("li");
+  const links = [
+    `<a href="${d.vfanyc}" target="_blank" rel="noopener">VFANYC profile</a>`,
+    d.site ? `<a href="${d.site}" target="_blank" rel="noopener">${d.siteLabel}</a>` : null
+  ].filter(Boolean).join('<span class="sep">&middot;</span>');
+
+  li.innerHTML =
+    `<span class="badge" aria-hidden="true">${d.letter}</span>
+     <span class="meta">
+       <span class="name">${d.name}</span>
+       <span class="addr">${d.address}</span>
+       <span class="links">${links}</span>
+     </span>`;
+
+  if (markers[d.letter]) {
+    li.style.cursor = "pointer";
+    li.addEventListener("click", e => {
+      if (e.target.tagName === "A") return;
+      map.setView(markers[d.letter].getLatLng(), 15);
+      markers[d.letter].openPopup();
+    });
+  }
+  key.appendChild(li);
+});
+</script>
+</body>
+</html>

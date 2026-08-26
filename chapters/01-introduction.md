@@ -32,7 +32,7 @@ alongside the FDNY.
 
 ## The Eight NYC Volunteer Fire Departments
 
-:::{iframe} PASTE_GOOGLE_MY_MAPS_EMBED_URL
+:::{iframe} ../assets/vfd-map.html
 :width: 100%
 :title: VFA Response Area Map
 Locations of the eight NYC volunteer fire departments.
@@ -40,7 +40,7 @@ Locations of the eight NYC volunteer fire departments.
 
 | Department | Learn more |
 |---|---|
-| Broad Channel VFD & Ambulance Corp. | [VFANYC](https://vfanyc.org/broad-channel-volunteer-fire-department/) · [Dept. site](https://www.broadchannelvfd.org) |
+| Broad Channel VFD & Ambulance Corp. | [VFANYC](https://vfanyc.org/broad-channel-volunteer-fire-department/) · [Dept. site](https://broadchannelvfd.org/) |
 | Edgewater Park Volunteer Hose Co. #1 | [VFANYC](https://vfanyc.org/edgewater-park-volunteer-hose-company-no-1/) |
 | Gerritsen Beach VFD | [VFANYC](https://vfanyc.org/gerritsen-beach-volunteer-fire-department/) |
 | Point Breeze VFD | [VFANYC](https://vfanyc.org/point-breeze-volunteer-fire-department/) |
