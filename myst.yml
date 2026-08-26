@@ -21,6 +21,8 @@ project:
     - volunteer fire departments
   static_files:
     - assets
+  bibliography:
+    - references.bib
   toc:
     - file: index.md
     - file: chapters/01-introduction.md

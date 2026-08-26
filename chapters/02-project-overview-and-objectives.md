@@ -47,18 +47,43 @@ theories and their real-world application.
 
 ## Employer-Desired Competencies
 
-Drawing on [Deloitte's Workforce of the Future Institute](https://www.deloitte.com/us/en/Industries/government-public/about/future-of-work-institute.html), the project is
-designed to build these competencies across all deliverables:
+The competencies below are drawn from
+[Deloitte's Future of Work Institute](https://www.deloitte.com/us/en/Industries/government-public/about/future-of-work-institute.html)
+[@deloitteFutureOfWork]. Each term also links to its general-language
+definition in *Merriam-Webster* for students who want a plain-English
+starting point before applying it in a workplace context.
 
-1. **Empathy** — understanding another's thoughts and feelings from
-   their point of view
-2. **Adaptability** — adjusting to new conditions
+1. **Empathy** — understanding another's thoughts and feelings from their
+   point of view, rather than one's own
+   ([definition](https://www.merriam-webster.com/dictionary/empathy))
+   [@mwEmpathy]
+2. **Adaptability** — the ability to adjust to new conditions
+   ([definition](https://www.merriam-webster.com/dictionary/adaptability))
+   [@mwAdaptability]
 3. **Emotional Intelligence** — managing one's own emotions and
-   understanding others'
-4. **Problem-Solving** — finding solutions to complex issues
-5. **Critical Thinking** — logically identifying and solving problems
-6. **Logical Reasoning** — distinguishing facts from opinions, avoiding
-   premature conclusions
-7. **Curiosity** — eagerness to know or learn
+   understanding the emotions of those around oneself
+   ([definition](https://www.merriam-webster.com/dictionary/emotional%20intelligence))
+   [@mwEmotionalIntelligence]
+4. **Problem-Solving** — finding solutions to difficult or complex issues
+   ([definition](https://www.merriam-webster.com/dictionary/problem-solving))
+   [@mwProblemSolving]
+5. **Critical Thinking** — identifying a problem and logically thinking
+   through it to reach a solution
+   ([definition](https://www.merriam-webster.com/dictionary/critical%20thinking))
+   [@mwCriticalThinking]
+6. **Logical Reasoning** — distinguishing facts from opinions, and
+   suspending judgment when important information is missing rather than
+   jumping to conclusions
+   ([logic](https://www.merriam-webster.com/dictionary/logic) ·
+   [reasoning](https://www.merriam-webster.com/dictionary/reasoning))
+   [@mwLogic; @mwReasoning]
+7. **Curiosity** — eagerness to know or learn something
+   ([definition](https://www.merriam-webster.com/dictionary/curiosity))
+   [@mwCuriosity]
 8. **Resilience** — recovering quickly from difficulties or mistakes
-9. **Communication** — clear written and verbal communication
+   ([definition](https://www.merriam-webster.com/dictionary/resilience))
+   [@mwResilience]
+9. **Communication** — clear written and verbal communication, including
+   attention to details needed to make a decision
+   ([definition](https://www.merriam-webster.com/dictionary/communication))
+   [@mwCommunication]
