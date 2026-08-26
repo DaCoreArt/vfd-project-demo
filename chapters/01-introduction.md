@@ -32,7 +32,7 @@ alongside the FDNY.
 
 ## The Eight NYC Volunteer Fire Departments
 
-:::{iframe} ../assets/vfd-map.html
+:::{iframe} ../assets/interactive/vfd-map.html
 :width: 100%
 :height: 480
 :title: VFA Response Area Map

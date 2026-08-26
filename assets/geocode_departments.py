@@ -12,7 +12,7 @@ import urllib.request
 from pathlib import Path
 
 ASSETS = Path(__file__).resolve().parent
-HTML_PATH = ASSETS / "vfd-map.html"
+HTML_PATH = ASSETS / "interactive" / "vfd-map.html"
 GEOJSON_PATH = ASSETS / "departments.geojson"
 USER_AGENT = "vfd-project-demo/1.0 (educational map; local geocoding)"
 

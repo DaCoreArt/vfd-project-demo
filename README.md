@@ -21,6 +21,9 @@ This is the first real (non-placeholder) content run through the platform's inge
 | `chapters/07-deliverable-five.md` | Reflection (written + oral) |
 | `chapters/08-rubrics.md` | Grading rubrics for all five deliverables |
 | `chapters/09-appendix-and-references.md` | Confidentiality statement, citation guidance, references |
+| `chapters/10-media-gallery.md` | Video and visual reference gallery |
+| `assets/` | Figures, photos, interactive HTML, and data files (see `assets/README.md`) |
+| `project-template/` | Starting point for new projects — copy this folder to begin a new Jupyter Book |
 
 ## Source and attribution
 

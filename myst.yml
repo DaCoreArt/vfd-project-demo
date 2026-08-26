@@ -34,6 +34,7 @@ project:
     - file: chapters/07-deliverable-five.md
     - file: chapters/08-rubrics.md
     - file: chapters/09-appendix-and-references.md
+    - file: chapters/10-media-gallery.md
 site:
   template: book-theme
   options:
