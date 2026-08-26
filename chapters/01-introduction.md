@@ -28,16 +28,26 @@ the City of New York (VFACNY)** to advocate for the needs of volunteer
 fire departments and provide support and resources to its members.
 
 Today, there are eight volunteer fire departments across NYC working
-alongside the FDNY:
+alongside the FDNY.
 
-1. Broad Channel VFD & Ambulance Corp.
-2. Edgewater Park Volunteer Hose Company No. 1
-3. Gerrittsen Beach Volunteer Fire Department
-4. Point Breeze Volunteer Fire Department
-5. Richmond Engine Company #1
-6. Rockaway Point Volunteer Fire Department
-7. Roxbury Volunteer Fire Department
-8. West Hamilton Beach Volunteer Fire Department
+## The Eight NYC Volunteer Fire Departments
+
+:::{iframe} PASTE_GOOGLE_MY_MAPS_EMBED_URL
+:width: 100%
+:title: VFA Response Area Map
+Locations of the eight NYC volunteer fire departments.
+:::
+
+| Department | Learn more |
+|---|---|
+| Broad Channel VFD & Ambulance Corp. | [VFANYC](https://vfanyc.org/broad-channel-volunteer-fire-department/) · [Dept. site](https://www.broadchannelvfd.org) |
+| Edgewater Park Volunteer Hose Co. #1 | [VFANYC](https://vfanyc.org/edgewater-park-volunteer-hose-company-no-1/) |
+| Gerritsen Beach VFD | [VFANYC](https://vfanyc.org/gerritsen-beach-volunteer-fire-department/) |
+| Point Breeze VFD | [VFANYC](https://vfanyc.org/point-breeze-volunteer-fire-department/) |
+| Richmond Engine Co. #1 | [VFANYC](https://vfanyc.org/richmond-engine-company-1/) |
+| Rockaway Point VFD | [VFANYC](https://vfanyc.org/rockaway-point-volunteer-fire-department/) |
+| Roxbury VFD | [VFANYC](https://vfanyc.org/roxbury-volunteer-fire-department/) |
+| West Hamilton Beach VFD | [VFANYC](https://vfanyc.org/west-hamilton-beach-volunteer-fire-department/) |
 
 ## NYC Volunteer Fire Departments Offer an Experience to Connect Theory to Practice
 
