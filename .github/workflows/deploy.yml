@@ -6,6 +6,7 @@ on:
   push:
     # Runs on pushes targeting the default branch
     branches: [master]
+  workflow_dispatch:
 
 env:
   # `BASE_URL` determines the website is served from, including CSS & JS assets
@@ -18,11 +19,10 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# New group name bypasses a stuck queued run that blocked the old "pages" group.
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages-deploy"
+  cancel-in-progress: true
 
 jobs:
   deploy:
