@@ -65,7 +65,9 @@ starting point before applying it in a workplace context.
    through it to reach a solution [@mwCriticalThinking]
 6. **Logical Reasoning** — distinguishing facts from opinions, and
    suspending judgment when important information is missing rather than
-   jumping to conclusions [@mwLogic; @mwReasoning]
+   jumping to conclusions (logic [@mwLogic]; reasoning [@mwReasoning]).
+   *Note:* Merriam-Webster defines *logic* and *reasoning* as separate
+   entries, so both citations are included.
 7. **Curiosity** — eagerness to know or learn something [@mwCuriosity]
 8. **Resilience** — recovering quickly from difficulties or mistakes
    [@mwResilience]
