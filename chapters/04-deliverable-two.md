@@ -50,8 +50,9 @@ communication.
 
 Same citation requirements as Deliverable One.
 
-## Submission Requirements
-
+:::{admonition} Submission Requirements
+:class: important
 - Excel file: `D2_LastName_FirstName`
 - Word file: `D2_LastName_FirstName`
 - Upload to Brightspace under Deliverable Two
+:::

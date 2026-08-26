@@ -57,8 +57,9 @@ insurance providers, and academic sources (all must be listed).
 AI-generated explanations without authoritative underlying sources (AI
 is a research tool, not an authoritative source itself).
 
-## Submission Requirements
-
+:::{admonition} Submission Requirements
+:class: important
 - Excel file: `D1_LastName_FirstName`
 - Word file: `D1_LastName_FirstName`
 - Upload both to Brightspace under Deliverable One
+:::

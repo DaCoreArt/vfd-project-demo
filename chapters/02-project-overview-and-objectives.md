@@ -47,7 +47,7 @@ theories and their real-world application.
 
 ## Employer-Desired Competencies
 
-Drawing on Deloitte's Workforce of the Future Institute, the project is
+Drawing on [Deloitte's Workforce of the Future Institute](https://www.deloitte.com/us/en/Industries/government-public/about/future-of-work-institute.html), the project is
 designed to build these competencies across all deliverables:
 
 1. **Empathy** — understanding another's thoughts and feelings from

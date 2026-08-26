@@ -25,7 +25,8 @@ concise, professional, narrated PowerPoint.
   slide timings directly in PowerPoint.
 :::
 
-## Submission Requirements
-
+:::{admonition} Submission Requirements
+:class: important
 - File: `D4_LastName` (PowerPoint, saved as `.ppt`/`.pptx`)
 - Upload to Brightspace under Deliverable Four
+:::

@@ -32,7 +32,8 @@ modeling and evaluating capital investment decisions.
 
 Same citation requirements as Deliverable One.
 
-## Submission Requirements
-
+:::{admonition} Submission Requirements
+:class: important
 - Word file: `D3_LastName_FirstName`
 - Upload to Brightspace under Deliverable Three
+:::

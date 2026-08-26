@@ -36,3 +36,4 @@ site:
   template: book-theme
   options:
     logo_text: "CUNY Experiential Learning Repository"
+    hide_outline: true

@@ -33,9 +33,10 @@ a real fire department enhanced employer-desired competencies relevant
 to financial and strategic decision-making. Must be concise, rehearsed,
 and delivered with energy and conviction.
 
-## Submission Requirements
-
+:::{admonition} Submission Requirements
+:class: important
 - Written narrative: `D5_LastName_FirstName` (Word file only — **no
   PDF**)
 - Oral component: VoiceThread
 - Upload the Word document to Brightspace under Deliverable Five
+:::
