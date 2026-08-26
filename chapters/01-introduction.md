@@ -25,10 +25,11 @@ in New York City's fire service in the late 1800s. Facing inadequate
 funding, poor equipment, and limited training opportunities, a group of
 volunteer firefighters formed the **Volunteer Firemen's Association of
 the City of New York (VFACNY)** to advocate for the needs of volunteer
-fire departments and provide support and resources to its members.
+fire departments and provide support and resources to its members
+[@vfacny2025].
 
 Today, there are eight volunteer fire departments across NYC working
-alongside the FDNY.
+alongside the FDNY [@vfacny2025].
 
 ## The Eight NYC Volunteer Fire Departments
 
@@ -54,11 +55,12 @@ Locations of the eight NYC volunteer fire departments.
 
 Many accounting and finance students report difficulty connecting
 abstract financial theories to real-world decision-making, particularly
-in organizations that do not operate for profit. Traditional coursework
-often relies on short case studies offering limited insight into how
-organizations function in practice. Compared to other fields (education,
-healthcare, physical sciences), accounting and finance programs offer
-relatively few opportunities for immersive, community-based experiences.
+in organizations that do not operate for profit [@foy2024; @foy2025].
+Traditional coursework often relies on short case studies offering
+limited insight into how organizations function in practice. Compared to
+other fields (education, healthcare, physical sciences), accounting and
+finance programs offer relatively few opportunities for immersive,
+community-based experiences [@foy2024; @foy2025].
 
 This project addresses that gap by placing students directly in the
 context of NYC volunteer fire departments, where financial decisions are
