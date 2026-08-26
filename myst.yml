@@ -19,6 +19,8 @@ project:
     - financial management
     - MGMT 603
     - volunteer fire departments
+  static_files:
+    - assets
   toc:
     - file: index.md
     - file: chapters/01-introduction.md
