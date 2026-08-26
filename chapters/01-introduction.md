@@ -35,7 +35,6 @@ alongside the FDNY [@vfacny2025].
 
 :::{iframe} ../assets/interactive/vfd-map.html
 :width: 100%
-:height: 480
 :title: VFA Response Area Map
 Locations of the eight NYC volunteer fire departments.
 :::

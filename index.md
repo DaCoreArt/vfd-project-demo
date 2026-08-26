@@ -24,5 +24,7 @@ financial decision-making.
 - **Rubrics** — grading criteria for every deliverable
 - **Appendix and References** — confidentiality statement, citation
   guidance, and sources
+- **Media Gallery** — video reference material on firehouse operations,
+  apparatus, and nonprofit funding
 
 **Instructor:** Dr. Joseph Foy, CPA ([joseph.foy@cuny.edu](mailto:joseph.foy@cuny.edu))

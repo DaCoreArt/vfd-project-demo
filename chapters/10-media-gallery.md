@@ -15,7 +15,6 @@ it for inclusion. See the submission note at the bottom of this page.
 
 :::{iframe} https://www.youtube.com/embed/VIDEO_ID
 :width: 100%
-:height: 420px
 
 **[Video title]** — [One sentence on what it shows and why it matters to
 the project.] Source: [department or channel name], [year].
@@ -29,7 +28,6 @@ ambulances, turnout gear, and communications equipment.
 
 :::{iframe} https://www.youtube.com/embed/VIDEO_ID
 :width: 100%
-:height: 420px
 
 **[Video title]** — [Description.] Source: [name], [year].
 :::
@@ -41,7 +39,6 @@ fundraising, community donations, and financing.
 
 :::{iframe} https://www.youtube.com/embed/VIDEO_ID
 :width: 100%
-:height: 420px
 
 **[Video title]** — [Description.] Source: [name], [year].
 :::
