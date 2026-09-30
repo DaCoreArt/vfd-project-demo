@@ -40,7 +40,7 @@ Use the MyST `figure` directive rather than plain Markdown image syntax. It give
 
 Reserve ratio (cash ÷ total expenses) across six fiscal years.
 
-Data source: IRS Form 990 filings.
+Data source: [IRS Form 990 filings](https://apps.irs.gov/app/eos/).
 
 :::
 

@@ -25,9 +25,11 @@ chosen firehouse.
 7. Describe sensory observations (sounds, smells, movement, pace,
    atmosphere).
 
-Acceptable data sources: IRS Form 990 filings, ProPublica, Candid
-(GuideStar), NY State charity filings, nonprofit websites, local news or
-fundraising reports.
+Acceptable data sources: [IRS Form 990 filings](https://apps.irs.gov/app/eos/),
+[ProPublica](https://projects.propublica.org/nonprofits/),
+[Candid (GuideStar)](https://www.guidestar.org/),
+[NY State charity filings](https://www.charitiesnys.com/), nonprofit
+websites, local news or fundraising reports.
 
 ## Task D1.2 — Firehouse Identification
 
@@ -56,6 +58,8 @@ insurance providers, and academic sources (all must be listed).
 **Not acceptable:** Wikipedia, Investopedia or similar aggregators;
 AI-generated explanations without authoritative underlying sources (AI
 is a research tool, not an authoritative source itself).
+
+Refer to the [Citations section](#citations) for further guidance.
 
 :::{admonition} Submission Requirements
 :class: important

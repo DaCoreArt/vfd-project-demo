@@ -50,6 +50,8 @@ communication.
 
 Same citation requirements as Deliverable One.
 
+Refer to the [Citations section](#citations) for further guidance.
+
 :::{admonition} Submission Requirements
 :class: important
 - Excel file: `D2_LastName_FirstName`

@@ -22,8 +22,9 @@ financial decision-making.
 - **Deliverables One through Five** — detailed task instructions for
   each phase of the project
 - **Rubrics** — grading criteria for every deliverable
-- **Appendix and References** — confidentiality statement, citation
-  guidance, and sources
+- **Citation Guidance** — APA 7th edition citation and reference examples
+- **Student Confidentiality Statement** — research project confidentiality
+  pledge
 - **Media Gallery** — video reference material on firehouse operations,
   apparatus, and nonprofit funding
 

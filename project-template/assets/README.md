@@ -41,7 +41,7 @@ It gives you a caption, a numbered label, and a cross-reference target:
 :alt: Line chart of reserve ratio across six fiscal years for all eight departments.
 
 Reserve ratio (cash ÷ total expenses) across six fiscal years.
-Data source: IRS Form 990 filings.
+Data source: [IRS Form 990 filings](https://apps.irs.gov/app/eos/).
 :::
 ```
 

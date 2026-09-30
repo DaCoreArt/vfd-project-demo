@@ -32,6 +32,8 @@ modeling and evaluating capital investment decisions.
 
 Same citation requirements as Deliverable One.
 
+Refer to the [Citations section](#citations) for further guidance.
+
 :::{admonition} Submission Requirements
 :class: important
 - Word file: `D3_LastName_FirstName`
