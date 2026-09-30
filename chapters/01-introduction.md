@@ -33,22 +33,34 @@ alongside the FDNY [@vfacny2025].
 
 ## The Eight NYC Volunteer Fire Departments
 
+:::{iframe} MY_MAPS_EMBED_URL_TODO
+:width: 100%
+:title: NYC Volunteer Fire Departments — Google My Maps
+Locations of the eight NYC volunteer fire departments. Each pin lists
+the Chief and Key Personnel (Board of Directors).
+:::
+
+*Personnel shown in pin pop-ups are as of the source filing year listed
+in `data/departments.json` (`key_personnel_source`). Import pins from
+`data/my-maps-import.csv` into Google My Maps, then replace
+`MY_MAPS_EMBED_URL_TODO` with the published embed URL.*
+
 :::{iframe} ../assets/interactive/vfd-map.html
 :width: 100%
-:title: VFA Response Area Map
-Locations of the eight NYC volunteer fire departments.
+:title: VFA Response Area Map (interim Leaflet map)
+Interim local map used until the Google My Maps embed URL is available.
 :::
 
 | Department | Learn more |
 |---|---|
 | Broad Channel VFD & Ambulance Corp. | [VFANYC](https://vfanyc.org/broad-channel-volunteer-fire-department/) · [Dept. site](https://broadchannelvfd.org/) |
 | Edgewater Park Volunteer Hose Co. #1 | [VFANYC](https://vfanyc.org/edgewater-park-volunteer-hose-company-no-1/) |
-| Gerritsen Beach VFD | [VFANYC](https://vfanyc.org/gerritsen-beach-volunteer-fire-department/) |
-| Point Breeze VFD | [VFANYC](https://vfanyc.org/point-breeze-volunteer-fire-department/) |
-| Richmond Engine Co. #1 | [VFANYC](https://vfanyc.org/richmond-engine-company-1/) |
-| Rockaway Point VFD | [VFANYC](https://vfanyc.org/rockaway-point-volunteer-fire-department/) |
-| Roxbury VFD | [VFANYC](https://vfanyc.org/roxbury-volunteer-fire-department/) |
-| West Hamilton Beach VFD | [VFANYC](https://vfanyc.org/west-hamilton-beach-volunteer-fire-department/) |
+| Gerritsen Beach VFD | [VFANYC](https://vfanyc.org/gerritsen-beach-volunteer-fire-department/) · [Dept. site](https://gbfd.net) |
+| Point Breeze VFD | [VFANYC](https://vfanyc.org/point-breeze-volunteer-fire-department/) · [Official Facebook](https://www.facebook.com/PointBreezeVFD/) |
+| Richmond Engine Co. #1 | [VFANYC](https://vfanyc.org/richmond-engine-company-1/) · [Dept. site](https://richmondengine.org) |
+| Rockaway Point VFD | [VFANYC](https://vfanyc.org/rockaway-point-volunteer-fire-department/) · [Dept. site](https://rpfdny.org) |
+| Roxbury VFD | [VFANYC](https://vfanyc.org/roxbury-volunteer-fire-department/) · [Official Facebook](https://www.facebook.com/RoxburyVolunteerFD/) |
+| West Hamilton Beach VFD | [VFANYC](https://vfanyc.org/west-hamilton-beach-volunteer-fire-department/) · [Dept. site](https://www.whbvfd.org) |
 
 ## NYC Volunteer Fire Departments Offer an Experience to Connect Theory to Practice
 

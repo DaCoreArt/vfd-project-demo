@@ -21,6 +21,8 @@ project:
     - volunteer fire departments
   static_files:
     - assets
+    - data
+    - images
   bibliography:
     - references.bib
   toc:
