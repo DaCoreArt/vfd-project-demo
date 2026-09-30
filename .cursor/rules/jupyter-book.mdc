@@ -1,0 +1,12 @@
+---
+description: Project rules for Dr. Foy's volunteer fire department Jupyter Book
+alwaysApply: true
+---
+
+- This is a Jupyter Book 2 (mystmd) site deployed to GitHub Pages. Static hosting only: no server, no live Python kernel on the published site.
+- Interactive features must be self-contained HTML/JS widgets stored in `widgets/` and embedded with the MyST `{iframe}` directive (or `{anywidget}` if already in use). Load libraries only from CDNs (cdnjs, jsDelivr).
+- NEVER invent factual data (founding years, revenue, names, board members, URLs). Read from `data/departments.json`. If a value is missing, show a visible "TODO" placeholder and list it in your summary.
+- Citations follow APA 7th edition.
+- All images need meaningful alt text; widgets must be keyboard-accessible and readable on mobile.
+- Before editing, inspect `myst.yml` and the existing page structure. After editing, run `myst build --html` (or `myst start`) and fix any warnings, broken links, or broken cross-references.
+- Make one git commit per completed task with a clear message.
