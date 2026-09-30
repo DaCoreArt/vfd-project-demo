@@ -21,6 +21,13 @@ concerns report for each firehouse under these four funding scenarios:
 
 All concerns raised should be financial in nature.
 
+### Deliverable form — Task D3.1
+
+:::{iframe} ../widgets/deliverables/d3-1.html
+:width: 100%
+:title: Task D3.1 deliverable form
+:::
+
 ## Task D3.2 — Reflection
 
 Reflect on how this deliverable developed financial reasoning,
@@ -28,11 +35,25 @@ problem-solving, curiosity, adaptability, critical thinking, empathy,
 emotional intelligence, and communication — specifically regarding
 modeling and evaluating capital investment decisions.
 
+### Deliverable form — Task D3.2
+
+:::{iframe} ../widgets/deliverables/d3-2.html
+:width: 100%
+:title: Task D3.2 deliverable form
+:::
+
 ## Task D3.3 — References (APA 7th Edition)
 
 Same citation requirements as Deliverable One.
 
 Refer to the [Citations section](#citations) for further guidance.
+
+### Deliverable form — Task D3.3
+
+:::{iframe} ../widgets/deliverables/d3-3.html
+:width: 100%
+:title: Task D3.3 deliverable form
+:::
 
 :::{admonition} Submission Requirements
 :class: important

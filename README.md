@@ -45,3 +45,7 @@ jupyter book start
 ## Status
 
 Structural conversion complete and validated (builds with zero content errors). This is the primary demo repo for showing the platform pipeline using real course material, rather than placeholder or third-party test content.
+
+## Future phase
+
+Brightspace direct upload would require an LTI 1.3 integration or Brightspace Valence API OAuth app approved by CUNY IT. Until that approval exists, students generate Word/PDF files in-book and upload them manually to Brightspace assignments.

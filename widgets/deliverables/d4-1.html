@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Task D4.1 — Presentation Storyboard and Talking Points</title>
+<script src="https://cdn.jsdelivr.net/npm/docx@9.5.0/dist/index.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
+<style>
+  :root {
+    --ink: #16191d;
+    --paper: #f7f5f2;
+    --steel: #6b7280;
+    --rule: #dcd7cf;
+    --focus: #0b57d0;
+    --warn-bg: #fff6e5;
+    --warn-border: #e0b65c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.45;
+    padding: 12px 14px 20px;
+  }
+  h1 { font-size: 1.1rem; margin: 0 0 0.25rem; }
+  .meta { font-size: 0.85rem; color: var(--steel); margin: 0 0 0.75rem; }
+  .instructions, .warn {
+    font-size: 0.88rem;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--rule);
+    background: #fff;
+    margin: 0 0 0.85rem;
+  }
+  .warn {
+    background: var(--warn-bg);
+    border-color: var(--warn-border);
+  }
+  .field { margin-bottom: 0.75rem; }
+  label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .hint { font-size: 0.8rem; color: var(--steel); margin: 0 0 0.35rem; }
+  input, select, textarea {
+    width: 100%;
+    font: inherit;
+    padding: 0.45rem 0.55rem;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: #fff;
+  }
+  textarea { min-height: 6rem; resize: vertical; }
+  input:focus, select:focus, textarea:focus, button:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+  .grid {
+    display: grid;
+    gap: 0.75rem;
+  }
+  @media (min-width: 640px) {
+    .grid.two { grid-template-columns: 1fr 1fr; }
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.85rem 0 0.5rem;
+  }
+  button {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+  }
+  button.secondary {
+    background: #fff;
+    color: var(--ink);
+  }
+  #status {
+    font-size: 0.85rem;
+    color: var(--steel);
+    min-height: 1.25em;
+  }
+  #status.error { color: #a32020; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+  <h1 id="task-heading">Deliverable</h1>
+  <p class="meta">Task <span id="task-id-label"></span></p>
+  <p class="meta" id="intro"></p>
+
+  <div class="instructions">
+    After generating your file, upload it to the assignment in Brightspace.
+  </div>
+  <div class="warn" role="note">
+    Drafts are saved only in this browser on this device. Download your file before closing.
+    See the
+    <a href="/student-confidentiality-statement" target="_parent" id="confidentiality-link">Student Confidentiality Statement</a>.
+  </div>
+
+  <form id="form" onsubmit="return false;">
+    <div class="grid two">
+      <div class="field">
+        <label for="student-name">Student name</label>
+        <input id="student-name" name="student-name" autocomplete="name" required />
+      </div>
+      <div class="field">
+        <label for="course-section">Course section</label>
+        <input id="course-section" name="course-section" autocomplete="off" />
+      </div>
+      <div class="field">
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" />
+      </div>
+      <div class="field">
+        <label for="department">Department analyzed</label>
+        <select id="department" name="department"></select>
+      </div>
+    </div>
+
+    <div id="sections"></div>
+
+    <div class="field">
+      <label for="references">References (APA 7th edition)</label>
+      <p class="hint">Cite textbooks, journals, 990 filings, interviews, and other sources. Include page numbers or deep hyperlinks.</p>
+      <textarea id="references" rows="5" placeholder="Author, A. A. (Year). Title. Publisher. https://..."></textarea>
+    </div>
+
+    <div class="actions">
+      <button type="button" id="gen-word">Generate Word Document</button>
+      <button type="button" id="gen-pdf">Generate PDF</button>
+      <button type="button" id="save-draft" class="secondary">Save draft in this browser</button>
+      <button type="button" id="clear-draft" class="secondary">Clear draft</button>
+    </div>
+    <p id="status" role="status" aria-live="polite"></p>
+  </form>
+
+  <script>
+window.DELIVERABLE_CONFIG = {
+  "taskId": "D4.1",
+  "title": "Task D4.1 \u2014 Presentation Storyboard and Talking Points",
+  "intro": "Deliverable Four is submitted as a narrated PowerPoint. Use this form for your storyboard, talking points, and references before recording.",
+  "sections": [
+    {
+      "id": "storyboard",
+      "label": "Storyboard / slide outline",
+      "hint": "Outline or empty slide sequence populated with ideas from Deliverables One through Three.",
+      "rows": 10
+    },
+    {
+      "id": "narration",
+      "label": "Narration talking points",
+      "hint": "Keep the full presentation to five minutes or less.",
+      "rows": 8
+    },
+    {
+      "id": "rehearsal",
+      "label": "Rehearsal notes",
+      "hint": "Timing, clarity, accessibility accommodations if applicable.",
+      "rows": 4
+    }
+  ]
+};
+</script>
+<script src="form-runtime.js"></script>
+
+</body>
+</html>

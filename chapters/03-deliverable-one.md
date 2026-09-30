@@ -31,6 +31,13 @@ Acceptable data sources: [IRS Form 990 filings](https://apps.irs.gov/app/eos/),
 [NY State charity filings](https://www.charitiesnys.com/), nonprofit
 websites, local news or fundraising reports.
 
+### Deliverable form — Task D1.1
+
+:::{iframe} ../widgets/deliverables/d1-1.html
+:width: 100%
+:title: Task D1.1 deliverable form
+:::
+
 ## Task D1.2 — Firehouse Identification
 
 Identify a primary target firehouse to visit, plus two alternates in
@@ -38,6 +45,13 @@ case the primary cannot be visited.
 
 1. Provide the name, address, and picture of the primary firehouse.
 2. Describe how and why it was selected.
+
+### Deliverable form — Task D1.2
+
+:::{iframe} ../widgets/deliverables/d1-2.html
+:width: 100%
+:title: Task D1.2 deliverable form
+:::
 
 ## Task D1.3 — Reflection (Self-Assessment)
 
@@ -47,6 +61,13 @@ In one well-developed paragraph, address:
    a framework to understand nonprofit accounting and financial data.
 2. How this process strengthened at least three employer-desired
    competencies.
+
+### Deliverable form — Task D1.3
+
+:::{iframe} ../widgets/deliverables/d1-3.html
+:width: 100%
+:title: Task D1.3 deliverable form
+:::
 
 ## Task D1.4 — References (APA 7th Edition)
 
@@ -60,6 +81,13 @@ AI-generated explanations without authoritative underlying sources (AI
 is a research tool, not an authoritative source itself).
 
 Refer to the [Citations section](#citations) for further guidance.
+
+### Deliverable form — Task D1.4
+
+:::{iframe} ../widgets/deliverables/d1-4.html
+:width: 100%
+:title: Task D1.4 deliverable form
+:::
 
 :::{admonition} Submission Requirements
 :class: important

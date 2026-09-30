@@ -11,7 +11,8 @@
     "website": "https://broadchannelvfd.org/",
     "chief_name": "TODO",
     "key_personnel": [],
-    "key_personnel_source": "TODO"
+    "key_personnel_source": "TODO",
+    "logo_source_url": "https://broadchannelvfd.org/wp-content/uploads/2022/02/Broad-Channel-patch.png"
   },
   {
     "name": "Edgewater Park Volunteer Hose Co. #1",
@@ -25,7 +26,8 @@
     "website": "https://vfanyc.org/edgewater-park-volunteer-hose-company-no-1/",
     "chief_name": "TODO",
     "key_personnel": [],
-    "key_personnel_source": "TODO"
+    "key_personnel_source": "TODO",
+    "logo_source_url": "https://vfanyc.org/wp-content/uploads/2022/09/Edgewater-Park-patch-232x300.png"
   },
   {
     "name": "Gerritsen Beach VFD",
@@ -39,7 +41,8 @@
     "website": "https://gbfd.net",
     "chief_name": "TODO",
     "key_personnel": [],
-    "key_personnel_source": "TODO"
+    "key_personnel_source": "TODO",
+    "logo_source_url": "https://gbfd.net/wp-content/uploads/2022/02/Gerrittsen-Beach-100-Years.png"
   },
   {
     "name": "Point Breeze VFD",
@@ -53,7 +56,8 @@
     "website": "https://www.facebook.com/PointBreezeVFD/",
     "chief_name": "TODO",
     "key_personnel": [],
-    "key_personnel_source": "TODO"
+    "key_personnel_source": "TODO",
+    "logo_source_url": "user-supplied:Point Breeze.jpg"
   },
   {
     "name": "Richmond Engine Co. #1",
@@ -67,7 +71,8 @@
     "website": "https://richmondengine.org",
     "chief_name": "TODO",
     "key_personnel": [],
-    "key_personnel_source": "TODO"
+    "key_personnel_source": "TODO",
+    "logo_source_url": "https://richmondengine.org/wp-content/uploads/2023/04/Richmond-Engine-Co-NYC-patch.png"
   },
   {
     "name": "Rockaway Point VFD",
@@ -81,7 +86,8 @@
     "website": "https://rpfdny.org",
     "chief_name": "TODO",
     "key_personnel": [],
-    "key_personnel_source": "TODO"
+    "key_personnel_source": "TODO",
+    "logo_source_url": "https://rpfdny.org/wp-content/uploads/2022/02/Rockaway-Point-Patch.png"
   },
   {
     "name": "Roxbury VFD",
@@ -95,7 +101,8 @@
     "website": "https://www.facebook.com/RoxburyVolunteerFD/",
     "chief_name": "TODO",
     "key_personnel": [],
-    "key_personnel_source": "TODO"
+    "key_personnel_source": "TODO",
+    "logo_source_url": "user-supplied:Roxbury.jpg"
   },
   {
     "name": "West Hamilton Beach VFD",
@@ -109,6 +116,7 @@
     "website": "https://www.whbvfd.org",
     "chief_name": "TODO",
     "key_personnel": [],
-    "key_personnel_source": "TODO"
+    "key_personnel_source": "TODO",
+    "logo_source_url": "user-supplied:West Hamilton Beach.png"
   }
 ]

@@ -25,6 +25,17 @@ concise, professional, narrated PowerPoint.
   slide timings directly in PowerPoint.
 :::
 
+### Deliverable form — Task D4.1 (storyboard / talking points)
+
+Deliverable Four is submitted as a narrated PowerPoint. Use the form below
+to draft your storyboard and talking points, then export Word/PDF notes for
+your own records before recording.
+
+:::{iframe} ../widgets/deliverables/d4-1.html
+:width: 100%
+:title: Task D4.1 deliverable form
+:::
+
 :::{admonition} Submission Requirements
 :class: important
 - File: `D4_LastName` (PowerPoint, saved as `.ppt`/`.pptx`)

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Department founding timeline</title>
+<style>
+  :root {
+    --ink: #16191d;
+    --paper: #f7f5f2;
+    --steel: #6b7280;
+    --ember: #c8322b;
+    --rule: #dcd7cf;
+    --active: #1f4b3f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.45;
+    padding: 12px 14px 18px;
+  }
+  h1 {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--steel);
+    margin: 0 0 14px;
+  }
+  .stage {
+    position: relative;
+    min-height: 120px;
+    margin-bottom: 8px;
+  }
+  .logos {
+    position: relative;
+    height: 88px;
+    margin: 0 8px 6px;
+  }
+  .logo-marker {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 64px;
+    text-align: center;
+    opacity: 0.22;
+    filter: grayscale(1);
+    transition: opacity 0.2s ease, filter 0.2s ease, transform 0.2s ease;
+  }
+  .logo-marker.active {
+    opacity: 1;
+    filter: none;
+    transform: translateX(-50%) translateY(-2px);
+  }
+  .logo-marker img,
+  .logo-marker .ph {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border: 1px solid var(--rule);
+    background: #fff;
+    display: block;
+    margin: 0 auto 4px;
+  }
+  .logo-marker .ph {
+    font-size: 0.58rem;
+    color: var(--steel);
+    display: grid;
+    place-items: center;
+    padding: 4px;
+    line-height: 1.2;
+  }
+  .logo-marker .label {
+    font-size: 0.65rem;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+  .track-wrap { padding: 0 8px; }
+  input[type="range"] {
+    width: 100%;
+    accent-color: var(--ember);
+    height: 2rem;
+  }
+  .year-readout {
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-top: 0.15rem;
+    color: var(--active);
+  }
+  .pending {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--steel);
+  }
+  .pending ul { margin: 0.35rem 0 0; padding-left: 1.2rem; }
+  .empty {
+    font-size: 0.9rem;
+    color: var(--steel);
+    margin: 0.5rem 0 1rem;
+  }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); border: 0;
+  }
+</style>
+</head>
+<body>
+  <h1>Founding timeline</h1>
+  <p id="status" class="empty" hidden></p>
+  <div class="stage">
+    <div class="logos" id="logos" aria-hidden="false"></div>
+    <div class="track-wrap">
+      <label class="sr-only" for="year-slider">Founding year</label>
+      <input id="year-slider" type="range" min="1880" max="2030" value="1880" step="1" />
+      <div class="year-readout" id="year-readout" aria-live="polite">1880</div>
+    </div>
+  </div>
+  <div class="pending" id="pending" hidden>
+    <strong>Founding year pending</strong>
+    <ul id="pending-list"></ul>
+  </div>
+
+<script>
+const DATA_URL = new URL("../data/departments.json", window.location.href).href;
+
+function parseYear(value) {
+  if (value === null || value === undefined) return null;
+  const s = String(value).trim();
+  if (!s || s.toUpperCase() === "TODO") return null;
+  const n = Number(s);
+  return Number.isFinite(n) ? n : null;
+}
+
+function slugName(name) {
+  return String(name).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+async function main() {
+  const status = document.getElementById("status");
+  const logos = document.getElementById("logos");
+  const slider = document.getElementById("year-slider");
+  const readout = document.getElementById("year-readout");
+  const pending = document.getElementById("pending");
+  const pendingList = document.getElementById("pending-list");
+
+  let depts = [];
+  try {
+    const resp = await fetch(DATA_URL);
+    depts = await resp.json();
+  } catch (err) {
+    status.hidden = false;
+    status.textContent = "Could not load department data.";
+    return;
+  }
+
+  const known = [];
+  const unknown = [];
+  for (const d of depts) {
+    const year = parseYear(d.founded_year);
+    if (year === null) unknown.push(d);
+    else known.push({ ...d, founded_year: year });
+  }
+
+  if (unknown.length) {
+    pending.hidden = false;
+    pendingList.innerHTML = unknown.map(d =>
+      `<li>${d.name} — founding year pending</li>`
+    ).join("");
+  }
+
+  if (!known.length) {
+    status.hidden = false;
+    status.textContent = "No founded years are available yet. Add numeric founded_year values in data/departments.json to activate the timeline.";
+    slider.disabled = true;
+    return;
+  }
+
+  const years = known.map(d => d.founded_year);
+  const minY = Math.min(...years) - 5;
+  const maxY = Math.max(...years) + 5;
+  slider.min = String(minY);
+  slider.max = String(maxY);
+  slider.value = String(minY);
+  readout.textContent = String(minY);
+
+  known.forEach(d => {
+    const left = ((d.founded_year - minY) / (maxY - minY)) * 100;
+    const el = document.createElement("div");
+    el.className = "logo-marker";
+    el.style.left = `${left}%`;
+    el.dataset.year = String(d.founded_year);
+    el.title = `${d.name} (${d.founded_year})`;
+    el.setAttribute("role", "img");
+    el.setAttribute("aria-label", `${d.name}, founded ${d.founded_year}`);
+
+    const imgPath = new URL("../" + d.logo_path.replace(/^\/+/, ""), window.location.href).href;
+    const img = document.createElement("img");
+    img.alt = `${d.name} logo`;
+    img.src = imgPath;
+    img.addEventListener("error", () => {
+      const ph = document.createElement("div");
+      ph.className = "ph";
+      ph.textContent = d.short_name || d.name;
+      img.replaceWith(ph);
+    });
+
+    const label = document.createElement("div");
+    label.className = "label";
+    label.textContent = `${d.short_name || d.name}\n${d.founded_year}`;
+    label.style.whiteSpace = "pre-line";
+
+    el.appendChild(img);
+    el.appendChild(label);
+    logos.appendChild(el);
+  });
+
+  function render() {
+    const y = Number(slider.value);
+    readout.textContent = String(y);
+    logos.querySelectorAll(".logo-marker").forEach(el => {
+      const fy = Number(el.dataset.year);
+      el.classList.toggle("active", y >= fy);
+    });
+  }
+
+  slider.addEventListener("input", render);
+  slider.addEventListener("change", render);
+  render();
+}
+
+main();
+</script>
+</body>
+</html>

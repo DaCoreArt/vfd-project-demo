@@ -23,6 +23,7 @@ project:
     - assets
     - data
     - images
+    - widgets
   bibliography:
     - references.bib
   toc:

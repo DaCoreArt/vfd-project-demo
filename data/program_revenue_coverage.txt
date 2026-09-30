@@ -1,0 +1,8 @@
+[SKIP] Broad Channel VFD & Ambulance Corp.: EIN is TODO / invalid ('TODO')
+[SKIP] Edgewater Park Volunteer Hose Co. #1: EIN is TODO / invalid ('TODO')
+[SKIP] Gerritsen Beach VFD: EIN is TODO / invalid ('TODO')
+[SKIP] Point Breeze VFD: EIN is TODO / invalid ('TODO')
+[SKIP] Richmond Engine Co. #1: EIN is TODO / invalid ('TODO')
+[SKIP] Rockaway Point VFD: EIN is TODO / invalid ('TODO')
+[SKIP] Roxbury VFD: EIN is TODO / invalid ('TODO')
+[SKIP] West Hamilton Beach VFD: EIN is TODO / invalid ('TODO')

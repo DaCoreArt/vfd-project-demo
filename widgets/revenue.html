@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Program revenue</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --ink: #16191d;
+    --paper: #f7f5f2;
+    --steel: #6b7280;
+    --ember: #c8322b;
+    --rule: #dcd7cf;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    padding: 12px 14px 16px;
+    line-height: 1.45;
+  }
+  h1 {
+    font-size: 1rem;
+    margin: 0 0 0.35rem;
+  }
+  .meta, .source, .empty {
+    font-size: 0.82rem;
+    color: var(--steel);
+  }
+  .source { margin-top: 0.75rem; }
+  .chart-wrap {
+    position: relative;
+    height: 280px;
+    margin-top: 0.75rem;
+  }
+  .empty {
+    border: 1px solid var(--rule);
+    background: #fff;
+    padding: 1rem;
+    margin-top: 0.75rem;
+  }
+</style>
+</head>
+<body>
+  <h1 id="title">Program revenue</h1>
+  <p class="meta" id="meta"></p>
+  <div id="empty" class="empty" hidden></div>
+  <div class="chart-wrap" id="chart-wrap" hidden>
+    <canvas id="chart" aria-label="Program service revenue by tax year" role="img"></canvas>
+  </div>
+  <p class="source">Source: IRS Form 990 via ProPublica Nonprofit Explorer.</p>
+
+<script>
+const DEPTS_URL = new URL("../data/departments.json", window.location.href).href;
+const CSV_URL = new URL("../data/program_revenue.csv", window.location.href).href;
+
+function params() {
+  return new URLSearchParams(window.location.search);
+}
+
+function parseCsv(text) {
+  const lines = text.trim().split(/\r?\n/);
+  if (lines.length < 2) return [];
+  const headers = lines[0].split(",");
+  return lines.slice(1).map(line => {
+    // simple CSV (no commas inside department names expected after our writer quoting)
+    const cols = [];
+    let cur = "";
+    let inQ = false;
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+      if (ch === '"') { inQ = !inQ; continue; }
+      if (ch === "," && !inQ) { cols.push(cur); cur = ""; continue; }
+      cur += ch;
+    }
+    cols.push(cur);
+    const obj = {};
+    headers.forEach((h, idx) => { obj[h.trim()] = (cols[idx] || "").trim(); });
+    return obj;
+  });
+}
+
+function money(n) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0
+  }).format(n);
+}
+
+async function main() {
+  const deptKey = (params().get("dept") || "").toLowerCase();
+  const title = document.getElementById("title");
+  const meta = document.getElementById("meta");
+  const empty = document.getElementById("empty");
+  const wrap = document.getElementById("chart-wrap");
+
+  const [depts, csvText] = await Promise.all([
+    fetch(DEPTS_URL).then(r => r.json()),
+    fetch(CSV_URL).then(r => r.ok ? r.text() : "ein,department,tax_year,program_revenue,form_type\n")
+  ]);
+  const rows = parseCsv(csvText);
+
+  const dept = depts.find(d => {
+    const short = (d.short_name || "").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    const full = (d.name || "").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    return deptKey && (short === deptKey || full === deptKey || short.includes(deptKey) || full.includes(deptKey));
+  }) || depts[0];
+
+  if (!dept) {
+    empty.hidden = false;
+    empty.textContent = "No department selected.";
+    return;
+  }
+
+  title.textContent = `${dept.short_name || dept.name}: program service revenue`;
+  meta.textContent = `EIN: ${dept.ein || "TODO"}`;
+
+  const deptRows = rows
+    .filter(r => r.department === dept.name)
+    .map(r => ({
+      year: Number(r.tax_year),
+      revenue: Number(r.program_revenue),
+      form: r.form_type || "unknown"
+    }))
+    .filter(r => Number.isFinite(r.year) && Number.isFinite(r.revenue))
+    .sort((a, b) => a.year - b.year);
+
+  if (!deptRows.length) {
+    const formHint = (dept.ein && String(dept.ein).toUpperCase() !== "TODO")
+      ? "available filings"
+      : "EIN pending";
+    empty.hidden = false;
+    empty.textContent = `Program revenue not reported on available filings (form type: ${formHint}). Many volunteer fire departments file Form 990-EZ or 990-N, which may omit program service revenue.`;
+    return;
+  }
+
+  wrap.hidden = false;
+  const forms = [...new Set(deptRows.map(r => r.form))].join(", ");
+  meta.textContent = `EIN: ${dept.ein} · Forms with program revenue: ${forms}`;
+
+  const ctx = document.getElementById("chart");
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: deptRows.map(r => String(r.year)),
+      datasets: [{
+        label: "Program service revenue",
+        data: deptRows.map(r => r.revenue),
+        borderColor: "#c8322b",
+        backgroundColor: "rgba(200,50,43,0.12)",
+        tension: 0.2,
+        pointRadius: 4,
+        pointHoverRadius: 6
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: true },
+        tooltip: {
+          callbacks: {
+            label: (item) => money(item.parsed.y)
+          }
+        }
+      },
+      scales: {
+        x: {
+          title: { display: true, text: "Tax year" }
+        },
+        y: {
+          title: { display: true, text: "Program service revenue (USD)" },
+          ticks: {
+            callback: (v) => money(v)
+          }
+        }
+      }
+    }
+  });
+}
+
+main().catch(err => {
+  const empty = document.getElementById("empty");
+  empty.hidden = false;
+  empty.textContent = "Could not load revenue data.";
+  console.error(err);
+});
+</script>
+</body>
+</html>

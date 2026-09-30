@@ -24,6 +24,13 @@ Address explicitly:
 3. How competencies were enhanced — framed as if explaining to a
    prospective employer.
 
+### Deliverable form — Task D5.1
+
+:::{iframe} ../widgets/deliverables/d5-1.html
+:width: 100%
+:title: Task D5.1 deliverable form
+:::
+
 ## Task D5.2 — Oral Reflection (VoiceThread)
 
 A **two-to-three-minute** VoiceThread business story, as if answering a
@@ -32,6 +39,13 @@ to this organization?"* Reference the project and describe how analyzing
 a real fire department enhanced employer-desired competencies relevant
 to financial and strategic decision-making. Must be concise, rehearsed,
 and delivered with energy and conviction.
+
+### Deliverable form — Task D5.2 (VoiceThread planning)
+
+:::{iframe} ../widgets/deliverables/d5-2.html
+:width: 100%
+:title: Task D5.2 deliverable form
+:::
 
 :::{admonition} Submission Requirements
 :class: important

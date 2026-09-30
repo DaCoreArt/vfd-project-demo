@@ -1,0 +1,17 @@
+[
+  {
+    "department": "Point Breeze VFD",
+    "website": "https://www.facebook.com/PointBreezeVFD/",
+    "reason": "facebook.com URL"
+  },
+  {
+    "department": "Roxbury VFD",
+    "website": "https://www.facebook.com/RoxburyVolunteerFD/",
+    "reason": "facebook.com URL"
+  },
+  {
+    "department": "West Hamilton Beach VFD",
+    "website": "https://www.whbvfd.org",
+    "reason": "fetch failed: HTTP Error 403: Forbidden"
+  }
+]

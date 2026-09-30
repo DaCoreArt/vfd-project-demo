@@ -5,3 +5,7 @@ _build/
 __pycache__/
 node_modules/
 .DS_Store
+
+tmp-export-test/
+data/cache/
+images/logos/_candidates/
