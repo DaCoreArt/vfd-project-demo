@@ -66,33 +66,22 @@ analysis and participation in experiential learning activities.
 
 ## Deliverables Process Flowchart
 
-Mapping of each deliverable to Course Learning Outcomes and tasks (from
-the course step-by-step guide):
+The course step-by-step guide maps each deliverable to the Course Learning
+Outcomes addressed and the tasks completed to achieve those objectives
+(three columns: Deliverable Sequence → Course Learning Outcomes Addressed
+→ Tasks).
 
-```{mermaid}
-flowchart TD
-  D1[Deliverable One<br/>Financial Data Gathering<br/>and Firehouse Identification]
-  D2[Deliverable Two<br/>Firehouse Visitation<br/>and Financial Analysis]
-  D3[Deliverable Three<br/>Funding Scenarios<br/>Simulation Evaluation]
-  D4[Deliverable Four<br/>Communicating Results]
-  D5[Deliverable Five<br/>Reflection]
+![Deliverables Process Flowchart from the course step-by-step guide, page 7: five deliverables mapped left-to-right to Course Learning Outcomes and tasks](../images/deliverables-process-flowchart.png)
 
-  D1 --> D2 --> D3 --> D4 --> D5
+Accessible text version of the same flowchart:
 
-  D1 --- D1CLO[CLO 1, CLO 3, CLO 6]
-  D2 --- D2CLO[CLO 2, CLO 4, CLO 6]
-  D3 --- D3CLO[CLO 1, CLO 2, CLO 4, CLO 5, CLO 6]
-  D4 --- D4CLO[CLO 1 through CLO 6]
-  D5 --- D5CLO[CLO 1 through CLO 6]
-```
-
-| Deliverable | Course Learning Outcomes | Tasks |
+| Deliverable Sequence | Course Learning Outcomes Addressed | Tasks to be Completed to Achieve Course Learning Objectives |
 |---|---|---|
-| **D1** Financial Data Gathering and Firehouse Identification | CLO 1, CLO 3, CLO 6 | Construct a six-year dataset; Firehouse identification; Reflection (self-assessment); References (APA 7th) |
-| **D2** Firehouse Visitation and Financial Analysis | CLO 2, CLO 4, CLO 6 | Review and analyze financial statements; Firehouse visitation; Reflection; References (APA 7th) |
-| **D3** Funding Scenarios Simulation Evaluation | CLO 1, CLO 2, CLO 4, CLO 5, CLO 6 | Funding requests; Reflection; References (APA 7th) |
-| **D4** Communicating Results | CLO 1 through CLO 6 | Make a PowerPoint slideshow; References (APA 7th) |
-| **D5** Reflection | CLO 1 through CLO 6 | Comprehensive written reflection; Create an oral three-minute VoiceThread (individual reflection) about the Project |
+| **Deliverable One**<br>Financial Data Gathering and Firehouse Identification | **CLO 1:** Explain the purpose, legal structure, and distinguishing characteristics of nonprofit organizations and how they differ from for-profit entities.<br><br>**CLO 3:** Construct a structured, multi-year dataset using relevant nonprofit data sources to support financial analysis.<br><br>**CLO 6:** Demonstrate professional competencies through financial analysis and participation in experiential learning activities. | Task 1: Construct a Six-Year Dataset<br>Task 2: Firehouse Identification<br>Task 3: Reflection (Self-Assessment)<br>Task 4: References (Citations) (APA 7th Edition) |
+| **Deliverable Two**<br>Firehouse Visitation and Financial Analysis | **CLO 2:** Analyze nonprofit financial reporting frameworks to interpret financial position, performance, and transparency.<br><br>**CLO 4:** Evaluate nonprofit financial condition, operational performance, and risk using financial metrics, governance considerations, and internal control concepts.<br><br>**CLO 6:** Demonstrate professional competencies through financial analysis and participation in experiential learning activities. | Task 1: Review and Analyze Financial Statements<br>Task 2: Firehouse Visitation<br>Task 3: Reflection<br>Task 4: References (Citations) (APA 7th Edition) |
+| **Deliverable Three**<br>Funding Scenarios Simulation Evaluation | **CLO 1:** Explain the purpose, legal structure, and distinguishing characteristics of nonprofit organizations and how they differ from for-profit entities.<br><br>**CLO 2:** Analyze nonprofit financial reporting frameworks to interpret financial position, performance, and transparency.<br><br>**CLO 4:** Evaluate nonprofit financial condition, operational performance, and risk using financial metrics, governance considerations, and internal control concepts.<br><br>**CLO 5:** Evaluate and compare alternative funding and financing strategies using scenario-based analysis in a nonprofit context.<br><br>**CLO 6:** Demonstrate professional competencies through financial analysis and participation in experiential learning activities. | Task 1: Funding Requests<br>Task 2: Reflection<br>Task 3: References (Citations) (APA 7th Edition) |
+| **Deliverable Four**<br>Communicating Results | CLO 1 through CLO 6 | Task 1: Make a PowerPoint Slide Show<br>Task 2: References (Citations) (APA 7th Edition) |
+| **Deliverable Five**<br>Reflection | CLO 1 through CLO 6 | Task 1: Comprehensive reflection<br>Task 2: Create an oral three-minute VoiceThread (individual reflection) about the Project |
 
 ## Employer-Desired Competencies
 
