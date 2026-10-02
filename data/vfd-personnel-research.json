@@ -1,0 +1,158 @@
+{
+  "_note": "Research compiled 2026-09-30 from public sources (ProPublica Nonprofit Explorer / IRS Form 990, department websites, VFANYC, news). Board lists are 'as of' the filing listed. Items marked VERIFY need confirmation with the department before publishing.",
+  "departments": [
+    {
+      "short_name": "broad-channel",
+      "name": "Broad Channel Volunteer Fire Department & Ambulance Corps",
+      "legal_name": "Broad Channel Volunteers Inc",
+      "ein": "11-2557794",
+      "founded_year": 1905,
+      "founded_year_source": "https://broadchannelvfd.org/about/ (bucket brigade Aug 31, 1905; formally organized Dec 15, 1907)",
+      "chief_name": "George Conklin",
+      "chief_title": "Chief of Department",
+      "chief_source": "FY2025 Form 990 (filed Jun 2026); department 2024 officer list https://broadchannelvfd.org/2024-elected-chiefs-and-corporation-officers/",
+      "chief_status": "confirmed",
+      "key_personnel": [
+        {"name": "George Conklin", "title": "Chief of Department"},
+        {"name": "Michael Delgado", "title": "Assistant Chief of Department"},
+        {"name": "Daniel McIntyre", "title": "President"},
+        {"name": "Mo Sartor", "title": "Vice President"},
+        {"name": "Donna Bassetti", "title": "Treasurer"}
+      ],
+      "key_personnel_source": "Form 990, FY2025 (ProPublica: https://projects.propublica.org/nonprofits/organizations/112557794)"
+    },
+    {
+      "short_name": "edgewater-park",
+      "name": "Edgewater Park Volunteer Hose Company No. 1",
+      "legal_name": "Edgewater Park Volunteer Hose Co No 1 Inc",
+      "ein": "13-6125044",
+      "founded_year": 1922,
+      "founded_year_source": "https://vfanyc.org/edgewater-park-volunteer-hose-company-no-1/ ; https://www.edgewaterfire.com",
+      "chief_name": "Brian Kelly",
+      "chief_title": "Chief",
+      "chief_source": "FY2025 Form 990 (filed Apr 7, 2026)",
+      "chief_status": "990 only",
+      "key_personnel": [
+        {"name": "Sean Kean", "title": "Chairman of the Board"},
+        {"name": "Brendan McArdle", "title": "President"},
+        {"name": "Kenneth Arenholz", "title": "Treasurer"},
+        {"name": "Katie Flynn", "title": "Secretary"},
+        {"name": "Brian Kelly", "title": "Chief"},
+        {"name": "Joe Raneri", "title": "Deputy Chief (VERIFY spelling: Raneri vs. Ranieri)"},
+        {"name": "Joe Powers", "title": "Captain"},
+        {"name": "Nick Davidow", "title": "Captain"},
+        {"name": "Scott Orlansky", "title": "Captain"},
+        {"name": "Ashley Goldman", "title": "Lieutenant"}
+      ],
+      "key_personnel_source": "Form 990, FY2025 (ProPublica: https://projects.propublica.org/nonprofits/organizations/136125044)"
+    },
+    {
+      "short_name": "gerritsen-beach",
+      "name": "Gerrittsen Beach Fire Department",
+      "legal_name": "Gerrittsen Beach Fire Volunteers Inc",
+      "ein": "11-6076710",
+      "founded_year": 1922,
+      "founded_year_source": "https://gbfd.net ; https://vfanyc.org/?p=854",
+      "chief_name": "Daniel Cavanagh",
+      "chief_title": "Chief of Department",
+      "chief_source": "GuideStar profile (undated); PoliticsNY May 16, 2023",
+      "chief_status": "VERIFY - newest source is 2023; not listed on 990",
+      "key_personnel": [
+        {"name": "Shawn Byrne", "title": "President"},
+        {"name": "Anthony Baisden", "title": "Vice President"},
+        {"name": "Dan Ene", "title": "Treasurer"},
+        {"name": "David Ostrowsky", "title": "Financial Secretary"},
+        {"name": "Patrick Klein", "title": "Recording Secretary"}
+      ],
+      "key_personnel_source": "Form 990, FY2024 (ProPublica: https://projects.propublica.org/nonprofits/organizations/116076710)"
+    },
+    {
+      "short_name": "point-breeze",
+      "name": "Point Breeze Volunteer Fire Department",
+      "legal_name": "Point Breeze Volunteer Fire Dept Inc",
+      "ein": "11-2452399",
+      "founded_year": 1910,
+      "founded_year_source": "https://vfanyc.org/point-breeze-volunteer-fire-department/ ; department logo",
+      "chief_name": "Ed Morgan",
+      "chief_title": "Chief",
+      "chief_source": "FY2024 Form 990 (filed Nov 13, 2025)",
+      "chief_status": "990 only",
+      "key_personnel": [
+        {"name": "Ed Morgan", "title": "Chief"},
+        {"name": "John Ingram", "title": "Commissioner"},
+        {"name": "Timothy Dufficy", "title": "Commissioner"},
+        {"name": "Daniel O'Donoghue", "title": "Commissioner"},
+        {"name": "Gerard Carney", "title": "Secretary"},
+        {"name": "John Manley", "title": "Treasurer"}
+      ],
+      "key_personnel_source": "Form 990, FY2024 (ProPublica: https://projects.propublica.org/nonprofits/organizations/112452399)"
+    },
+    {
+      "short_name": "richmond-engine",
+      "name": "Richmond Engine Company No. 1",
+      "legal_name": "Richmond Engine Co No 1",
+      "ein": "13-2943389",
+      "founded_year": 1903,
+      "founded_year_source": "Staten Island Historical Society collection record https://statenisland.pastperfectonline.com/webobject/AEFB8FA9-1B40-44F1-BE32-287688246941 (some secondary sources say 1905)",
+      "chief_name": "Steven White",
+      "chief_title": "Fire Chief",
+      "chief_source": "GuideStar principal officer (undated); nycfire.net forum directory post Jan 26, 2023",
+      "chief_status": "VERIFY - weak sources",
+      "key_personnel": [],
+      "key_personnel_source": "Not available - files Form 990-N (e-Postcard), which lists no board. VERIFY with department.",
+      "notes": "richmondengine.org currently shows unrelated generic content; do not link it as the department site until verified."
+    },
+    {
+      "short_name": "rockaway-point",
+      "name": "Rockaway Point Volunteer Fire Department & Ambulance Corps",
+      "legal_name": "Rockaway Point Volunteer Emergency Services Inc",
+      "ein": "11-2665405",
+      "related_ein": "83-2700498 (Rockaway Point Volunteer Ambulance And Rescue Corps Inc, 501(c)(3) - the entity named on the donate page)",
+      "founded_year": 1914,
+      "founded_year_source": "https://rpfdny.org/about/history/ ; https://vfanyc.org/rockaway-point-volunteer-fire-department/",
+      "chief_name": "John Piccione",
+      "chief_title": "Chief of Department",
+      "chief_source": "https://rpfdny.org/about/ (updated Sep 2026)",
+      "chief_status": "confirmed",
+      "key_personnel": [
+        {"name": "James Morton", "title": "President"},
+        {"name": "John Piccione", "title": "Vice President"},
+        {"name": "Daniel Koppinger", "title": "Secretary"},
+        {"name": "Timothy Johnson", "title": "Treasurer"}
+      ],
+      "key_personnel_source": "Form 990, FY2025 (ProPublica: https://projects.propublica.org/nonprofits/organizations/112665405)"
+    },
+    {
+      "short_name": "roxbury",
+      "name": "Roxbury Volunteer Fire Department",
+      "legal_name": "Roxbury Volunteer Emergency Services Inc",
+      "ein": "11-3084367",
+      "founded_year": 1910,
+      "founded_year_source": "https://vfanyc.org/roxbury-volunteer-fire-department/ ; department logo",
+      "chief_name": "TODO",
+      "chief_title": "Chief of Department",
+      "chief_source": "Last named: Richard Colleran on 2015 Form 990-EZ - too old to publish",
+      "chief_status": "VERIFY - no current source",
+      "key_personnel": [],
+      "key_personnel_source": "Latest filing on ProPublica is 2015 (990-EZ). Likely now files 990-N. VERIFY with department / IRS TEOS.",
+      "notes": "IRS classifies this EIN as ambulance/EMS (NTEE), not fire. Confirm it is the correct entity."
+    },
+    {
+      "short_name": "west-hamilton-beach",
+      "name": "West Hamilton Beach Volunteer Fire Department & Ambulance Corps",
+      "legal_name": "West Hamilton Beach Volunteers Inc",
+      "ein": "11-2741267",
+      "founded_year": 1928,
+      "founded_year_source": "NYC DCAS Fleet Newsletter #98, Jun 2015 https://www.nyc.gov/assets/dcas/downloads/pdf/fleet/2015-6-4-NYC-Fleet-Newsletter-98.pdf",
+      "chief_name": "Jonah Cohen",
+      "chief_title": "Chief",
+      "chief_source": "FY2024 Form 990 (filed Nov 6, 2025)",
+      "chief_status": "VERIFY - whbvfd.org/officers lists Nicholas A. Spinelli as Chief of Department and Cohen as Deputy Chief of EMS (page undated)",
+      "key_personnel": [
+        {"name": "Jonah Cohen", "title": "Chief"},
+        {"name": "Ignatius Tambarello", "title": "President"}
+      ],
+      "key_personnel_source": "Form 990, FY2024 (ProPublica: https://projects.propublica.org/nonprofits/organizations/112741267)"
+    }
+  ]
+}

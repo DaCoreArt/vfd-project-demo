@@ -2,121 +2,314 @@
   {
     "name": "Broad Channel VFD & Ambulance Corp.",
     "short_name": "Broad Channel",
-    "ein": "TODO",
+    "ein": "112557794",
     "address": "15 Noel Road, Broad Channel, NY 11693",
     "lat": 40.607926,
     "lng": -73.818419,
-    "founded_year": "TODO",
+    "founded_year": 1905,
     "logo_path": "images/logos/broad-channel-vfd.png",
     "website": "https://broadchannelvfd.org/",
-    "chief_name": "TODO",
-    "key_personnel": [],
-    "key_personnel_source": "TODO",
-    "logo_source_url": "https://broadchannelvfd.org/wp-content/uploads/2022/02/Broad-Channel-patch.png"
+    "chief_name": "George Conklin",
+    "key_personnel": [
+      {
+        "name": "George Conklin",
+        "title": "Chief of Department"
+      },
+      {
+        "name": "Michael Delgado",
+        "title": "Assistant Chief of Department"
+      },
+      {
+        "name": "Daniel McIntyre",
+        "title": "President"
+      },
+      {
+        "name": "Mo Sartor",
+        "title": "Vice President"
+      },
+      {
+        "name": "Donna Bassetti",
+        "title": "Treasurer"
+      }
+    ],
+    "key_personnel_source": "Form 990, FY2025 (ProPublica: https://projects.propublica.org/nonprofits/organizations/112557794)",
+    "logo_source_url": "https://broadchannelvfd.org/wp-content/uploads/2022/02/Broad-Channel-patch.png",
+    "ein_source": "vfd-personnel-research.json; https://projects.propublica.org/nonprofits/organizations/112557794",
+    "legal_name": "Broad Channel Volunteers Inc",
+    "founded_year_source": "https://broadchannelvfd.org/about/ (bucket brigade Aug 31, 1905; formally organized Dec 15, 1907)",
+    "chief_title": "Chief of Department",
+    "chief_source": "FY2025 Form 990 (filed Jun 2026); department 2024 officer list https://broadchannelvfd.org/2024-elected-chiefs-and-corporation-officers/",
+    "chief_status": "confirmed",
+    "irs_ruling_year": "1998"
   },
   {
     "name": "Edgewater Park Volunteer Hose Co. #1",
     "short_name": "Edgewater Park",
-    "ein": "TODO",
+    "ein": "136125044",
     "address": "1 Adee Avenue, Bronx, NY 10465",
     "lat": 40.870666,
     "lng": -73.838768,
-    "founded_year": "TODO",
+    "founded_year": 1922,
     "logo_path": "images/logos/edgewater-park-hose-co.png",
     "website": "https://vfanyc.org/edgewater-park-volunteer-hose-company-no-1/",
-    "chief_name": "TODO",
-    "key_personnel": [],
-    "key_personnel_source": "TODO",
-    "logo_source_url": "https://vfanyc.org/wp-content/uploads/2022/09/Edgewater-Park-patch-232x300.png"
+    "chief_name": "Brian Kelly",
+    "key_personnel": [
+      {
+        "name": "Sean Kean",
+        "title": "Chairman of the Board"
+      },
+      {
+        "name": "Brendan McArdle",
+        "title": "President"
+      },
+      {
+        "name": "Kenneth Arenholz",
+        "title": "Treasurer"
+      },
+      {
+        "name": "Katie Flynn",
+        "title": "Secretary"
+      },
+      {
+        "name": "Brian Kelly",
+        "title": "Chief"
+      },
+      {
+        "name": "Joe Raneri",
+        "title": "Deputy Chief (VERIFY spelling: Raneri vs. Ranieri)"
+      },
+      {
+        "name": "Joe Powers",
+        "title": "Captain"
+      },
+      {
+        "name": "Nick Davidow",
+        "title": "Captain"
+      },
+      {
+        "name": "Scott Orlansky",
+        "title": "Captain"
+      },
+      {
+        "name": "Ashley Goldman",
+        "title": "Lieutenant"
+      }
+    ],
+    "key_personnel_source": "Form 990, FY2025 (ProPublica: https://projects.propublica.org/nonprofits/organizations/136125044)",
+    "logo_source_url": "https://vfanyc.org/wp-content/uploads/2022/09/Edgewater-Park-patch-232x300.png",
+    "ein_source": "vfd-personnel-research.json; https://projects.propublica.org/nonprofits/organizations/136125044",
+    "legal_name": "Edgewater Park Volunteer Hose Co No 1 Inc",
+    "founded_year_source": "https://vfanyc.org/edgewater-park-volunteer-hose-company-no-1/ ; https://www.edgewaterfire.com",
+    "chief_title": "Chief",
+    "chief_source": "FY2025 Form 990 (filed Apr 7, 2026)",
+    "chief_status": "990 only",
+    "irs_ruling_year": "2015"
   },
   {
     "name": "Gerritsen Beach VFD",
     "short_name": "Gerritsen Beach",
-    "ein": "TODO",
+    "ein": "116076710",
     "address": "52 Seba Avenue, Brooklyn, NY 11229",
     "lat": 40.588222,
     "lng": -73.922075,
-    "founded_year": "TODO",
+    "founded_year": 1922,
     "logo_path": "images/logos/gerritsen-beach-vfd.png",
     "website": "https://gbfd.net",
-    "chief_name": "TODO",
-    "key_personnel": [],
-    "key_personnel_source": "TODO",
-    "logo_source_url": "https://gbfd.net/wp-content/uploads/2022/02/Gerrittsen-Beach-100-Years.png"
+    "chief_name": "Daniel Cavanagh",
+    "key_personnel": [
+      {
+        "name": "Shawn Byrne",
+        "title": "President"
+      },
+      {
+        "name": "Anthony Baisden",
+        "title": "Vice President"
+      },
+      {
+        "name": "Dan Ene",
+        "title": "Treasurer"
+      },
+      {
+        "name": "David Ostrowsky",
+        "title": "Financial Secretary"
+      },
+      {
+        "name": "Patrick Klein",
+        "title": "Recording Secretary"
+      }
+    ],
+    "key_personnel_source": "Form 990, FY2024 (ProPublica: https://projects.propublica.org/nonprofits/organizations/116076710)",
+    "logo_source_url": "https://gbfd.net/wp-content/uploads/2022/02/Gerrittsen-Beach-100-Years.png",
+    "ein_source": "vfd-personnel-research.json; https://projects.propublica.org/nonprofits/organizations/116076710",
+    "legal_name": "Gerrittsen Beach Fire Volunteers Inc",
+    "founded_year_source": "https://gbfd.net ; https://vfanyc.org/?p=854",
+    "chief_title": "Chief of Department",
+    "chief_source": "GuideStar profile (undated); PoliticsNY May 16, 2023",
+    "chief_status": "VERIFY - newest source is 2023; not listed on 990",
+    "irs_ruling_year": "1991"
   },
   {
     "name": "Point Breeze VFD",
     "short_name": "Point Breeze",
-    "ein": "TODO",
+    "ein": "112452399",
     "address": "29 Point Breeze Avenue, Breezy Point, NY 11697",
     "lat": 40.560093,
     "lng": -73.920191,
-    "founded_year": "TODO",
+    "founded_year": 1910,
     "logo_path": "images/logos/point-breeze-vfd.png",
     "website": "https://www.facebook.com/PointBreezeVFD/",
-    "chief_name": "TODO",
-    "key_personnel": [],
-    "key_personnel_source": "TODO",
-    "logo_source_url": "user-supplied:Point Breeze.jpg"
+    "chief_name": "Ed Morgan",
+    "key_personnel": [
+      {
+        "name": "Ed Morgan",
+        "title": "Chief"
+      },
+      {
+        "name": "John Ingram",
+        "title": "Commissioner"
+      },
+      {
+        "name": "Timothy Dufficy",
+        "title": "Commissioner"
+      },
+      {
+        "name": "Daniel O'Donoghue",
+        "title": "Commissioner"
+      },
+      {
+        "name": "Gerard Carney",
+        "title": "Secretary"
+      },
+      {
+        "name": "John Manley",
+        "title": "Treasurer"
+      }
+    ],
+    "key_personnel_source": "Form 990, FY2024 (ProPublica: https://projects.propublica.org/nonprofits/organizations/112452399)",
+    "logo_source_url": "user-supplied:Point Breeze.jpg",
+    "ein_source": "vfd-personnel-research.json; https://projects.propublica.org/nonprofits/organizations/112452399",
+    "legal_name": "Point Breeze Volunteer Fire Dept Inc",
+    "founded_year_source": "https://vfanyc.org/point-breeze-volunteer-fire-department/ ; department logo",
+    "chief_title": "Chief",
+    "chief_source": "FY2024 Form 990 (filed Nov 13, 2025)",
+    "chief_status": "990 only",
+    "irs_ruling_year": "1979"
   },
   {
     "name": "Richmond Engine Co. #1",
     "short_name": "Richmond Engine",
-    "ein": "TODO",
+    "ein": "132943389",
     "address": "3664 Richmond Road, Staten Island, NY 10306",
     "lat": 40.571959,
     "lng": -74.143529,
-    "founded_year": "TODO",
+    "founded_year": 1903,
     "logo_path": "images/logos/richmond-engine-co.png",
     "website": "https://richmondengine.org",
-    "chief_name": "TODO",
+    "chief_name": "Steven White",
     "key_personnel": [],
-    "key_personnel_source": "TODO",
-    "logo_source_url": "https://richmondengine.org/wp-content/uploads/2023/04/Richmond-Engine-Co-NYC-patch.png"
+    "key_personnel_source": "Not available - files Form 990-N (e-Postcard), which lists no board. VERIFY with department.",
+    "logo_source_url": "https://richmondengine.org/wp-content/uploads/2023/04/Richmond-Engine-Co-NYC-patch.png",
+    "ein_source": "vfd-personnel-research.json; https://projects.propublica.org/nonprofits/organizations/132943389",
+    "legal_name": "Richmond Engine Co No 1",
+    "founded_year_source": "Staten Island Historical Society collection record https://statenisland.pastperfectonline.com/webobject/AEFB8FA9-1B40-44F1-BE32-287688246941 (some secondary sources say 1905)",
+    "chief_title": "Fire Chief",
+    "chief_source": "GuideStar principal officer (undated); nycfire.net forum directory post Jan 26, 2023",
+    "chief_status": "VERIFY - weak sources",
+    "notes": "richmondengine.org currently shows unrelated generic content; do not link it as the department site until verified.",
+    "irs_ruling_year": "2000"
   },
   {
     "name": "Rockaway Point VFD",
     "short_name": "Rockaway Point",
-    "ein": "TODO",
+    "ein": "112665405",
     "address": "204-26 Rockaway Point Boulevard, Breezy Point, NY 11697",
     "lat": 40.566658,
     "lng": -73.886303,
-    "founded_year": "TODO",
+    "founded_year": 1914,
     "logo_path": "images/logos/rockaway-point-vfd.png",
     "website": "https://rpfdny.org",
-    "chief_name": "TODO",
-    "key_personnel": [],
-    "key_personnel_source": "TODO",
-    "logo_source_url": "https://rpfdny.org/wp-content/uploads/2022/02/Rockaway-Point-Patch.png"
+    "chief_name": "John Piccione",
+    "key_personnel": [
+      {
+        "name": "James Morton",
+        "title": "President"
+      },
+      {
+        "name": "John Piccione",
+        "title": "Vice President"
+      },
+      {
+        "name": "Daniel Koppinger",
+        "title": "Secretary"
+      },
+      {
+        "name": "Timothy Johnson",
+        "title": "Treasurer"
+      }
+    ],
+    "key_personnel_source": "Form 990, FY2025 (ProPublica: https://projects.propublica.org/nonprofits/organizations/112665405)",
+    "logo_source_url": "https://rpfdny.org/wp-content/uploads/2022/02/Rockaway-Point-Patch.png",
+    "ein_source": "vfd-personnel-research.json; https://projects.propublica.org/nonprofits/organizations/112665405",
+    "legal_name": "Rockaway Point Volunteer Emergency Services Inc",
+    "founded_year_source": "https://rpfdny.org/about/history/ ; https://vfanyc.org/rockaway-point-volunteer-fire-department/",
+    "chief_title": "Chief of Department",
+    "chief_source": "https://rpfdny.org/about/ (updated Sep 2026)",
+    "chief_status": "confirmed",
+    "related_ein": "83-2700498 (Rockaway Point Volunteer Ambulance And Rescue Corps Inc, 501(c)(3) - the entity named on the donate page)",
+    "irs_ruling_year": "1985"
   },
   {
     "name": "Roxbury VFD",
     "short_name": "Roxbury",
-    "ein": "TODO",
+    "ein": "113084367",
     "address": "42 State Road, Breezy Point, NY 11697",
     "lat": 40.566311,
     "lng": -73.891126,
-    "founded_year": "TODO",
+    "founded_year": 1910,
     "logo_path": "images/logos/roxbury-vfd.png",
     "website": "https://www.facebook.com/RoxburyVolunteerFD/",
     "chief_name": "TODO",
     "key_personnel": [],
-    "key_personnel_source": "TODO",
-    "logo_source_url": "user-supplied:Roxbury.jpg"
+    "key_personnel_source": "Latest filing on ProPublica is 2015 (990-EZ). Likely now files 990-N. VERIFY with department / IRS TEOS.",
+    "logo_source_url": "user-supplied:Roxbury.jpg",
+    "ein_source": "vfd-personnel-research.json; https://projects.propublica.org/nonprofits/organizations/113084367",
+    "legal_name": "Roxbury Volunteer Emergency Services Inc",
+    "founded_year_source": "https://vfanyc.org/roxbury-volunteer-fire-department/ ; department logo",
+    "chief_title": "Chief of Department",
+    "chief_source": "Last named: Richard Colleran on 2015 Form 990-EZ - too old to publish",
+    "chief_status": "VERIFY - no current source",
+    "notes": "IRS classifies this EIN as ambulance/EMS (NTEE), not fire. Confirm it is the correct entity.",
+    "irs_ruling_year": "1996"
   },
   {
     "name": "West Hamilton Beach VFD",
     "short_name": "West Hamilton Beach",
-    "ein": "TODO",
+    "ein": "112741267",
     "address": "102-33 Davenport Court, Howard Beach, NY 11414",
     "lat": 40.653769,
     "lng": -73.828403,
-    "founded_year": "TODO",
+    "founded_year": 1928,
     "logo_path": "images/logos/west-hamilton-beach-vfd.png",
     "website": "https://www.whbvfd.org",
-    "chief_name": "TODO",
-    "key_personnel": [],
-    "key_personnel_source": "TODO",
-    "logo_source_url": "user-supplied:West Hamilton Beach.png"
+    "chief_name": "Jonah Cohen",
+    "key_personnel": [
+      {
+        "name": "Jonah Cohen",
+        "title": "Chief"
+      },
+      {
+        "name": "Ignatius Tambarello",
+        "title": "President"
+      }
+    ],
+    "key_personnel_source": "Form 990, FY2024 (ProPublica: https://projects.propublica.org/nonprofits/organizations/112741267)",
+    "logo_source_url": "user-supplied:West Hamilton Beach.png",
+    "ein_source": "vfd-personnel-research.json; https://projects.propublica.org/nonprofits/organizations/112741267",
+    "legal_name": "West Hamilton Beach Volunteers Inc",
+    "founded_year_source": "NYC DCAS Fleet Newsletter #98, Jun 2015 https://www.nyc.gov/assets/dcas/downloads/pdf/fleet/2015-6-4-NYC-Fleet-Newsletter-98.pdf",
+    "chief_title": "Chief",
+    "chief_source": "FY2024 Form 990 (filed Nov 6, 2025)",
+    "chief_status": "VERIFY - whbvfd.org/officers lists Nicholas A. Spinelli as Chief of Department and Cohen as Deputy Chief of EMS (page undated)",
+    "irs_ruling_year": "2020"
   }
 ]
