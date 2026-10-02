@@ -128,9 +128,6 @@ workplace context.
    pay more attention to important details when it may be needed to make
    a decision (Merriam-Webster, n.d.)
 
-Full *Merriam-Webster* reference-list entries for the definitions above:
-[@mwEmpathy; @mwAdaptability; @mwEmotionalIntelligence; @mwProblemSolving; @mwCriticalThinking; @mwLogic; @mwReasoning; @mwCuriosity; @mwResilience; @mwCommunication].
-
 By completing this deliverable, students are not just learning about
 nonprofit accounting and financial management. They are building a
 foundation of career-ready skills that will help them succeed in any
