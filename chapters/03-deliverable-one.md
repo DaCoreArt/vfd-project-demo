@@ -57,6 +57,16 @@ Acceptable data sources: [IRS Form 990 filings](https://apps.irs.gov/app/eos/),
 [NY State charity filings](https://www.charitiesnys.com/), nonprofit
 websites, local news or fundraising reports.
 
+### Program service revenue by department
+
+Use the tabs to switch departments. Each chart plots program service
+revenue by tax year where Form 990 filings report it.
+
+:::{iframe} ../widgets/revenue.html
+:width: 100%
+:title: Program service revenue by department
+:::
+
 ### Deliverable form — Task D1.1
 
 :::{iframe} ../widgets/deliverables/d1-1.html
@@ -135,8 +145,7 @@ The following sources are not acceptable:
    a tool to help find authoritative sources.
 
 All work in the project must be cited. Refer to the
-[Citation Guidance](09-citation-guidance.md) section for specific
-examples.
+[Citations section](09-citation-guidance.md) for further guidance.
 
 ### Deliverable form — Task D1.4
 

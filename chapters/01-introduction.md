@@ -102,6 +102,16 @@ iframe above with the published embed URL (see `FOY-QUESTIONS.md`).
 | Roxbury VFD | [VFANYC](https://vfanyc.org/roxbury-volunteer-fire-department/) · [Official Facebook](https://www.facebook.com/RoxburyVolunteerFD/) |
 | West Hamilton Beach VFD | [VFANYC](https://vfanyc.org/west-hamilton-beach-volunteer-fire-department/) · [Dept. site](https://www.whbvfd.org) |
 
+### Founding timeline
+
+Move the slider across years. The year appears below the track; each
+department logo appears above the line when its founding year is reached.
+
+:::{iframe} ../widgets/timeline.html
+:width: 100%
+:title: NYC volunteer fire department founding timeline
+:::
+
 ## NYC Volunteer Fire Departments Offer an Experience to Connect Theory to Practice
 
 Many accounting and finance students report difficulty connecting

@@ -12,6 +12,7 @@
     --steel: #6b7280;
     --ember: #c8322b;
     --rule: #dcd7cf;
+    --active: #1f4b3f;
   }
   * { box-sizing: border-box; }
   body {
@@ -31,6 +32,30 @@
     color: var(--steel);
   }
   .source { margin-top: 0.75rem; }
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0.75rem 0 0.5rem;
+  }
+  .tabs button {
+    border: 1px solid var(--rule);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.78rem;
+    cursor: pointer;
+  }
+  .tabs button[aria-selected="true"] {
+    background: var(--active);
+    border-color: var(--active);
+    color: #fff;
+  }
+  .tabs button:focus-visible {
+    outline: 2px solid var(--ember);
+    outline-offset: 2px;
+  }
   .chart-wrap {
     position: relative;
     height: 280px;
@@ -47,6 +72,7 @@
 <body>
   <h1 id="title">Program revenue</h1>
   <p class="meta" id="meta"></p>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Fire departments"></div>
   <div id="empty" class="empty" hidden></div>
   <div class="chart-wrap" id="chart-wrap" hidden>
     <canvas id="chart" aria-label="Program service revenue by tax year" role="img"></canvas>
@@ -57,16 +83,11 @@
 const DEPTS_URL = new URL("../data/departments.json", window.location.href).href;
 const CSV_URL = new URL("../data/program_revenue.csv", window.location.href).href;
 
-function params() {
-  return new URLSearchParams(window.location.search);
-}
-
 function parseCsv(text) {
   const lines = text.trim().split(/\r?\n/);
   if (lines.length < 2) return [];
   const headers = lines[0].split(",");
   return lines.slice(1).map(line => {
-    // simple CSV (no commas inside department names expected after our writer quoting)
     const cols = [];
     let cur = "";
     let inQ = false;
@@ -91,30 +112,22 @@ function money(n) {
   }).format(n);
 }
 
-async function main() {
-  const deptKey = (params().get("dept") || "").toLowerCase();
+function slug(d) {
+  return String(d.short_name || d.name || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+let chart;
+let depts = [];
+let rows = [];
+
+function renderDept(dept) {
   const title = document.getElementById("title");
   const meta = document.getElementById("meta");
   const empty = document.getElementById("empty");
   const wrap = document.getElementById("chart-wrap");
-
-  const [depts, csvText] = await Promise.all([
-    fetch(DEPTS_URL).then(r => r.json()),
-    fetch(CSV_URL).then(r => r.ok ? r.text() : "ein,department,tax_year,program_revenue,form_type\n")
-  ]);
-  const rows = parseCsv(csvText);
-
-  const dept = depts.find(d => {
-    const short = (d.short_name || "").toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    const full = (d.name || "").toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    return deptKey && (short === deptKey || full === deptKey || short.includes(deptKey) || full.includes(deptKey));
-  }) || depts[0];
-
-  if (!dept) {
-    empty.hidden = false;
-    empty.textContent = "No department selected.";
-    return;
-  }
 
   title.textContent = `${dept.short_name || dept.name}: program service revenue`;
   meta.textContent = `EIN: ${dept.ein || "TODO"}`;
@@ -129,21 +142,25 @@ async function main() {
     .filter(r => Number.isFinite(r.year) && Number.isFinite(r.revenue))
     .sort((a, b) => a.year - b.year);
 
+  if (chart) {
+    chart.destroy();
+    chart = null;
+  }
+
   if (!deptRows.length) {
-    const formHint = (dept.ein && String(dept.ein).toUpperCase() !== "TODO")
-      ? "available filings"
-      : "EIN pending";
+    wrap.hidden = true;
     empty.hidden = false;
-    empty.textContent = `Program revenue not reported on available filings (form type: ${formHint}). Many volunteer fire departments file Form 990-EZ or 990-N, which may omit program service revenue.`;
+    empty.textContent =
+      "Program revenue not reported on available filings. Many volunteer fire departments file Form 990-EZ or 990-N, which may omit program service revenue.";
     return;
   }
 
+  empty.hidden = true;
   wrap.hidden = false;
   const forms = [...new Set(deptRows.map(r => r.form))].join(", ");
   meta.textContent = `EIN: ${dept.ein} · Forms with program revenue: ${forms}`;
 
-  const ctx = document.getElementById("chart");
-  new Chart(ctx, {
+  chart = new Chart(document.getElementById("chart"), {
     type: "line",
     data: {
       labels: deptRows.map(r => String(r.year)),
@@ -169,18 +186,54 @@ async function main() {
         }
       },
       scales: {
-        x: {
-          title: { display: true, text: "Tax year" }
-        },
+        x: { title: { display: true, text: "Tax year" } },
         y: {
           title: { display: true, text: "Program service revenue (USD)" },
-          ticks: {
-            callback: (v) => money(v)
-          }
+          ticks: { callback: (v) => money(v) }
         }
       }
     }
   });
+}
+
+async function main() {
+  const tabs = document.getElementById("tabs");
+  const empty = document.getElementById("empty");
+
+  [depts, rows] = await Promise.all([
+    fetch(DEPTS_URL).then(r => r.json()),
+    fetch(CSV_URL).then(r => r.ok ? r.text() : "ein,department,tax_year,program_revenue,form_type\n").then(parseCsv)
+  ]);
+
+  if (!depts.length) {
+    empty.hidden = false;
+    empty.textContent = "No department data available.";
+    return;
+  }
+
+  const initial =
+    new URLSearchParams(window.location.search).get("dept") || slug(depts[0]);
+
+  depts.forEach((d, idx) => {
+    const key = slug(d);
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.role = "tab";
+    btn.id = `tab-${key}`;
+    btn.textContent = d.short_name || d.name;
+    btn.setAttribute("aria-controls", "chart-wrap");
+    btn.setAttribute("aria-selected", key === initial || (!initial && idx === 0) ? "true" : "false");
+    btn.addEventListener("click", () => {
+      tabs.querySelectorAll("button").forEach(b => b.setAttribute("aria-selected", "false"));
+      btn.setAttribute("aria-selected", "true");
+      renderDept(d);
+    });
+    tabs.appendChild(btn);
+  });
+
+  const start =
+    depts.find(d => slug(d) === initial) || depts[0];
+  renderDept(start);
 }
 
 main().catch(err => {

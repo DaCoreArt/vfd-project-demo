@@ -110,119 +110,145 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-/* ─────────────────────────────────────────────────────────────
-   DEPARTMENT DATA
-   lat/lng marked null must be filled in — see geocode_departments.py
-   ───────────────────────────────────────────────────────────── */
-const DEPARTMENTS = [
-  { letter:"A", name:"Broad Channel VFD & Ambulance Corp.",
-    address:"15 Noel Road, Broad Channel, NY 11693",
-    lat:40.607926, lng:-73.818419,
-    vfanyc:"https://vfanyc.org/broad-channel-volunteer-fire-department/",
-    site:"https://broadchannelvfd.org/", siteLabel:"Department site" },
+const DATA_URL = new URL("../../data/departments.json", window.location.href).href;
+const LETTERS = "ABCDEFGH";
 
-  { letter:"B", name:"Edgewater Park Volunteer Hose Co. #1",
-    address:"1 Adee Avenue, Bronx, NY 10465",
-    lat:40.870666, lng:-73.838768,
-    vfanyc:"https://vfanyc.org/edgewater-park-volunteer-hose-company-no-1/",
-    site:null, siteLabel:null },
+const VFANYC = {
+  "Broad Channel": "https://vfanyc.org/broad-channel-volunteer-fire-department/",
+  "Edgewater Park": "https://vfanyc.org/edgewater-park-volunteer-hose-company-no-1/",
+  "Gerritsen Beach": "https://vfanyc.org/gerritsen-beach-volunteer-fire-department/",
+  "Point Breeze": "https://vfanyc.org/point-breeze-volunteer-fire-department/",
+  "Richmond Engine": "https://vfanyc.org/richmond-engine-company-1/",
+  "Rockaway Point": "https://vfanyc.org/rockaway-point-volunteer-fire-department/",
+  "Roxbury": "https://vfanyc.org/roxbury-volunteer-fire-department/",
+  "West Hamilton Beach": "https://vfanyc.org/west-hamilton-beach-volunteer-fire-department/"
+};
 
-  { letter:"C", name:"Gerrittsen Beach VFD",
-    address:"52 Seba Avenue, Brooklyn, NY 11229",
-    lat:40.588222, lng:-73.922075,
-    vfanyc:"https://vfanyc.org/gerrittsen-beach-volunteer-fire-department/",
-    site:"https://gbfd.net", siteLabel:"Department site" },
-
-  { letter:"D", name:"Point Breeze VFD",
-    address:"29 Point Breeze Avenue, Breezy Point, NY 11697",
-    lat:40.560093, lng:-73.920191,
-    vfanyc:"https://vfanyc.org/point-breeze-volunteer-fire-department/",
-    site:"https://www.facebook.com/PointBreezeVFD/", siteLabel:"Official Facebook" },
-
-  { letter:"E", name:"Richmond Engine Co. #1",
-    address:"3664 Richmond Road, Staten Island, NY 10306",
-    lat:40.571959, lng:-74.143529,
-    vfanyc:"https://vfanyc.org/richmond-engine-company-1/",
-    site:null, siteLabel:null },
-
-  { letter:"F", name:"Rockaway Point VFD",
-    address:"204-26 Rockaway Point Boulevard, Breezy Point, NY 11697",
-    lat:40.566658, lng:-73.886303,
-    vfanyc:"https://vfanyc.org/rockaway-point-volunteer-fire-department/",
-    site:"https://rpfdny.org", siteLabel:"Department site" },
-
-  { letter:"G", name:"Roxbury VFD",
-    address:"42 State Road, Breezy Point, NY 11697",
-    lat:40.566311, lng:-73.891126,
-    vfanyc:"https://vfanyc.org/roxbury-volunteer-fire-department/",
-    site:"https://www.facebook.com/RoxburyVolunteerFD/", siteLabel:"Official Facebook" },
-
-  { letter:"H", name:"West Hamilton Beach VFD",
-    address:"102-33 Davenport Court, Howard Beach, NY 11414",
-    lat:40.653769, lng:-73.828403,
-    vfanyc:"https://vfanyc.org/west-hamilton-beach-volunteer-fire-department/",
-    site:"https://www.whbvfd.org", siteLabel:"Department site" }
-];
-
-/* ── Map ── */
-const map = L.map("map", { scrollWheelZoom:false }).setView([40.62, -73.86], 11);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom:19,
-  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-const located = DEPARTMENTS.filter(d => d.lat !== null && d.lng !== null);
-const markers = {};
-
-located.forEach(d => {
-  const icon = L.divIcon({
-    className:"",
-    html:`<div class="marker-badge" aria-hidden="true">${d.letter}</div>`,
-    iconSize:[28,28],
-    iconAnchor:[14,14],
-    popupAnchor:[0,-15]
-  });
-  const links = [
-    `<a href="${d.vfanyc}" target="_blank" rel="noopener">VFANYC profile</a>`,
-    d.site ? `<a href="${d.site}" target="_blank" rel="noopener">${d.siteLabel}</a>` : null
-  ].filter(Boolean).join(" &middot; ");
-
-  markers[d.letter] = L.marker([d.lat, d.lng], { icon, title:d.name })
-    .addTo(map)
-    .bindPopup(`<strong>${d.letter}. ${d.name}</strong>${d.address}<br>${links}`);
-});
-
-if (located.length) {
-  map.fitBounds(L.latLngBounds(located.map(d => [d.lat, d.lng])).pad(0.18));
+function esc(s) {
+  return String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
-/* ── Reference list ── */
-const key = document.getElementById("key");
-DEPARTMENTS.forEach(d => {
-  const li = document.createElement("li");
-  const links = [
-    `<a href="${d.vfanyc}" target="_blank" rel="noopener">VFANYC profile</a>`,
-    d.site ? `<a href="${d.site}" target="_blank" rel="noopener">${d.siteLabel}</a>` : null
-  ].filter(Boolean).join('<span class="sep">&middot;</span>');
+function siteLabel(url) {
+  if (!url) return null;
+  if (/facebook\.com/i.test(url)) return "Official Facebook";
+  return "Department site";
+}
 
-  li.innerHTML =
-    `<span class="badge" aria-hidden="true">${d.letter}</span>
-     <span class="meta">
-       <span class="name">${d.name}</span>
-       <span class="addr">${d.address}</span>
-       <span class="links">${links}</span>
-     </span>`;
-
-  if (markers[d.letter]) {
-    li.style.cursor = "pointer";
-    li.addEventListener("click", e => {
-      if (e.target.tagName === "A") return;
-      map.setView(markers[d.letter].getLatLng(), 15);
-      markers[d.letter].openPopup();
-    });
+function chiefLine(d) {
+  const name = (d.chief_name || "").trim();
+  if (!name || name.toUpperCase() === "TODO" || /^to be confirmed$/i.test(name)) {
+    return "Chief: to be confirmed";
   }
-  key.appendChild(li);
-});
+  return `Chief: ${name}`;
+}
+
+function personnelHtml(d) {
+  const people = Array.isArray(d.key_personnel) ? d.key_personnel : [];
+  const items = people.length
+    ? people.map(p => `<li>${esc(p.name)}${p.title ? `, ${esc(p.title)}` : ""}</li>`).join("")
+    : "<li>to be confirmed</li>";
+  return `<div style="margin-top:6px"><strong>Key Personnel</strong><ul style="margin:4px 0 0;padding-left:1.1rem">${items}</ul></div>`;
+}
+
+function popupHtml(d) {
+  const links = [
+    d.vfanyc ? `<a href="${esc(d.vfanyc)}" target="_blank" rel="noopener">VFANYC profile</a>` : null,
+    d.site ? `<a href="${esc(d.site)}" target="_blank" rel="noopener">${esc(d.siteLabel)}</a>` : null
+  ].filter(Boolean).join(" &middot; ");
+  return (
+    `<strong>${esc(d.letter)}. ${esc(d.name)}</strong>` +
+    `${esc(d.address)}<br>` +
+    `${esc(chiefLine(d))}<br>` +
+    personnelHtml(d) +
+    (links ? `<div style="margin-top:6px">${links}</div>` : "")
+  );
+}
+
+async function main() {
+  const map = L.map("map", { scrollWheelZoom: false }).setView([40.62, -73.86], 11);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  let raw = [];
+  try {
+    raw = await fetch(DATA_URL).then(r => r.json());
+  } catch (err) {
+    document.querySelector(".cap").textContent = "Could not load department data.";
+    return;
+  }
+
+  const DEPARTMENTS = raw.map((d, i) => {
+    const website = d.website || null;
+    return {
+      letter: LETTERS[i] || String(i + 1),
+      name: d.name,
+      address: d.address || "",
+      lat: d.lat,
+      lng: d.lng,
+      vfanyc: VFANYC[d.short_name] || null,
+      site: website,
+      siteLabel: siteLabel(website),
+      chief_name: d.chief_name,
+      key_personnel: d.key_personnel || []
+    };
+  });
+
+  const located = DEPARTMENTS.filter(d => d.lat != null && d.lng != null);
+  const markers = {};
+
+  located.forEach(d => {
+    const icon = L.divIcon({
+      className: "",
+      html: `<div class="marker-badge" aria-hidden="true">${d.letter}</div>`,
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+      popupAnchor: [0, -15]
+    });
+    markers[d.letter] = L.marker([d.lat, d.lng], { icon, title: d.name })
+      .addTo(map)
+      .bindPopup(popupHtml(d), { maxWidth: 320 });
+  });
+
+  if (located.length) {
+    map.fitBounds(L.latLngBounds(located.map(d => [d.lat, d.lng])).pad(0.18));
+  }
+
+  const key = document.getElementById("key");
+  DEPARTMENTS.forEach(d => {
+    const li = document.createElement("li");
+    const links = [
+      d.vfanyc ? `<a href="${esc(d.vfanyc)}" target="_blank" rel="noopener">VFANYC profile</a>` : null,
+      d.site ? `<a href="${esc(d.site)}" target="_blank" rel="noopener">${esc(d.siteLabel)}</a>` : null
+    ].filter(Boolean).join('<span class="sep">&middot;</span>');
+
+    li.innerHTML =
+      `<span class="badge" aria-hidden="true">${esc(d.letter)}</span>
+       <span class="meta">
+         <span class="name">${esc(d.name)}</span>
+         <span class="addr">${esc(d.address)}</span>
+         <span class="addr">${esc(chiefLine(d))}</span>
+         <span class="links">${links}</span>
+       </span>`;
+
+    if (markers[d.letter]) {
+      li.style.cursor = "pointer";
+      li.addEventListener("click", e => {
+        if (e.target.tagName === "A") return;
+        map.setView(markers[d.letter].getLatLng(), 15);
+        markers[d.letter].openPopup();
+      });
+    }
+    key.appendChild(li);
+  });
+}
+
+main();
 </script>
 </body>
 </html>

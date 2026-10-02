@@ -70,8 +70,8 @@ real-world business context?
 
 ## Task D3.3 — References (Citations) (APA 7th Edition)
 
-See the [Citation Guidance](09-citation-guidance.md) section for specific
-examples. All work in the project must be cited.
+Refer to the [Citations section](09-citation-guidance.md) for further
+guidance. All work in the project must be cited.
 
 ### Deliverable form — Task D3.3
 

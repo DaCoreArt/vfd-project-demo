@@ -95,9 +95,8 @@ closed captioning.
 - Microsoft Support: [Video: Add and record
   audio](https://support.microsoft.com/en-us/office/video-add-and-record-audio-eeac1757-5f20-4379-95f2-0d0cd151d5b8)
 
-**Last slide:** References (Citations) (APA 7th Edition). See the
-[Citation Guidance](09-citation-guidance.md) section for specific
-examples.
+**Last slide:** References (Citations) (APA 7th Edition). Refer to the
+[Citations section](09-citation-guidance.md) for further guidance.
 
 ### Deliverable form — Task D4.1 (storyboard / talking points)
 

@@ -94,31 +94,42 @@ cited to its general-language definition in *Merriam-Webster* for
 students who want a plain-English starting point before applying it in a
 workplace context.
 
-1. **Empathy** — Understanding another person's thoughts and feelings
-   from their point of view, rather than one's own [@mwEmpathy]
-2. **Adaptability** — The ability to adjust to new conditions
-   [@mwAdaptability]
-3. **Emotional Intelligence** — The ability to manage both one's own
-   emotions and understand the emotions of people around oneself
-   [@mwEmotionalIntelligence]
-4. **Problem-Solving** — The ability to go through a process of finding
-   solutions to difficult or complex issues [@mwProblemSolving]
-5. **Critical Thinking** — The ability to identify a problem and
-   logically think through it to find a solution [@mwCriticalThinking]
+1. **[Empathy](https://www.merriam-webster.com/dictionary/empathy)** —
+   Understanding another person's thoughts and feelings from their point
+   of view, rather than one's own (Merriam-Webster, n.d.)
+2. **[Adaptability](https://www.merriam-webster.com/dictionary/adaptability)** —
+   The ability to adjust to new conditions (Merriam-Webster, n.d.)
+3. **[Emotional Intelligence](https://www.merriam-webster.com/dictionary/emotional%20intelligence)** —
+   The ability to manage both one's own emotions and understand the
+   emotions of people around oneself (Merriam-Webster, n.d.)
+4. **[Problem-Solving](https://www.merriam-webster.com/dictionary/problem-solving)** —
+   The ability to go through a process of finding solutions to difficult
+   or complex issues (Merriam-Webster, n.d.)
+5. **[Critical Thinking](https://www.merriam-webster.com/dictionary/critical%20thinking)** —
+   The ability to identify a problem and logically think through it to
+   find a solution (Merriam-Webster, n.d.)
 6. **Logical Reasoning** — The ability to distinguish facts from mere
    opinions. The ability to understand that when important information is
    missing, it is often better to suspend judgment than to jump to
-   conclusions (logic [@mwLogic]; reasoning [@mwReasoning]).
+   conclusions
+   ([logic](https://www.merriam-webster.com/dictionary/logic);
+   [reasoning](https://www.merriam-webster.com/dictionary/reasoning))
+   (Merriam-Webster, n.d.).
    *Note:* Merriam-Webster defines *logic* and *reasoning* as separate
-   entries, so both citations are included.
-7. **Curiosity** — The ability to be eager to know or learn something
-   [@mwCuriosity]
-8. **Resilience** — The ability to recover quickly from difficulties or
-   making mistakes [@mwResilience]
-9. **Communication (Written and Verbal)** — The ability to write notes
-   and verbally communicate. The ability to pay more attention to
-   important details when it may be needed to make a decision
-   [@mwCommunication]
+   entries, so both dictionary links are included.
+7. **[Curiosity](https://www.merriam-webster.com/dictionary/curiosity)** —
+   The ability to be eager to know or learn something (Merriam-Webster,
+   n.d.)
+8. **[Resilience](https://www.merriam-webster.com/dictionary/resilience)** —
+   The ability to recover quickly from difficulties or making mistakes
+   (Merriam-Webster, n.d.)
+9. **[Communication](https://www.merriam-webster.com/dictionary/communication) (Written and Verbal)** —
+   The ability to write notes and verbally communicate. The ability to
+   pay more attention to important details when it may be needed to make
+   a decision (Merriam-Webster, n.d.)
+
+Full *Merriam-Webster* reference-list entries for the definitions above:
+[@mwEmpathy; @mwAdaptability; @mwEmotionalIntelligence; @mwProblemSolving; @mwCriticalThinking; @mwLogic; @mwReasoning; @mwCuriosity; @mwResilience; @mwCommunication].
 
 By completing this deliverable, students are not just learning about
 nonprofit accounting and financial management. They are building a
