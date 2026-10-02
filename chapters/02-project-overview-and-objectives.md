@@ -89,27 +89,36 @@ Additionally, this assignment is designed to help students develop highly
 valued, employer-desired competencies across all industries. The list
 below is compiled by Deloitte's Workforce of the Future Institute, as
 presented in the course step-by-step guide (Foy, based on Deloitte's
-Future of Work Institute) [@deloitteFutureOfWork]:
+Future of Work Institute) [@deloitteFutureOfWork]. Each term is also
+cited to its general-language definition in *Merriam-Webster* for
+students who want a plain-English starting point before applying it in a
+workplace context.
 
 1. **Empathy** — Understanding another person's thoughts and feelings
-   from their point of view, rather than one's own.
-2. **Adaptability** — The ability to adjust to new conditions.
+   from their point of view, rather than one's own [@mwEmpathy]
+2. **Adaptability** — The ability to adjust to new conditions
+   [@mwAdaptability]
 3. **Emotional Intelligence** — The ability to manage both one's own
-   emotions and understand the emotions of people around oneself.
+   emotions and understand the emotions of people around oneself
+   [@mwEmotionalIntelligence]
 4. **Problem-Solving** — The ability to go through a process of finding
-   solutions to difficult or complex issues.
+   solutions to difficult or complex issues [@mwProblemSolving]
 5. **Critical Thinking** — The ability to identify a problem and
-   logically think through it to find a solution.
+   logically think through it to find a solution [@mwCriticalThinking]
 6. **Logical Reasoning** — The ability to distinguish facts from mere
    opinions. The ability to understand that when important information is
    missing, it is often better to suspend judgment than to jump to
-   conclusions.
-7. **Curiosity** — The ability to be eager to know or learn something.
+   conclusions (logic [@mwLogic]; reasoning [@mwReasoning]).
+   *Note:* Merriam-Webster defines *logic* and *reasoning* as separate
+   entries, so both citations are included.
+7. **Curiosity** — The ability to be eager to know or learn something
+   [@mwCuriosity]
 8. **Resilience** — The ability to recover quickly from difficulties or
-   making mistakes.
+   making mistakes [@mwResilience]
 9. **Communication (Written and Verbal)** — The ability to write notes
    and verbally communicate. The ability to pay more attention to
-   important details when it may be needed to make a decision.
+   important details when it may be needed to make a decision
+   [@mwCommunication]
 
 By completing this deliverable, students are not just learning about
 nonprofit accounting and financial management. They are building a
