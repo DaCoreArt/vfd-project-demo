@@ -1,18 +1,19 @@
-"""Merge data/vfd-personnel-research.json into data/departments.json."""
+"""Merge data/vfd-personnel-research.json into data/departments.json.
+
+VERIFY-marked chiefs/personnel are not published as fact.
+"""
 from __future__ import annotations
 
 import csv
 import json
-import shutil
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEPTS = ROOT / "data" / "departments.json"
-RESEARCH_SRC = Path(r"C:\Users\cpett\Downloads\vfd-personnel-research.json")
-PERSONNEL_DST = ROOT / "data" / "vfd-personnel-research.json"
+PERSONNEL = ROOT / "data" / "vfd-personnel-research.json"
 MAP_CSV = ROOT / "data" / "my-maps-import.csv"
 
-# Map research short_name -> departments.json short_name
 SLUG_TO_SHORT = {
     "broad-channel": "Broad Channel",
     "edgewater-park": "Edgewater Park",
@@ -24,6 +25,61 @@ SLUG_TO_SHORT = {
     "west-hamilton-beach": "West Hamilton Beach",
 }
 
+RICHMOND_VFANYC = "https://vfanyc.org/richmond-engine-company-1/"
+CHIEF_UNCONFIRMED = "to be confirmed"
+
+
+def normalize_ein(raw: str | None) -> str:
+    digits = "".join(ch for ch in str(raw or "") if ch.isdigit())
+    return digits if len(digits) >= 8 else "TODO"
+
+
+def is_verify(value: str | None) -> bool:
+    return "VERIFY" in str(value or "").upper()
+
+
+def publishable_personnel(people: list[dict], chief_status: str) -> list[dict]:
+    out: list[dict] = []
+    chief_is_verify = is_verify(chief_status)
+    for person in people or []:
+        name = str(person.get("name") or "").strip()
+        title = str(person.get("title") or "").strip()
+        if not name:
+            continue
+        if is_verify(title) or is_verify(name):
+            continue
+        # Do not publish an unverified chief under another title/role either
+        if chief_is_verify and re.search(r"\bchief\b", title, re.I):
+            continue
+        out.append({"name": name, "title": title})
+    return out
+
+
+def publishable_source(source: str | None) -> str:
+    text = (source or "").strip()
+    if not text:
+        return "TODO"
+    if is_verify(text):
+        # Keep only the non-VERIFY factual framing when possible
+        if "2015" in text and "990-EZ" in text:
+            return (
+                "Latest detailed filing on ProPublica is Form 990-EZ (2015); "
+                "current officers not confirmed for publication."
+            )
+        if "990-N" in text or "e-Postcard" in text:
+            return "Board not listed on available Form 990-N (e-Postcard) filings."
+        return "Source pending department confirmation."
+    return text
+
+
+def display_chief_line(dept: dict) -> str:
+    if is_verify(dept.get("chief_status")):
+        return "Chief: to be confirmed"
+    name = dept.get("chief_name") or "TODO"
+    if str(name).strip().upper() in {"TODO", CHIEF_UNCONFIRMED.upper()}:
+        return "Chief: to be confirmed"
+    return f"Chief: {name}"
+
 
 def load_ruling_years() -> dict[str, str]:
     path = ROOT / "data" / "ein_candidates.csv"
@@ -32,18 +88,44 @@ def load_ruling_years() -> dict[str, str]:
     best: dict[str, str] = {}
     with path.open(encoding="utf-8", newline="") as fh:
         for row in csv.DictReader(fh):
-            ein = "".join(ch for ch in (row.get("ein") or "") if ch.isdigit())
+            ein = normalize_ein(row.get("ein"))
             ruling = (row.get("ruling_date") or "").strip()
-            if ein and ruling and ruling[:4].isdigit():
-                # Prefer rows that also have a form type / higher score later
-                if ein not in best:
-                    best[ein] = ruling[:4]
+            if ein != "TODO" and ruling[:4].isdigit() and ein not in best:
+                best[ein] = ruling[:4]
     return best
 
 
+def regenerate_maps_csv(depts: list[dict]) -> None:
+    fieldnames = ["Name", "Address", "Latitude", "Longitude", "Description"]
+    rows = []
+    for dept in depts:
+        lines = [display_chief_line(dept)]
+        lines.append("Key Personnel:")
+        people = dept.get("key_personnel") or []
+        if people:
+            for p in people:
+                lines.append(f"- {p.get('name')}, {p.get('title')}")
+        else:
+            lines.append("- to be confirmed")
+        source = dept.get("key_personnel_source") or "TODO"
+        lines.append(f"Source: {source}")
+        rows.append(
+            {
+                "Name": dept["name"],
+                "Address": dept.get("address", ""),
+                "Latitude": dept.get("lat", ""),
+                "Longitude": dept.get("lng", ""),
+                "Description": "\n".join(lines),
+            }
+        )
+    with MAP_CSV.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def main() -> int:
-    shutil.copy2(RESEARCH_SRC, PERSONNEL_DST)
-    research = json.loads(RESEARCH_SRC.read_text(encoding="utf-8"))
+    research = json.loads(PERSONNEL.read_text(encoding="utf-8"))
     depts = json.loads(DEPTS.read_text(encoding="utf-8"))
     by_short = {d["short_name"]: d for d in depts}
     rulings = load_ruling_years()
@@ -51,95 +133,61 @@ def main() -> int:
     for item in research["departments"]:
         short = SLUG_TO_SHORT[item["short_name"]]
         dept = by_short[short]
-        ein_digits = "".join(ch for ch in str(item.get("ein") or "") if ch.isdigit())
-        dept["ein"] = ein_digits if ein_digits else "TODO"
-        if ein_digits:
+
+        ein = normalize_ein(item.get("ein"))
+        dept["ein"] = ein
+        if ein != "TODO":
             dept["ein_source"] = (
                 f"vfd-personnel-research.json; "
-                f"https://projects.propublica.org/nonprofits/organizations/{ein_digits}"
+                f"https://projects.propublica.org/nonprofits/organizations/{ein}"
             )
-        else:
-            dept["ein_source"] = "TODO"
         if item.get("legal_name"):
             dept["legal_name"] = item["legal_name"]
+
         fy = item.get("founded_year")
         dept["founded_year"] = fy if fy not in (None, "", "TODO") else "TODO"
         if item.get("founded_year_source"):
             dept["founded_year_source"] = item["founded_year_source"]
-        chief = item.get("chief_name") or "TODO"
-        dept["chief_name"] = chief
+
+        status = item.get("chief_status") or ""
+        dept["chief_status"] = status
         if item.get("chief_title"):
             dept["chief_title"] = item["chief_title"]
         if item.get("chief_source"):
             dept["chief_source"] = item["chief_source"]
-        if item.get("chief_status"):
-            dept["chief_status"] = item["chief_status"]
-        dept["key_personnel"] = item.get("key_personnel") or []
-        dept["key_personnel_source"] = item.get("key_personnel_source") or "TODO"
+
+        # Publishable chief only — VERIFY chiefs are not published as named fact
+        if is_verify(status):
+            dept["chief_name"] = CHIEF_UNCONFIRMED
+        else:
+            chief = (item.get("chief_name") or "").strip()
+            dept["chief_name"] = chief if chief and chief.upper() != "TODO" else CHIEF_UNCONFIRMED
+
+        dept["key_personnel"] = publishable_personnel(
+            item.get("key_personnel") or [], status
+        )
+        dept["key_personnel_source"] = publishable_source(item.get("key_personnel_source"))
+
         if item.get("notes"):
             dept["notes"] = item["notes"]
         if item.get("related_ein"):
             dept["related_ein"] = item["related_ein"]
-        if ein_digits and ein_digits in rulings:
-            dept["irs_ruling_year"] = rulings[ein_digits]
-        # Prefer research legal/display caution for Richmond website
-        if short == "Richmond Engine" and "unrelated" in (item.get("notes") or "").lower():
-            # Keep URL but do not invent a replacement; note already stored
-            pass
+        if ein != "TODO" and ein in rulings:
+            dept["irs_ruling_year"] = rulings[ein]
+
+        if short == "Richmond Engine":
+            dept["website"] = RICHMOND_VFANYC
 
     DEPTS.write_text(json.dumps(depts, indent=2) + "\n", encoding="utf-8")
+    regenerate_maps_csv(depts)
+
     print(f"Updated {DEPTS}")
-    print(f"Copied research -> {PERSONNEL_DST}")
-
-    # Refresh My Maps CSV descriptions from departments.json
-    if MAP_CSV.exists():
-        rows = []
-        with MAP_CSV.open(encoding="utf-8", newline="") as fh:
-            reader = csv.DictReader(fh)
-            fieldnames = reader.fieldnames or [
-                "Name",
-                "Address",
-                "Latitude",
-                "Longitude",
-                "Description",
-            ]
-            existing = {r["Name"]: r for r in reader}
-
-        for dept in depts:
-            base = existing.get(dept["name"], {})
-            people = dept.get("key_personnel") or []
-            lines = [f"Chief: {dept.get('chief_name') or 'TODO'}"]
-            status = dept.get("chief_status")
-            if status and status != "confirmed":
-                lines[0] += f" ({status})"
-            lines.append("Key Personnel:")
-            if people:
-                for p in people:
-                    lines.append(f"- {p.get('name')}, {p.get('title')}")
-            else:
-                lines.append("- TODO")
-            lines.append(f"Source: {dept.get('key_personnel_source') or 'TODO'}")
-            rows.append(
-                {
-                    "Name": dept["name"],
-                    "Address": dept.get("address") or base.get("Address", ""),
-                    "Latitude": dept.get("lat", base.get("Latitude", "")),
-                    "Longitude": dept.get("lng", base.get("Longitude", "")),
-                    "Description": "\n".join(lines),
-                }
-            )
-
-        with MAP_CSV.open("w", encoding="utf-8", newline="") as fh:
-            writer = csv.DictWriter(fh, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(rows)
-        print(f"Updated {MAP_CSV}")
-
+    print(f"Regenerated {MAP_CSV}")
     for d in depts:
         print(
-            f"  {d['short_name']}: ein={d.get('ein')} founded={d.get('founded_year')} "
-            f"chief={d.get('chief_name')} ({d.get('chief_status', '')}) "
-            f"people={len(d.get('key_personnel') or [])}"
+            f"  {d['short_name']}: chief={d.get('chief_name')!r} "
+            f"status={d.get('chief_status')!r} people={len(d.get('key_personnel') or [])} "
+            f"site={d.get('website')}"
         )
     return 0
 
