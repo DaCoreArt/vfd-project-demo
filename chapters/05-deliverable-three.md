@@ -2,24 +2,48 @@
 
 **Course Learning Outcomes:** CLO 1, CLO 2, CLO 4, CLO 5, CLO 6
 
+## Project Learning Outcomes
+
+1. Integrate employer-desired competencies to develop highly valued
+   employer-desired skills.
+2. Construct and analyze a comprehensive financial profile of a
+   nonprofit organization using real-world data and field-based
+   observations.
+3. Analyze real nonprofit financial data and interpret nonprofit
+   operations from a nonprofit accounting and financial management
+   perspective.
+4. Defend evidence-based financial recommendations under realistic
+   operational constraints in a nonprofit context.
+
+For this Deliverable Three, students engage in analyzing potential
+funding requests for a firehouse's needs. It is important that students
+become familiar with and follow the D3 grading rubric for each task.
+
 ## Task D3.1 — Funding Requests
 
-**Scenario:** You are a consultant hired by the Volunteer Firemen's
-Association of the City of New York, asked to testify before the New
-York State legislature on the financial capacity and concerns of
-volunteer firehouses regarding their ability to sustain operations.
+Imagine that you are a consultant hired by the Volunteer Firemen's
+Association of the City of New York. They have been asked to testify
+before the New York State legislature to help assess the financial
+capacity and concerns of volunteer firehouses regarding their ability to
+sustain operations, given a random sample of a specific need.
 
-Choose a common piece of equipment, apparatus, marketing campaign,
-training course, or recruitment campaign, and prepare a financial
-concerns report for each firehouse under these four funding scenarios:
+Given what you have learned about the financial data for each fire
+department, and your limited knowledge about firehouse operations, choose
+a common piece of equipment, other apparatus, marketing campaign,
+training courses, or recruitment campaign, and prepare a report for each
+firehouse expressing your concerns for their funding request.
 
-1. **Community funding** — membership and small donations
-2. **Full grant funding** — fully funded by a grant maker
-3. **Short-term bank loan** — bridge financing reimbursed later by a
-   grant maker
-4. **Long-term bank loan**
+For each entity, address the following scenario:
 
-All concerns raised should be financial in nature.
+1. The fire departments are asking the community to fund it through their
+   membership and small donations.
+2. The fire departments are asking for a grant that will be fully funded
+   by the grant maker.
+3. The fire departments are asking a bank for a short-term loan to buy
+   the equipment and then be reimbursed by a grant maker.
+4. The fire departments are seeking a long-term loan from a bank.
+
+Your concerns should be financial in nature.
 
 ### Deliverable form — Task D3.1
 
@@ -30,10 +54,12 @@ All concerns raised should be financial in nature.
 
 ## Task D3.2 — Reflection
 
-Reflect on how this deliverable developed financial reasoning,
-problem-solving, curiosity, adaptability, critical thinking, empathy,
-emotional intelligence, and communication — specifically regarding
-modeling and evaluating capital investment decisions.
+Reflect on how you developed a deeper understanding and application in
+key areas such as financial reasoning, problem-solving, curiosity,
+adaptability, critical thinking, empathy, emotional intelligence, and
+written and oral communication. How did it help you grow and develop your
+ability to model and evaluate capital investment decisions in a
+real-world business context?
 
 ### Deliverable form — Task D3.2
 
@@ -42,11 +68,10 @@ modeling and evaluating capital investment decisions.
 :title: Task D3.2 deliverable form
 :::
 
-## Task D3.3 — References (APA 7th Edition)
+## Task D3.3 — References (Citations) (APA 7th Edition)
 
-Same citation requirements as Deliverable One.
-
-Refer to the [Citations section](#citations) for further guidance.
+See the [Citation Guidance](09-citation-guidance.md) section for specific
+examples. All work in the project must be cited.
 
 ### Deliverable form — Task D3.3
 
@@ -57,6 +82,7 @@ Refer to the [Citations section](#citations) for further guidance.
 
 :::{admonition} Submission Requirements
 :class: important
-- Word file: `D3_LastName_FirstName`
-- Upload to Brightspace under Deliverable Three
+- Word file: `D3_Your Last Name_Your First Name`
+- Upload into Brightspace under Deliverable Three, according to the
+  syllabus instructions and due date.
 :::

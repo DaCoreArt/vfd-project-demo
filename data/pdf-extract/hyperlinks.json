@@ -1,0 +1,200 @@
+[
+  {
+    "page": 10,
+    "uri": "https://www.deloitte.com/us/en/Industries/government-public/about/future-of-work-institute.html",
+    "anchor_text": "Deloitte's Workforce of the",
+    "rect": [
+      386.69000244140625,
+      577.6099853515625,
+      542.25,
+      593.47998046875
+    ]
+  },
+  {
+    "page": 10,
+    "uri": "https://www.deloitte.com/us/en/Industries/government-public/about/future-of-work-institute.html",
+    "anchor_text": "Future Institute.",
+    "rect": [
+      69.75,
+      593.47998046875,
+      147.91000366210938,
+      619.3499755859375
+    ]
+  },
+  {
+    "page": 11,
+    "uri": "https://vfanyc.org/",
+    "anchor_text": "Volunteer Fireman\u2019s Association of the City of New York",
+    "rect": [
+      135.41000366210938,
+      552.5599975585938,
+      419.8500061035156,
+      568.4299926757812
+    ]
+  },
+  {
+    "page": 11,
+    "uri": "https://apps.irs.gov/app/eos/",
+    "anchor_text": "Tax Exempt Organization Search Tool",
+    "rect": [
+      127.06999969482422,
+      584.2999877929688,
+      317.510009765625,
+      600.1699829101562
+    ]
+  },
+  {
+    "page": 14,
+    "uri": "https://chat.openai.com/",
+    "anchor_text": "https://chat.openai.com/.",
+    "rect": [
+      207.38999938964844,
+      300.69000244140625,
+      327.19000244140625,
+      316.55999755859375
+    ]
+  },
+  {
+    "page": 14,
+    "uri": "https://www.firequirementmagazine.com/products/hoses",
+    "anchor_text": "https://www.firequirementmagazine.com/products/hoses",
+    "rect": [
+      69.75,
+      374.1600036621094,
+      346.17999267578125,
+      400.0299987792969
+    ]
+  },
+  {
+    "page": 21,
+    "uri": "https://www.youtube.com/watch?v=hisnhKK94nI",
+    "anchor_text": "How to Easily Make a Video \ud83c\udf9e\ufe0f in PowerPoint",
+    "rect": [
+      271.3599853515625,
+      168.59002685546875,
+      542.25,
+      184.54998779296875
+    ]
+  },
+  {
+    "page": 21,
+    "uri": "https://www.youtube.com/watch?v=hisnhKK94nI",
+    "anchor_text": "(Slideshow & Screen Recording).",
+    "rect": [
+      69.75,
+      184.54998779296875,
+      251.2100067138672,
+      198.3499755859375
+    ]
+  },
+  {
+    "page": 21,
+    "uri": "https://www.youtube.com/watch?v=QZp3jumnWUg",
+    "anchor_text": "How to Record Narration for a PowerPoint Presentation https://www.youtube.com/watch?v=QZp3jumnWUg",
+    "rect": [
+      105.75,
+      309.6000061035156,
+      363.6400146484375,
+      323.3999938964844
+    ]
+  },
+  {
+    "page": 21,
+    "uri": "https://support.office.com/en-us/article/record-a-slide-show-with-narration-and-slide-timings-0b9502c6-5f6c-40ae-b1e7-e47d8741161c",
+    "anchor_text": "https://support.office.com/en-us/article/record-a-slide-show-",
+    "rect": [
+      234.05999755859375,
+      337.20001220703125,
+      542.25,
+      351.8599853515625
+    ]
+  },
+  {
+    "page": 21,
+    "uri": "https://support.office.com/en-us/article/record-a-slide-show-with-narration-and-slide-timings-0b9502c6-5f6c-40ae-b1e7-e47d8741161c",
+    "anchor_text": "with-narration-and-slide-timings-0b9502c6-5f6c-40ae-b1e7-e47d8741161c",
+    "rect": [
+      69.75,
+      351.8599853515625,
+      472.1400146484375,
+      365.6600036621094
+    ]
+  },
+  {
+    "page": 21,
+    "uri": "https://support.microsoft.com/en-us/office/video-add-and-record-audio-eeac1757-5f20-4379-95f2-0d0cd151d5b8",
+    "anchor_text": "https://support.microsoft.com/en-us/office/video-add-and-record-audio-eeac1757-5f20-",
+    "rect": [
+      105.75,
+      379.0899963378906,
+      542.25,
+      392.8900146484375
+    ]
+  },
+  {
+    "page": 21,
+    "uri": "https://support.microsoft.com/en-us/office/video-add-and-record-audio-eeac1757-5f20-4379-95f2-0d0cd151d5b8",
+    "anchor_text": "https://support.microsoft.com/en-us/office/video-add-and-record-audio-eeac1757-5f20- 4379-95f2-0d0cd151d5b8",
+    "rect": [
+      69.75,
+      392.8900146484375,
+      235.55999755859375,
+      406.69000244140625
+    ]
+  },
+  {
+    "page": 39,
+    "uri": "https://www.aejournal.com/ojs/index.php/aej/article/view/1140",
+    "anchor_text": "https://www.aejournal.com/ojs/index.php/aej/article/view/1140",
+    "rect": [
+      105.75,
+      204.3699951171875,
+      402.7900085449219,
+      217.79998779296875
+    ]
+  },
+  {
+    "page": 39,
+    "uri": "https://doi.org/10.2308/JFAR-2024-013",
+    "anchor_text": "Case: An Experiential Learning https://doi.org/10.2308/JFAR-",
+    "rect": [
+      377.6400146484375,
+      231.5999755859375,
+      542.25,
+      245.3900146484375
+    ]
+  },
+  {
+    "page": 39,
+    "uri": "https://doi.org/10.2308/JFAR-2024-013",
+    "anchor_text": "Exercise. Journal 2024-013",
+    "rect": [
+      69.75,
+      245.3900146484375,
+      156.25,
+      259.19000244140625
+    ]
+  },
+  {
+    "page": 39,
+    "uri": "https://vfanyc.org/about/history/#:~:text=The%20organization%20has%20organized%20events,of%20fire%20and%20other%20emergencies",
+    "anchor_text": "Volunteer Firemen\u2019s Association of the City of New York. (2025). History. https://vfanyc.org/about/history/#:~:text=The%20organization%20has%20organized%20",
+    "rect": [
+      105.75,
+      272.989990234375,
+      542.25,
+      286.7900085449219
+    ]
+  },
+  {
+    "page": 39,
+    "uri": "https://vfanyc.org/about/history/#:~:text=The%20organization%20has%20organized%20events,of%20fire%20and%20other%20emergencies",
+    "anchor_text": "https://vfanyc.org/about/history/#:~:text=The%20organization%20has%20organized%20 events,of%20fire%20and%20other%20emergencies.",
+    "rect": [
+      69.75,
+      286.7900085449219,
+      360.489990234375,
+      310.5899963378906
+    ]
+  }
+]

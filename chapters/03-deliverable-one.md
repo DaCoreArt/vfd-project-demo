@@ -2,28 +2,54 @@
 
 **Course Learning Outcomes:** CLO 1, CLO 3, CLO 6
 
+## Project Learning Outcomes
+
+1. Integrate employer-desired competencies to develop highly valued
+   employer-desired skills.
+2. Construct and analyze a comprehensive financial profile of a
+   nonprofit organization using real-world data and field-based
+   observations.
+
+Deliverable One is designed to help students understand accounting and
+finance theories by connecting them to a real-life context. Students are
+learning how to learn, using concrete examples to improve their
+understanding.
+
 :::{admonition} Virtual option
 :class: tip
-Students with an accommodation letter who cannot physically visit a
-local firehouse may rely on Google Maps, Yelp, a firehouse's website,
-online reviews, images, or interviews with people connected to the
-chosen firehouse.
+For those with an accommodation letter who cannot physically visit a
+local firehouse, there is a virtual option to complete this task.
+Students with accessibility limitations should rely on Google Maps, Yelp,
+a local firehouse's website, or other means such as online reviews,
+images, and interview people who may have a close connection to the local
+firehouse chosen.
 :::
 
 ## Task D1.1 — Construct a Six-Year Dataset and Firehouse Identification
 
-1. Identify all volunteer firehouses in NYC via the Volunteer Fireman's
-   Association of the City of New York website.
-2. Use the Tax Exempt Organization Search Tool to locate tax returns
-   filed by the Volunteer Fire Departments.
-3. Create an Excel spreadsheet of all entity names and available years.
+Your task is to construct a six-year dataset for all NYC volunteer
+firehouse nonprofits.
+
+1. Go to the Volunteer Fireman's Association of the City of New York
+   website and identify all volunteer firehouses in NYC.
+2. Use the Tax Exempt Organization Search Tool and locate copies of the
+   tax returns filed by the Volunteer Fire Departments.
+3. Create an Excel spreadsheet of all the names and available years of
+   the entities.
 4. Extract selected financial data.
-5. Summarize the financial data — what is the initial financial story
-   about the state of volunteer departments in NYC?
-6. Describe the financial aspects observed (what you did — walking
-   through the space, watching processes, interacting with people).
-7. Describe sensory observations (sounds, smells, movement, pace,
+5. Give a summary description of the financial data you collected. What
+   is the initial financial story about the state of volunteer
+   departments in NYC?
+6. Describe what financial aspects of the business you observed or
+   understood. In other words, what did you do when you were there (e.g.,
+   walking through the space, watching processes, interacting with
+   people).
+7. Describe what your senses picked up (sounds, smells, movement, pace,
    atmosphere).
+
+Students should collect data from sources such as IRS Form 990 filings,
+ProPublica, Candid (GuideStar), NY State charity filings, nonprofit
+websites, local news or fundraising reports, etc.
 
 Acceptable data sources: [IRS Form 990 filings](https://apps.irs.gov/app/eos/),
 [ProPublica](https://projects.propublica.org/nonprofits/),
@@ -40,11 +66,16 @@ websites, local news or fundraising reports.
 
 ## Task D1.2 — Firehouse Identification
 
-Identify a primary target firehouse to visit, plus two alternates in
-case the primary cannot be visited.
+Your task is to identify a primary target firehouse to visit. Students
+must also identify two alternative firehouses in case the primary target
+firehouse cannot be visited. For a student with an accommodation letter
+who cannot physically visit a local firehouse, there is a virtual option
+to complete this task.
 
-1. Provide the name, address, and picture of the primary firehouse.
-2. Describe how and why it was selected.
+1. Identify a local firehouse and two alternates to visit. Provide the
+   name, address, and picture of the primary local firehouse you
+   identified.
+2. Describe how and why you selected the primary local firehouse.
 
 ### Deliverable form — Task D1.2
 
@@ -55,12 +86,27 @@ case the primary cannot be visited.
 
 ## Task D1.3 — Reflection (Self-Assessment)
 
-In one well-developed paragraph, address:
+The Reflection task is important because it demonstrates how real
+learning occurs. Starting with identifying a real local firehouse makes
+abstract ideas easier to understand because you are learning from
+something familiar. Studying theory gives you a framework to explain what
+you observe, rather than leaving concrete experiences as random details.
+Reflection is important because it helps your experiences into a clear
+story, addressing what you saw, why it matters, and how it connects to
+nonprofit business decisions. This structured process makes nonprofit
+accounting and finance concepts clearer, more meaningful, and easier to
+apply to real financial decision-making.
 
-1. How the data collected from tax returns and other resources gave you
-   a framework to understand nonprofit accounting and financial data.
+In one well-developed paragraph, address the following points:
+
+1. How did the data collected from tax returns and other resources that
+   you initially examined give you a framework to understand nonprofit
+   accounting and financial data?
 2. How this process strengthened at least three employer-desired
-   competencies.
+   competencies (see the discussion on Employer-Desired Competencies).
+
+The reflection should clearly demonstrate how the learning sequence
+helped you understand corporate accounting/finance concepts.
 
 ### Deliverable form — Task D1.3
 
@@ -69,18 +115,28 @@ In one well-developed paragraph, address:
 :title: Task D1.3 deliverable form
 :::
 
-## Task D1.4 — References (APA 7th Edition)
+## Task D1.4 — References (Citations) (APA 7th Edition)
 
-Cite all sources with page numbers or deep hyperlinks. Acceptable
-sources include textbooks, academic journals, and professional finance
-publications, plus AI tools, interviews, pricing data, lender websites,
-insurance providers, and academic sources (all must be listed).
+You may use any authoritative source, including textbooks, academic
+journals, or professional finance publications. However, you must
+explicitly cite:
 
-**Not acceptable:** Wikipedia, Investopedia or similar aggregators;
-AI-generated explanations without authoritative underlying sources (AI
-is a research tool, not an authoritative source itself).
+1. Page numbers (books or PDFs), or
+2. Deep hyperlinks to exact source locations.
+3. Include a list of all sources used, including AI tools and the prompts
+   used, interviews, pricing data, lender websites, insurance providers,
+   academic sources, etc.
 
-Refer to the [Citations section](#citations) for further guidance.
+The following sources are not acceptable:
+
+1. Wikipedia, Investopedia, or similar aggregator sites.
+2. AI-generated explanations without authoritative underlying sources.
+3. Note: AI is not considered an authoritative source. It is more akin to
+   a tool to help find authoritative sources.
+
+All work in the project must be cited. Refer to the
+[Citation Guidance](09-citation-guidance.md) section for specific
+examples.
 
 ### Deliverable form — Task D1.4
 
@@ -91,7 +147,8 @@ Refer to the [Citations section](#citations) for further guidance.
 
 :::{admonition} Submission Requirements
 :class: important
-- Excel file: `D1_LastName_FirstName`
-- Word file: `D1_LastName_FirstName`
-- Upload both to Brightspace under Deliverable One
+- Excel file: `D1_Your Last Name_Your First Name`
+- Word file: `D1_Your Last Name_Your First Name`
+- Upload both files into Brightspace under Deliverable One, according to
+  the syllabus instructions and due date.
 :::

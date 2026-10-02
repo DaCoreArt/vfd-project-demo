@@ -1,0 +1,2192 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The NYC Volunteer Fire Department Project for  
+MGMT 603 Nonprofit Accounting and Financial Management 
+A Signature Term Experiential Learning Project  
+A Step-by-Step Guide 
+Revised 3/26/26 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+2 
+ 
+ 
+ 
+Table of Contents 
+ 
+ 
+Table of Contents ........................................................................................................................................................ 2 
+Introduction: Overview of the NYC Volunteer Fire Department Project............................................................. 3 
+NYC Volunteer Fire Departments Offer an Experience to Connect Theory to Practice ................................. 4 
+Project Implementation .......................................................................................................................................... 5 
+Research Study Information .................................................................................................................................. 5 
+Deliverables Process Flowchart ................................................................................................................................. 7 
+Purpose of the NYC Volunteer Fire Department Project ................................................................................... 8 
+Project Learning Objectives .................................................................................................................................. 8 
+Deliverables ................................................................................................................................................................. 9 
+Deliverable One: Financial Data Gathering and Firehouse Identification ..................................................... 10 
+Employer-Desired Competencies .................................................................................................................... 10 
+Deliverable Two: Financial Analysis and Firehouse Visitation ........................................................................ 15 
+Deliverable Three: Funding Scenarios Simulation Evaluation ........................................................................ 18 
+Deliverable Four: Communicating Results ........................................................................................................ 20 
+Deliverable Five: Reflection ................................................................................................................................. 22 
+Rubrics ....................................................................................................................................................................... 25 
+Deliverable One Grading Rubrics ....................................................................................................................... 26 
+Deliverable Two Grading Rubrics ...................................................................................................................... 29 
+Deliverable Three Grading Rubrics .................................................................................................................... 31 
+Deliverable Four Grading Rubrics ..................................................................................................................... 34 
+Deliverable Five Grading Rubrics ....................................................................................................................... 37 
+Appendix D - Student Confidentiality Statement .................................................................................................. 38 
+Resources ................................................................................................................................................................... 39 
+References .................................................................................................................................................................. 39 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+3 
+ 
+Introduction: Overview of the NYC Volunteer Fire Department Project  
+In this course, we will examine the volunteer fire departments that serve mainly New York City’s coastal 
+and geographically isolated communities. These volunteer fire departments must balance public safety 
+responsibilities with financial sustainability. All of them are nonprofit organizations that serve as 
+instructive experiential learning environments. These departments face accounting and financial 
+management issues, such as replacing major emergency equipment, which can cost hundreds of thousands 
+of dollars and is typically funded through grants, fundraising, and financing. 
+In this project, students will build a six-year financial dataset covering all NYC volunteer firehouse 
+nonprofits and analyze their financial sustainability using Excel. Students will also visit a local firehouse 
+to understand its operations and equipment needs, which will inform their analysis. Students will simulate 
+funding scenarios and assess the risk and financial readiness of these organizations to make significant 
+equipment and other purchases. 
+History of New York City Volunteer Fire Departments 
+Per The Volunteer Firemen’s Association of the City of New York (2025) (VFACNY), volunteer fire 
+departments began to play an increasingly important role in the fire service in New York City in the late 
+1800s. At that time, the city’s volunteer fire departments were facing a number of challenges, including 
+inadequate funding, poor equipment, and a lack of training opportunities. In response, a group of 
+volunteer firefighters formed the VFACNY in order to advocate for the needs of volunteer fire 
+departments and to provide support and resources to its members. 
+The VFACNY was established to advocate for the rights and interests of volunteer firefighters, and to 
+provide them with training, equipment and other resources. The organization’s early leaders worked to 
+improve the conditions and status of volunteer firefighters in New York City.  
+Over the years, the VFACNY has played a key role in advocating for better working conditions, and 
+benefits for volunteer firefighters. It has also worked to improve the quality and availability of training for 
+volunteer firefighters and to increase funding for volunteer fire departments. 
+In addition to advocating for the interests of volunteer fire departments, the VFACNY has also played an 
+important role in promoting the history and tradition of the fire service in New York City. The 
+organization has organized events and ceremonies to commemorate the contributions of volunteer 
+firefighters, and has worked to preserve the history and heritage of the fire service in the city. Throughout 
+its history, the VFACNY has played an important role in supporting volunteer firefighters in New York 
+City, and it continues to be a vital organization for the thousands of men and women who volunteer their 
+time and expertise to protect their communities from the threat of fire. They work alongside career 
+firefighters and provide vital services to residents and visitors. 
+Despite these changes, the VFACNY and it’s departments play an important part of the fire service in 
+New York City. Today, there are 8 volunteer fire departments across the city that work alongside the New 
+York City Fire Department (FDNY), which is one of the largest fire departments in the world, staffed by 
+over 11,000 career firefighters. The eight fire departments are: Broad Channel VFD & Ambulance Corp., 
+Edgewater Park Volunteer Hose Company No. 1, Gerrittsen Beach Volunteer Fire Department, Point 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+4 
+ 
+Breeze Volunteer Fire Department, Richmond Engine Company #1, Rockaway Point Volunteer Fire 
+Department, Roxbury Volunteer Fire Department, and West Hamilton Beach Volunteer Fire Department. 
+These volunteer departments provide vital services to residents and visitors, and are staffed by men and 
+women who are dedicated to protecting their communities from the threat of fire and other emergencies. 
+Today, the VFACNY continues to play an important role in supporting and representing the interests of 
+volunteer fire departments in New York City. It continues to work closely with the FDNY and other 
+organizations to ensure that volunteer departments have the resources they need to protect the 
+communities they serve. 
+The locations of these volunteer fire departments are marked on the following map. 
+ 
+ 
+NYC Volunteer Fire Departments Offer an Experience to Connect Theory to Practice 
+ 
+Many accounting and finance students report difficulty connecting abstract financial theories to 
+real-world decision-making, particularly in organizations that do not operate for profit. Traditional 
+coursework often relies on short case studies that offer limited insight into how organizations function in 
+practice. Compared to other fields (e.g., education, healthcare, and the physical sciences), accounting and 
+finance programs offer relatively few opportunities for immersive, community-based experiences in both 
+undergraduate and graduate settings (Foy et al., 2024; Foy et al., 2025). This gap is especially evident 
+when students attempt to understand how financial management operates within mission-driven 
+organizations such as volunteer fire departments. 
+This project addresses that gap by placing students directly in the context of New York City 
+volunteer fire departments, where financial decisions are closely tied to public safety, community trust, 
+and resource constraints. Unlike traditional business environments, volunteer fire departments rely on a 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+5 
+ 
+combination of grants, donations, fundraising efforts, and limited public funding to sustain operations. 
+Through this immersive, semester-long venue-based experiential learning project, students engage with a 
+real organizations, observing how financial decisions are made, how funding priorities are established, 
+and how operational needs (e.g., equipment, training, facilities) are balanced against financial realities. 
+Rather than analyzing a static case, students develop an evolving understanding of how accounting 
+and financial management issues function in a high-stakes, community-centered environment. We explore 
+questions such as: How does a fire department fund a new apparatus? What trade-offs are made between 
+equipment upgrades and community outreach? How do financial constraints influence emergency 
+readiness? This sustained engagement allows students to connect theoretical concepts, such as budgeting, 
+capital financing, and cost analysis, to real-world implications that directly impact public safety. 
+By the end of the project, students are expected to develop a deeper, more practical understanding 
+of how financial principles apply in nonprofit and public service contexts. In addition, the experience 
+supports the development of transferable, employer-valued skills such as communication, critical 
+thinking, adaptability, and professional judgment, particularly in environments where financial decisions 
+carry significant social consequences. 
+The instructions in this document are designed to guide students in linking textbook concepts to 
+real-world observations and analysis within their local communities. This project encourages students to 
+view accounting and finance not simply as technical disciplines, but as essential tools for supporting 
+organizations that serve and protect the public. This manual is intentionally flexible and may be refined as 
+needed. Students and instructors are encouraged to provide feedback and identify opportunities for 
+clarification or enhancement as the project evolves. 
+This manual is intentionally flexible and may be revised as needed. Students and instructors are 
+encouraged to provide feedback or identify areas requiring clarification. 
+ 
+Project Implementation 
+ 
+Throughout the semester, students will study accounting and financial management concepts 
+through assigned readings and course materials. This project complements those materials by providing a 
+structured opportunity to apply theory in a real business context. 
+The project consists of five deliverables spaced across the semester. Students will collect nonprofit 
+tax return data on all NYC volunteer fire departments and analyze them, identify and visit a local fire 
+department to familiarize themselves with fire department apparatus, analyze risk and funding scenarios, 
+prepare a presentation on findings, and reflect on how the experience developed employer-desired 
+competencies. 
+While all deliverables are graded individually, collaboration by sharing experiences with fellow 
+classmates is highly encouraged. This structure reflects real workplace environments, where individuals 
+are evaluated on both independent performance and share experiences with others. 
+A process flowchart on the following page summarizes the deliverable sequence, submission 
+requirements, and grading criteria. The remainder of this document provides detailed instructions, 
+templates, and grading rubrics. Reviewing the templates early is strongly recommended. 
+ 
+Research Study Information 
+Even though this project is required to fulfill course objectives, I intend to analyze the outcomes of 
+the deliverables to contribute to an educational research study. At the end of the project, I may send all 
+students an email invitation to take a survey related to our research asking you to consent to use outcomes 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+6 
+ 
+from the project. If you agree, we will de-identify all student work. This means identifying information 
+(example: IP addresses, student ID) is initially collected but is later removed. At the end of the project, 
+upon review of outcomes, I may send you a separate email asking you written permission to disclose 
+certain outcomes, such as pictures taken during the project. All names will be anonymized. Any 
+photograph used will be used for research purposes, such as presentations at conferences or publication. 
+Names will be anonymized. The principal investigator and the co-investigators will be the only parties 
+with access. Outcomes will be stored in a password protected cloud-based server. 
+Any photograph used will be used for research purposes, such as presentations at conferences or 
+publication. Names will be anonymized. The principal investigator and the co-investigators will be the 
+only parties with access. Outcomes will be stored in a password protected cloud-based server. 
+Final Thoughts 
+ 
+In addition to the instructions set forth in the Step-by-Step Guide, to enhance your understanding 
+of the business entity and its environment, students should use all resources available to them, including 
+to, but not limited to the library (specifically the business librarian), Internet, professional opinions and 
+interpretations, company published information, brokerage house information, etc. Students should think 
+about creative ways to extract and understand information. This instruction guide will direct you, but it 
+will not hold your hand during the semester. It is your project to learn from. 
+ 
+Good luck with this experiential learning project and let it enrich your understanding of 
+accounting and corporate finance!  
+ 
+Dr. Joseph Foy, CPA 
+joseph.foy@cuny.edu 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+7 
+ 
+ Deliverables Process Flowchart 
+ 
+Task 1: Construct a Six-Year Dataset 
+Task 2: Firehouse Identification 
+Task 3: Reflection (Self-Assessment) 
+Task 4: References (Citations) (APA 7th Edition) 
+Deliverable One 
+Financial Data Gathering  
+and Firehouse 
+Identification 
+CLO 1: Explain the purpose, legal structure, and distinguishing characteristics of 
+nonprofit organizations and how they differ from for-profit entities. 
+CLO 3: Construct a structured, multi-year dataset using relevant nonprofit data 
+sources to support financial analysis. 
+CLO 6: Demonstrate professional competencies through financial analysis and 
+participation in experiential learning activities. 
+Deliverable Two 
+Firehouse Visitation and 
+Financial Analysis 
+CLO 2: Analyze nonprofit financial reporting frameworks to interpret financial 
+position, performance, and transparency. 
+CLO 4: Evaluate nonprofit financial condition, operational performance, and risk 
+using financial metrics, governance considerations, and internal control 
+concepts. 
+CLO 6: Demonstrate professional competencies through financial analysis and 
+participation in experiential learning activities. 
+Task 1: Review and Analyze  Financial Statements  
+Task 2: Firehouse Visitation 
+Task 3: Reflection 
+Task 4: References (Citations) (APA 7th Edition) 
+Deliverable Three 
+Funding Scenarios 
+Simulation Evaluation  
+CLO 1: Explain the purpose, legal structure, and distinguishing characteristics of 
+nonprofit organizations and how they differ from for-profit entities. 
+CLO 2: Analyze nonprofit financial reporting frameworks to interpret financial 
+position, performance, and transparency. 
+CLO 4: Evaluate nonprofit financial condition, operational performance, and risk 
+using financial metrics, governance considerations, and internal control 
+concepts. 
+CLO 5: Evaluate and compare alternative funding and financing strategies using 
+scenario-based analysis in a nonprofit context.  
+CLO 6: Demonstrate professional competencies through financial analysis and 
+participation in experiential learning activities. 
+Task 1: Funding Requests 
+Task 2: Reflection 
+Task 3: References (Citations) (APA 7th Edition) 
+Deliverable Four 
+Communicating Results 
+Task 1: Make a PowerPoint Slide Show  
+Task 2: References (Citations) (APA 7th Edition) 
+Deliverable Five 
+Reflection 
+CLO 1 through CLO 6 
+Deliverable 
+Sequence 
+Course Learning Outcomes Addressed 
+Tasks to be Completed to Achieve Course 
+Learning Objectives 
+Task 1: Comprehensive reflection 
+Task 2: Create an oral three-minute VoiceThread (individual 
+reflection) about the Project. 
+CLO 1 through CLO 6 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+8 
+ 
+Purpose of the NYC Volunteer Fire Department Project 
+ 
+The purpose of the NYC Volunteer Fire Department Project is to connect the abstract theories a 
+student learns in a typical issues in nonprofit accounting and/or financial management course, 
+use a venue-based (a place outside of the classroom) local fire house as a concrete experience, 
+engage in active experimentation (applying theory), and reflect on the experiences. The project 
+requires that students identify and visit an independent local firehouse and attempt to engage a 
+firefighter to conduct a short tour of a firehouse and its operations. Inform the firefighter that you 
+are studying nonprofit accounting and financial management in school, and you have been tasked 
+to study the financial aspects of a small nonprofit organization, which requires a basic 
+understanding of how a firehouse operates. The aim is for students to gain a more comprehensive 
+understanding of accounting and finance issues related to nonprofit organizations, and observing 
+and understanding a local volunteer firehouse serves as a great example. Although many 
+government-run firehouses are not nonprofit organizations, the equipment and apparatus they use 
+are similar and can be easily substituted for a volunteer firehouse.  
+ 
+Another purpose of this project is to help all students further develop employer-desired 
+competencies and be able to tell a visual and oral story to potential employers about how they 
+learned nonprofit accounting and financial management theories and examples of their 
+application.  
+ 
+Project Learning Objectives 
+ 
+1. Integrate employer-desired competencies to develop highly valued employer-desired skills. 
+2. Construct and analyze a comprehensive financial profile of a nonprofit organization using 
+real-world data and field-based observations. 
+3. Analyze real nonprofit financial data and interpret nonprofit operations from a nonprofit 
+accounting and financial management perspective. 
+4. Defend evidence-based financial recommendations under realistic operational constraints in a 
+nonprofit context. 
+5. Communicate financial insights and reflect on experiential learning to demonstrate 
+professional judgment, analytical thinking, and applied competency development. 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+9 
+ 
+ 
+ 
+ 
+Deliverables 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+10 
+ 
+Deliverable One: Financial Data Gathering and Firehouse 
+Identification  
+ 
+Course Learning Outcomes Addressed 
+ 
+CLO 1: Explain the purpose, legal structure, and distinguishing characteristics of nonprofit 
+organizations. 
+CLO 3: Construct a structured, multi-year dataset using relevant nonprofit data sources to 
+support financial analysis. 
+CLO 6: Demonstrate professional competencies through financial analysis and participation in 
+experiential learning activities. 
+Deliverable One Project Learning Outcomes: 
+ 
+1. Integrate employer-desired competencies to develop highly valued employer-desired skills. 
+2. Construct and analyze a comprehensive financial profile of a nonprofit organization using 
+real-world data and field-based observations. 
+ 
+Deliverable One is designed to help students understand accounting and finance theories by 
+connecting them to a real-life. Students are learning how to learn, using concrete examples to 
+improve their understanding. 
+Virtual option: For those with an accommodation letter who cannot physically visit a local 
+firehouse, there is a virtual option to complete this task. Students with accessibility limitations 
+should rely on Google Maps, Yelp, a local firehouse’s website, or other means such as online 
+reviews, images, and interview people who may have a close connection to the local firehouse 
+chosen.  
+ 
+Employer-Desired Competencies 
+ 
+Additionally, this assignment is designed to help you develop highly valued, employer-desired 
+competencies across all industries. This list below is compiled by Deloitte's Workforce of the 
+Future Institute. They include: 
+1. Empathy: Understanding another person's thoughts and feelings from their point of view, 
+rather than one’s own.  
+2. Adaptability: The ability to adjust to new conditions.  
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+11 
+ 
+3. Emotional Intelligence: The ability to manage both one’s own emotions and understand the 
+emotions of people around oneself.  
+4. Problem-Solving: The ability to go through a process of finding solutions to difficult or 
+complex issues.  
+5. Critical Thinking: The ability to identify a problem and logically think through it to find a 
+solution. 
+6. Logical Reasoning: The ability to distinguish facts from mere opinions. The ability to 
+understand that when important information is missing, it is often better to suspend judgment 
+than to jump to conclusions. 
+7. Curiosity: The ability to be eager to know or learn something.  
+8. Resilience: The ability to recover quickly from difficulties or making mistakes.  
+9. Communication (Written and Verbal): The ability to write notes and verbally communicate. 
+The ability to pay more attention to important details when it may be needed to make a 
+decision. 
+By completing this deliverable, you’re not just learning about nonprofit accounting and financial 
+management. You are building a foundation of career-ready skills that will help you succeed in 
+any other future professional setting. 
+ 
+D1 Tasks: 
+ 
+For this deliverable, students must complete the tasks below. It is important that students become 
+familiar with and follow the D1 grading rubric for each task. 
+ 
+Task D1.1: Construct a Six-Year Dataset and Firehouse Identification 
+ 
+Your task is to construct a six-year dataset for all NYC volunteer firehouse nonprofits, and  
+ 
+D1.1 Task Requirements:  
+ 
+Address the requirements by using the D1 Template in the Templates Section of this document.  
+ 
+1. Go to the Volunteer Fireman’s Association of the City of New York website and identify all 
+volunteer firehouses in NYC. 
+2. Use the Tax Exempt Organization Search Tool and locate copies of the tax returns filed by 
+the Volunteer Fire Departments. 
+3. Create an Excel Spreadsheet of all the names and available years of the entities. 
+4. Extract selected financial data. 
+5. Give a summary description of the financial data you collected. What is the initial financial 
+story about the state of volunteer departments in NYC? 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+12 
+ 
+6. Describe what financial aspects of the business you observed or understood. In other words, 
+what did you do when you were there (e.g., walking through the space, watching processes, 
+interacting with people). 
+7. Describe what your senses picked up (sounds, smells, movement, pace, atmosphere). 
+ 
+Students should collect data from sources such as IRS Form 990 filings, ProPublica, Candid 
+(GuideStar), NY State charity filings, Nonprofit websites, Local news or fundraising reports, etc. 
+ 
+Click here to go to the Deliverable One Grading Rubrics 
+ 
+Task D1.2 Firehouse Identification 
+ 
+Your task is to identify a primary target firehouse to visit. Students must also identify two 
+alternative firehouses in case the primary target firehouse cannot be visited. For a student with an 
+accommodation letter who cannot physically visit a local firehouse, there is a virtual option to 
+complete this task.  
+ 
+Virtual option: Students with accessibility limitations should rely on Google Maps, Yelp, a local 
+firehouse’s website, or other means such as online reviews, images, and interview people who 
+may have a close connection to the local firehouse chosen.  
+ 
+D1.2 Task Requirements.  
+ 
+1. Identify a local firehouse and two alternates to visit. Provide the name, address, and picture 
+of the primary local firehouse you identified. 
+2. Describe how and why you selected the primary local firehouse. 
+ 
+Click here to go to the Deliverable One Grading Rubrics 
+ 
+Task D1.3 Reflection (Self-Assessment) 
+ 
+The Reflection task is important because it demonstrates how real learning occurs. Starting with 
+identifying a real local firehouse makes abstract ideas easier to understand because you are 
+learning from something familiar. Studying theory gives you a framework to explain what you 
+observe, rather than leaving concrete experiences as random details. Reflection is important 
+because it helps your experiences into a clear story, addressing what you saw, why it matters, 
+and how it connects to nonprofit business decisions. This structured process makes nonprofit 
+accounting and finance concepts clearer, more meaningful, and easier to apply to real financial 
+decision-making. 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+13 
+ 
+D1.3 Task Requirements: 
+ 
+In one well-developed paragraph, address the following points: 
+ 
+1. How did the data collected from tax returns and other resources that you initially examined 
+give you a framework to understand nonprofit accounting and financial data? 
+2. How this process strengthened at least three employer-desired competencies (see the 
+discussion on Employer-Desired Competencies above). 
+ 
+The reflection should clearly demonstrate how the learning sequence helped you understand 
+corporate accounting/finance concepts. 
+ 
+Click here to go to the Deliverable One Grading Rubrics 
+ 
+Task D1.4: References (Citations) (APA 7th Edition) 
+ 
+References and Citing Work  
+You may use any authoritative source, including textbooks, academic journals, or professional 
+finance publications. However, you must explicitly cite: 
+ 
+1. Page numbers (books or PDFs), or 
+2. Deep hyperlinks to exact source locations. 
+3. Include a list of all sources used, including AI tools and the prompts used, interviews, pricing 
+data, lender websites, insurance providers, academic sources, etc. 
+ 
+The following sources are not acceptable: 
+ 
+1. Wikipedia, Investopedia, or similar aggregator sites. 
+2. AI-generated explanations without authoritative underlying sources. 
+3. Note: AI is not considered an authoritative source. It is more akin to a tool to help find 
+authoritative sources.  
+ 
+All work in the project must be cited. 
+Include a list of all sources used, including AI tools and the prompts used (even though it is not 
+considered authoritative), interviews, pricing data, lender websites, insurance providers, 
+academic sources, etc. Here are some examples: 
+Narrative Citation (in-text) of a personal interview: 
+“According to DiLorenzo (April 10, 2025), managing rising equipment costs has forced them to 
+adjust their budgets.” 
+Parenthetical Citation (in-text) of a personal interview: 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+14 
+ 
+“Managing rising equipment costs has forced them to adjust their budgets (DiLorenzo, M. April 
+10, 2025).” 
+Parenthetical Citation (in-text) of using ChatGPT to conduct a personal interview: 
+“I developed a questionnaire to ask a firehouse personnel questions (ChatGPT, personal 
+communication, June 1, 2025).” 
+Parenthetical Citation (in-text) of information sourced from a business website: 
+Protective gear needs to be fire retardant (Fire Equipment Magazine, 2025). 
+What the Reference section will look like, related to the above in-text citations: 
+DiLorenzo, M. (2025, April 10). Personal interview. 
+OpenAI. (2025, June 1). ChatGPT response to a prompt about equipment need interviews [Large 
+language model]. ChatGPT. https://chat.openai.com/. Prompt: “From the attached document, 
+suggest a set of questions that a nonprofit accounting business student can ask in a interview 
+about equipment needs of a firehouse.” 
+Fire Equipment Magazine. (2025). Firehoses. 
+https://www.firequirementmagazine.com/products/hoses 
+ 
+**Important**: If you require additional information or assistance, please contact your 
+librarian. 
+Submission Requirements 
+ 
+Name the Excel file D1_Your Last Name_Your First Name 
+Name the Word file D1_Your Last Name_Your First Name 
+Upload both files into Brightspace under Deliverable One, according to the syllabus instructions 
+and due date. 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+15 
+ 
+Deliverable Two: Financial Analysis and Firehouse Visitation  
+ 
+Course Learning Outcomes Addressed 
+ 
+CLO 2: Analyze nonprofit financial reporting frameworks to interpret financial position, 
+performance, and transparency. 
+CLO 4: Evaluate nonprofit financial condition, operational performance, and risk using financial 
+metrics, governance considerations, and internal control concepts. 
+CLO 6: Demonstrate professional competencies through financial analysis and participation in 
+experiential learning activities. 
+ 
+Deliverable Two Project Learning Outcomes: 
+ 
+1. Integrate employer-desired competencies to develop highly valued employer-desired skills. 
+2. Construct and analyze a comprehensive financial profile of a nonprofit organization using 
+real-world data and field-based observations. 
+3. Analyze real nonprofit financial data and interpret nonprofit operations from a nonprofit 
+accounting and financial management perspective. 
+ 
+Deliverable two is intended to allow students to engage in higher-level financial analysis of 
+nonprofit organizations and to immerse themselves in a venue-based, concrete experience. 
+Deliverable two helps connect the abstract theories you are learning in the course materials with 
+active experimentation by researching data on a real-life scenario and evaluating feasibilities. 
+D2 Tasks: 
+ 
+For this deliverable, students must complete the tasks below. It is important that students become 
+familiar with and follow the D2 grading rubric for each task. 
+Task D2.1: Review and Analyze Financial Statements  
+ 
+Using the Excel spreadsheet developed in deliverable one, students analyze the financial data and 
+calculate key financial metrics for all available years, such as: 
+• Operating Surplus/Deficit: Total Revenue - Total Expenses 
+• Operating Margin: Operating Surplus / Total Revenue 
+• Reserve Ratio: Cash / Total Expenses 
+• Liability Burden: Liabilities / Total Revenue 
+• Donation Dependence: Donations / Total Revenue 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+16 
+ 
+Click here to go back to Deliverable Two Rubrics 
+Task D2.2: Firehouse Visitation 
+ 
+In experiential learning, this is considered a venue-based, concrete task. Students conduct a field 
+visit to a local Firehouse. A concrete experience is what you directly observe when you visit the 
+firehouse, such as the fire truck apparatus, protective gear, and communications equipment. The 
+concrete experience is designed to help you understand abstract concepts in your assigned 
+readings.  
+The purpose of the visit is to engage your external sensory perceptions, such as seeing, hearing, 
+smelling, tasting (if applicable), and experiencing physical sensations such as touch, as well as 
+your internal body’s natural awareness of movement, position, effort, balance, fatigue, emotions, 
+all known as kinesthetic proprioception, as you observe a local firehouse in action.  
+ 
+Why is engaging in your senses important for learning?  
+ 
+Learning is deeper and more meaningful when it involves the whole body, not just the eyes and 
+the mind. By paying attention to how work feels, such as the pace of movement, the physical 
+effort required, the tightness of space, and the rhythm of tasks, these senses help you gain 
+insights that cannot be captured by numbers alone. This bodily awareness helps you understand 
+why accounting and finance outcomes appear as they do. Labor costs, productivity, errors, waste, 
+pricing, and staffing decisions are all influenced by the physical realities of work. When you 
+notice strain, repetition, smooth coordination, or congestion, you are observing the real forces 
+that shape costs and revenues. 
+ 
+Engaging your senses and bodily awareness during the visit is intended to set the stage for you to 
+connect abstract financial concepts to real operational experience, thereby helping you transform 
+accounting and financial management from theoretical to practical applications and to 
+understand how a nonprofit business actually functions and generates revenue and incurs 
+expenses. 
+ 
+For those with an accommodation letter who cannot physically visit a local firehouse, there is a 
+virtual option to complete this task. Virtual option: Students with accessibility limitations should 
+rely on Google Maps, Yelp, a local firehouse’s website, or other means such as online reviews, 
+images, and interview people who may have a close connection to the local firehouse chosen. 
+You can also work with classmates who may be able to FaceTime their visitation live so you can 
+share the experience. This option has been done successfully in prior coursework as a virtual 
+option. 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+17 
+ 
+Students must visit one local firehouse (either volunteer or government-run) to learn about its 
+basic operations and equipment needs. Firefighters are generally very friendly and love to talk 
+about anything related to firehouses. During the visit, students should attempt to discuss: 
+• Equipment that needs replacement (e.g., fire trucks, drones, ambulances, etc.) 
+• Construction or infrastructure needs (e.g., parking lots, firehouse renovations) 
+• Funding sources (if a volunteer firehouse - donations, grants, etc.) 
+• 
+Recruitment and training needs 
+Task D2.3: Reflection 
+ 
+After you have completed your financial analysis and visitation, in two to three paragraphs, 
+describe how your skills and competencies have been strengthened by engaging in Deliverable 
+Two. Specifically, reflect on how you developed a deeper understanding and application in key 
+areas such as financial reasoning, problem-solving, curiosity, adaptability, critical thinking, 
+empathy, emotional intelligence, and written and oral communication. How did it help you grow 
+and develop your ability to engage in nonprofit accounting and financial management analysis 
+and understand the complex operations of a nonprofit organization? 
+Task D2.4: References (Citations) (APA 7th Edition) 
+ 
+See the D1.5 References. All work in the project must be cited section for specific examples. 
+Submission Requirements 
+ 
+Name the Excel file D2_Your Last Name_Your First Name 
+Name the Word file D2_Your Last Name_Your First Name 
+Upload into Brightspace under Deliverable Two, according to the syllabus instructions and due 
+date. 
+Click here to go back to Deliverable Two Rubrics 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+18 
+ 
+Deliverable Three: Funding Scenarios Simulation Evaluation  
+ 
+Course Learning Outcomes Addressed 
+ 
+CLO 1: Explain the purpose, legal structure, and distinguishing characteristics of nonprofit 
+organizations and how they differ from for-profit entities. 
+CLO 2: Analyze nonprofit financial reporting frameworks to interpret financial position, 
+performance, and transparency. 
+CLO 4: Evaluate nonprofit financial condition, operational performance, and risk using financial 
+metrics, governance considerations, and internal control concepts. 
+CLO 5: Evaluate and compare alternative funding and financing strategies using scenario-based 
+analysis in a nonprofit context.  
+CLO 6: Demonstrate professional competencies through financial analysis and participation in 
+experiential learning activities. 
+ 
+Deliverable Three Project Learning Outcomes: 
+ 
+1. Integrate employer-desired competencies to develop highly valued employer-desired skills. 
+2. Construct and analyze a comprehensive financial profile of a nonprofit organization using 
+real-world data and field-based observations. 
+3. Analyze real nonprofit financial data and interpret nonprofit operations from a nonprofit 
+accounting and financial management perspective. 
+4. Defend evidence-based financial recommendations under realistic operational constraints in a 
+nonprofit context. 
+ 
+Tasks: 
+ 
+For this Deliverable Three, students engage in analyzing potential funding requests for a 
+firehouse's needs. Students must complete the tasks below. It is important that students become 
+familiar with and follow the D3 grading rubric for each task. 
+Task D3.1: Funding Requests 
+ 
+Imagine that you are a consultant hired by the Volunteer Firemen’s Association of the City of 
+New York. They have been asked to testify before the New York State legislature to help assess 
+the financial capacity and concerns of volunteer firehouses regarding their ability to sustain 
+operations, given a random sample of a specific need. 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+19 
+ 
+Given what you have learned about the financial data for each fire department, and your limited 
+knowledge about firehouse operations, choose a common piece of equipment, other apparatus, 
+marketing campaign, training courses, or recruitment campaign, and prepare a report for each 
+firehouse expressing your concerns for their funding request.  
+For each entity, address the following scenario: 
+ 
+1. The fire departments are asking the community to fund it through their membership and 
+small donations. 
+2. The fire departments are asking for a grant that will be fully funded by the grant maker. 
+3. The fire departments are asking a bank for a short-term loan to buy the equipment and 
+then be reimbursed by a grant maker. 
+4. The fire departments are seeking a long-term loan from a bank. 
+ 
+Your concerns should be financial in nature.  
+ 
+Task D3.2: Reflection 
+ 
+Reflect on how you developed a deeper understanding and application in key areas such as 
+financial reasoning, problem-solving, curiosity, adaptability, critical thinking, empathy, 
+emotional intelligence, and written and oral communication. How did it help you grow and 
+develop your ability to model and evaluate capital investment decisions in a real-world business 
+context? 
+Task D3.3: References (Citations) (APA 7th Edition) 
+ 
+See the D1.5 References. All work in the project must be cited section for specific examples. 
+Submission Requirements 
+ 
+Name the Word file D3_Your Last Name_Your First Name 
+Upload into Brightspace under Deliverable Three, according to the syllabus instructions and due 
+date. 
+Click here to go to the Deliverable Three Grading Rubrics 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+20 
+ 
+Deliverable Four: Communicating Results 
+ 
+Course Learning Outcomes Addressed 
+ 
+CLOs one through six. 
+Deliverable Four Project Learning Outcomes: 
+ 
+1. Integrate employer-desired competencies to develop highly valued employer-desired skills. 
+2. Construct and analyze a comprehensive financial profile of a nonprofit organization using 
+real-world data and field-based observations. 
+3. Analyze real nonprofit financial data and interpret nonprofit operations from a nonprofit 
+accounting and financial management perspective. 
+4. Defend evidence-based financial recommendations under realistic operational constraints in a 
+nonprofit context. 
+5. Communicate financial insights and reflect on experiential learning to demonstrate 
+professional judgment, analytical thinking, and applied competency development. 
+ 
+Deliverable Four challenges students to synthesize and present a nonprofit accounting and 
+financial management story developed over deliverables one, two, and three. This should be 
+presented in a concise, professional PowerPoint. Deliverable four not only reinforces key 
+theories learned during the semester but also deepens the real-world application of financial 
+reasoning in evaluating and advising on nonprofit accounting and financial management issues. 
+Deliverable four is also designed to cultivate and demonstrate high-demand professional 
+competencies aligned with Deloitte’s Workforce of the Future.  
+This individually graded assignment emphasizes resilience and accountability, requiring students 
+to rehearse, communicate regularly, and produce polished, high-stakes output under a 
+collaborative deadline. By the end of this process, students will have developed a more holistic 
+skill set—blending technical finance expertise with interpersonal, digital communication abilities 
+critical for future business environments. 
+Click here to go to the Deliverable Four Grading Rubrics 
+D4 Tasks: 
+ 
+The D4 grading rubric lists the specific tasks one must complete. During the semester, students 
+are encouraged to draft slides and edit them as they complete deliverables one, two, and three.  
+How to Make a PowerPoint Slide Show 
+ 
+D4 Requirements: 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+21 
+ 
+ 
+1. Draft a storyboard to convey it in a concise presentation, which can simply be a series of 
+empty slides in a PowerPoint that students populate with their ideas. Perhaps a simple and 
+effective demonstration of how to present a storyboard is by Leila Gharani, a prominent 
+YouTuber who specializes in Microsoft product demonstrations. She presents information 
+clearly and concisely. She is not the only person who specializes in this space, but she is well 
+known with several million subscribers. She has produced a video that covers screen 
+recording and recording a slideshow.  How to Easily Make a Video 🎞️ in PowerPoint 
+(Slideshow & Screen Recording). Alternatively, students may want to search the internet for 
+other videos to get ideas on how to use Storyboarding. Students are not bound to use this 
+storyboard demonstration. Students are encouraged to pursue other methods if they are easier 
+or workable. 
+ 
+To assist students in developing a narrated PowerPoint, consider the following video 
+examples: 
+ 
+• How to Record Narration for a PowerPoint Presentation For Dummies: 
+https://www.youtube.com/watch?v=QZp3jumnWUg 
+ 
+• Microsoft Office Support: https://support.office.com/en-us/article/record-a-slide-show-
+with-narration-and-slide-timings-0b9502c6-5f6c-40ae-b1e7-e47d8741161c 
+ 
+https://support.microsoft.com/en-us/office/video-add-and-record-audio-eeac1757-5f20-
+4379-95f2-0d0cd151d5b8 
+ 
+2. The whole slideshow presentation should be no longer than five minutes. There is no 
+minimum or maximum amount of slides. Just fall within the time limit. I suggest targeting 
+about 10 slides. 
+ 
+The late policy for deliverable four is the same as for prior deliverables. It is important that 
+students provide their presentations in a timely manner, as it is a near-end-of-semester 
+submission. 
+ 
+Click here to go to the Deliverable Four Template 
+Click here to go to the Deliverable Four Grading Rubrics 
+ 
+Note: I cannot stress enough to students how important it is to rehearse presentations, so 
+mistakes are minimized during the recording and have proper timing. If a student experiences 
+physical challenges speaking clearly, consult the Office of Accommodations for alternatives such 
+as closed captioning.  
+ 
+Last Slide: References (Citations) (APA 7th Edition) 
+ 
+See the D1.5 References. In the last PPT slide, all work in the project must be cited section for 
+specific examples. 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+22 
+ 
+Submission Requirements 
+ 
+Save the file as a PPT. Name the PowerPoint Slide Show file to D4_Your Last Name 
+Upload the PPT into Brightspace under Deliverable Four, according to the syllabus instructions 
+and due date. 
+Click here to go to the Deliverable Four Grading Rubrics 
+ 
+Deliverable Five: Reflection 
+ 
+Course Learning Outcomes Addressed 
+ 
+CLOs one through six. 
+Deliverable Five Project Learning Outcomes: 
+ 
+1. Integrate employer-desired competencies to develop highly valued employer-desired skills. 
+2. Construct and analyze a comprehensive financial profile of a nonprofit organization using 
+real-world data and field-based observations. 
+3. Analyze real nonprofit financial data and interpret nonprofit operations from a nonprofit 
+accounting and financial management perspective. 
+4. Defend evidence-based financial recommendations under realistic operational constraints in a 
+nonprofit context. 
+5. Communicate financial insights and reflect on experiential learning to demonstrate 
+professional judgment, analytical thinking, and applied competency development. 
+ 
+Deliverable Five is designed to critically review how the combination of learning nonprofit 
+accounting and financial management concepts from the textbook and the signature term project 
+helps students better learn the course learning objectives.  
+ 
+Deliverable Five Reflections is a two-part process to help develop oral and written presentation 
+competency skills of a comprehensive experiential learning project.  
+Deliverable Five is solely an individual effort.  
+ 
+D5 Tasks: 
+ 
+For this deliverable, students must complete the tasks below. It is important that students become 
+familiar with and follow the D5 grading rubric for each task. 
+ 
+Click here to go to the Deliverable Five Grading Rubrics 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+23 
+ 
+Task D5.1: Create an individual reflection about the Project 
+ 
+For Part One of Deliverable Five, students combine the reflections from deliverables one 
+through four tell a flowing business story about the events you sensed during the project, 
+including and most importantly, the visit to the firehouse (concrete experiences) and how 
+different theories you studied helped you understand them (abstract conceptualizations), and how 
+everything you did in the Project enhanced all of your employer-desired competencies detailed in 
+Deliverable One. Did the project strengthen, weaken or it made no difference to them? You need 
+to be very specific in your narrative. You should write passionately and put feeling into it.  
+ 
+The objective of deliverable five is to critically review, in writing, how the combination of 
+learning accounting and finance concepts from the textbook and the signature term project 
+helped students better learn the course learning objectives. 
+ 
+D5.1 Task Requirements: 
+ 
+1. Thinking back on the Concrete Experiences of D1, D2 and D3, give a descriptive reflection 
+of how the firehouse setting engaged you sensory perceptions and why it was important in 
+your learning process. 
+2. Thinking back on the Abstract Conceptualizations (the theories) in D1, D2 and D3, give a 
+descriptive reflection of how they helped you understand and explain nonprofit accounting 
+and financial management. 
+3. Thinking back on how your competencies in D1, D2 and D3, give a descriptive reflection of 
+how they were enhanced. Give very specific examples as if you were telling a prospective 
+employer how this project helps develop your employer-desired competencies. 
+Each student must write up and submit their own work.  
+Click here to go to the Deliverable Five Grading Rubrics 
+ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+24 
+ 
+Task D5.2: Create an oral two to three-minute VoiceThread (individual 
+reflection) business story about the Project 
+ 
+For Part Two of Deliverable Five, students are to make a three-minute VoiceThread that orally 
+summarizes key learning points for the Signature Term Project in the form of a concise business 
+story. It is akin to a YouTube video short. 
+Task Requirement: 
+Imagine that you are asked in a job interview what experience(s) best prepared you to add value 
+to the employer’s organization. You are to refer to the Project and describe how you analyzed a 
+real fire department and how it specifically enhanced your employer-desired competences that 
+better enabled you to help make good financial and strategic decisions. 
+The VoiceThread cannot exceed three minutes. You must be concise and impactful. 
+In this requirement, the instructions are purposeful not to give you an industry for a potential 
+interview. This is one of the exact reasons why this project was designed the way it is. It is for a 
+moment like this that you have to convince an employer how you learned can be applied to all 
+situations. You are placed in a concrete experience, you have to explain it with theory, and 
+further explain how you tested the theory to the situation. This is a foundational skill to develop. 
+On the VoiceThread, you must rehearse this story over and over to get it right. One day, you may 
+have to really tell this business story to a prospective employer. Tell the story with passion and 
+excitement. Really convince the prospective employer that you are worth it! 
+ 
+Submission Requirements 
+ 
+For Part One is the written narrative: Name the Word file D5_Your Last Name_Your First Name 
+Part Two is VoiceThread. 
+Upload the Word Document into Brightspace under Deliverable Five, according to the syllabus 
+instructions and due date. Do not upload a pdf file. Only Word files will be accepted. 
+Click here to go to the Deliverable Five Grading Rubrics 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+25 
+ 
+ 
+ 
+ 
+Rubrics 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+26 
+ 
+Deliverable One Grading Rubrics 
+Criteria 
+Accomplished (100 pts) 
+Proficient (80 pts) 
+Developing (60 pts) 
+ Beginning (0 pts) 
+Task D1.1:  
+Identify all 
+volunteer 
+firehouses in NYC. 
+ 
+Identifies an appropriate firehouse and 
+clearly explains why; describes finance-
+related observations (equipment, training 
+needs); explains personal engagement in 
+the location; integrates sensory and bodily 
+observations to support understanding of 
+operations and costs. 
+Identifies an 
+appropriate firehouse; 
+describes basic 
+financial observations 
+and engagement; 
+includes some sensory 
+detail. 
+Provides a limited 
+explanation of 
+firehouse choice or 
+financial engagement; 
+sensory observations 
+are vague or weakly 
+connected. 
+Inappropriate 
+firehouse selected or 
+concrete experience 
+not meaningfully 
+described. 
+Task D1.2: 
+Locate copies of 
+the tax returns filed 
+by the Volunteer 
+Fire Departments. 
+Locates all available copies of tax returns 
+for six years or all fire departments. 
+Locates the majority 
+of available copies of 
+tax returns for six 
+years or all fire 
+departments. 
+Locates less than half 
+of the available copies 
+of tax returns for six 
+years or all fire 
+departments. 
+Does not locate tax 
+returns. 
+Task D1.3:  
+Create an Excel 
+spreadsheet of all 
+the names and 
+available years of 
+the entities. 
+Creates an Excel spreadsheet of all the 
+names and available years of the entities. 
+Creates an Excel 
+spreadsheet of the 
+majority of names and 
+available years of the 
+entities. 
+Creates an Excel 
+spreadsheet of less 
+than half of the names 
+and available years of 
+the entities. 
+Does not create an 
+Excel spreadsheet. 
+Click here to go back to Deliverable One Requirements 
+ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+27 
+ 
+Criteria 
+Accomplished (100 pts) 
+Proficient (80 pts) 
+Developing (60 pts) 
+Beginning (0 pts) 
+Task D1.4:  
+Extract and populate 
+selected financial 
+data. 
+Extracts and populates all financial data 
+for all available years. 
+Extracts and populates 
+the majority of the 
+financial data for all 
+available years. 
+Extracts and 
+populates less than 
+half of the financial 
+data for all available 
+years. 
+Does not extract and 
+populate financial 
+data. 
+Task D1.5:  
+Summary 
+description of the 
+financial data 
+collected. Tell the 
+initial financial story 
+about the state of 
+volunteer 
+departments in 
+NYC. 
+Provides a comprehensive summary 
+description of the financial data collected 
+and tells a concise and coherent initial 
+financial story about the state of 
+volunteer departments in NYC. 
+Provides a less than 
+comprehensive 
+summary description 
+of the financial data 
+collected or tells a 
+concise or coherent 
+(but not both) initial 
+financial story about 
+the state of volunteer 
+departments in NYC. 
+Provides a thin 
+summary description 
+of the financial data 
+collected and not a 
+concise and coherent 
+initial financial story 
+about the state of 
+volunteer departments 
+in NYC. 
+No summary or 
+story. 
+Click here to go back to Deliverable One Requirements 
+   
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+28 
+ 
+Task D1.6: 
+Reflection 
+Thoughtful and specific reflection; 
+clearly links theories, competency skills, 
+and project experience; demonstrates 
+meaningful personal and professional 
+growth. 
+Good reflection with 
+some links to theories, 
+competencies and 
+project experience. 
+Generic reflection 
+with limited insights 
+to theories and 
+competencies; weak 
+connection to learning 
+objectives. 
+Minimal or absent 
+reflection; lacks 
+personal 
+engagement or 
+depth. 
+Task D1.7: 
+References 
+(Citations) 
+All sources cited correctly in APA 7th; 
+includes page numbers or deep URL 
+links; sources are authoritative and 
+clearly integrated; only acceptable 
+sources used.  AI-generated citations 
+with clear in-text citations.  
+Most sources cited 
+correctly; minor APA 
+or formatting errors; 
+some non-acceptable 
+sources used. AI-
+generated citations 
+with some or unclear 
+in-text citations. 
+Citations incomplete, 
+inconsistently 
+formatted, or missing 
+required details; non-
+acceptable sources 
+used. AI-generated 
+citations with little or 
+very unclear in-text 
+citations. 
+Little or no citation 
+provided or non-
+acceptable sources 
+used. AI-generated 
+citations with no in-
+text citations. 
+ 
+Click here to go back to Deliverable One Requirements 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+29 
+ 
+Deliverable Two Grading Rubrics 
+Criteria 
+Accomplished (100 pts) 
+Proficient (80 pts) 
+Developing (60 pts) 
+Beginning (0 pts) 
+Task D2.1:  
+Using the Excel 
+spreadsheet 
+developed in 
+deliverable one, 
+students analyze the 
+financial data and 
+calculate key 
+financial metrics for 
+all available. 
+Comprehensive analysis (well 
+beyond the suggested ratios in this 
+guide) of the financial data to 
+calculate key financial metrics for all 
+available. 
+Less than comprehensive 
+analysis (barely beyond 
+the suggested ratios in 
+this guide) of the 
+financial data to calculate 
+key financial metrics for 
+all available. 
+Thin analysis (just 
+using the suggested 
+ratios in this guide) of 
+the financial data to 
+calculate key financial 
+metrics for all 
+available. 
+An analysis less than 
+using all the 
+suggested ratios in 
+this guide) of the 
+financial data to 
+calculate key 
+financial metrics for 
+all available. 
+Task D2.2:  
+Students must visit 
+one local firehouse 
+(either volunteer or 
+government-run) to 
+learn about its basic 
+operations and 
+equipment needs.  
+Visited at least one local firehouse 
+(either volunteer or government-run) 
+and comprehensively describes 
+(using senses such as sounds, smells, 
+movement, pace, atmosphere) its 
+basic operations and equipment 
+needs, as if the reader were there. 
+Visited at least one local 
+firehouse (either 
+volunteer or government-
+run) and less than 
+comprehensively 
+describes (using senses 
+such as sounds, smells, 
+movement, pace, 
+atmosphere) its basic 
+operations and equipment 
+needs, as if the reader 
+were there. 
+Visited at least one 
+local firehouse (either 
+volunteer or 
+government-run) and 
+thinly describes (using 
+senses such as sounds, 
+smells, movement, 
+pace, atmosphere) its 
+basic operations and 
+equipment needs, as if 
+the reader were there. 
+Did not visit at least 
+one local firehouse 
+(either volunteer or 
+government-run) or 
+did not describe 
+(using senses such as 
+sounds, smells, 
+movement, pace, 
+atmosphere) its basic 
+operations and 
+equipment needs, as 
+if the reader were 
+there. 
+Click here to go back to Deliverable Two Requirements 
+ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+30 
+ 
+Task D2.3: 
+Reflection 
+Thoughtful and specific reflection; 
+clearly links theories, competency skills, 
+and project experience; demonstrates 
+meaningful personal and professional 
+growth. 
+Good reflection with 
+some links to theories, 
+competencies and 
+project experience. 
+Generic reflection 
+with limited insights 
+to theories and 
+competencies; weak 
+connection to learning 
+objectives. 
+Minimal or absent 
+reflection; lacks 
+personal 
+engagement or 
+depth. 
+Task D2.4: 
+References 
+(Citations) 
+All sources cited correctly in APA 7th; 
+includes page numbers or deep URL 
+links; sources are authoritative and 
+clearly integrated; only acceptable 
+sources used.  AI-generated citations 
+with clear in-text citations.  
+Most sources cited 
+correctly; minor APA 
+or formatting errors; 
+some non-acceptable 
+sources used. AI-
+generated citations 
+with some or unclear 
+in-text citations. 
+Citations incomplete, 
+inconsistently 
+formatted, or missing 
+required details; non-
+acceptable sources 
+used. AI-generated 
+citations with little or 
+very unclear in-text 
+citations. 
+Little or no citation 
+provided or non-
+acceptable sources 
+used. AI-generated 
+citations with no 
+in-text citations. 
+ 
+Click here to go back to Deliverable Two Requirements 
+  
+ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+31 
+ 
+Deliverable Three Grading Rubrics 
+Criteria 
+Accomplished (100 pts) 
+Proficient (80 pts) 
+Developing (60 pts) 
+Beginning (0 pts) 
+Task D3.1: 
+Funding 
+Requests: 
+The fire 
+departments are 
+asking the 
+community to 
+fund it through 
+their 
+membership and 
+small donations. 
+Comprehensive analysis of community-
+based funding, including detailed 
+fundraising targets, realistic 
+participation assumptions, donor 
+segmentation, sustainability 
+considerations, and clear feasibility 
+assessment. 
+Less than comprehensive 
+analysis, including 
+fundraising targets and 
+basic assumptions about 
+community participation, 
+with some discussion of 
+feasibility. 
+Basic calculation of 
+fundraising needs using 
+simple assumptions, 
+with limited discussion 
+of feasibility. 
+Incomplete or 
+unclear analysis; 
+missing key 
+calculations or 
+unrealistic/no 
+assumptions. 
+Task D3.2: 
+Funding 
+Requests: 
+The fire 
+departments are 
+asking for a 
+grant that will 
+be fully funded 
+by the grant 
+maker. 
+Comprehensive analysis of full grant 
+funding, including eligibility 
+considerations, likelihood of approval, 
+timing constraints, restrictions, and 
+impact on operations if funding is 
+delayed or denied. 
+Less than comprehensive 
+analysis of grant funding 
+with general discussion of 
+requirements and timing, 
+but limited depth in risk 
+or constraints. 
+ 
+Basic description of 
+grant funding with 
+minimal analysis of 
+feasibility or constraints. 
+ 
+Little or no analysis 
+of how grant 
+funding works or 
+applies. 
+ 
+Click here to go back to Deliverable Three Requirements 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+32 
+ 
+Task D3.3: 
+Funding 
+Requests: 
+The fire 
+departments are 
+asking a bank 
+for a short-term 
+loan to buy the 
+equipment and 
+then be 
+reimbursed by a 
+grant maker. 
+Comprehensive financial analysis, 
+including accurate loan payment 
+calculations, cash flow timing, bridge 
+financing risk, interest costs, and 
+contingency planning if reimbursement 
+is delayed. 
+Correct loan calculations 
+with some discussion of 
+timing and repayment, 
+but limited risk analysis. 
+Basic loan calculation 
+with minimal 
+consideration of timing 
+or reimbursement risk. 
+Missing or 
+incorrect loan 
+calculations; no 
+understanding of 
+reimbursement 
+structure. 
+Task D3.4: 
+Funding 
+Requests: 
+The fire 
+departments are 
+seeking a long-
+term loan from a 
+bank. 
+Accurate calculations of all three 
+metrics for both financing strategies, the 
+discount rate chosen based on sound 
+theory. 
+Mostly accurate 
+calculations of all three 
+metrics for both financing 
+strategies with a logical 
+discount rate. 
+Missing calculations of 
+one of the three metrics 
+for both financing 
+strategies. Lack of 
+logical discount rate, 
+major errors. 
+Incomplete or 
+incorrect 
+calculations; little 
+understanding of 
+long-term 
+implications. 
+ 
+Click here to go back to Deliverable Three Requirements 
+ 
+ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+33 
+ 
+Criteria 
+Accomplished (100 pts) 
+Proficient (80 pts) 
+Developing (60 pts) 
+Beginning (0 pts) 
+Task D3.5: 
+Reflection 
+Thoughtful and specific reflection; clearly 
+links theories, competency skills, and 
+project experience; demonstrates 
+meaningful personal and professional 
+growth. 
+Correct loan calculations 
+with some discussion of 
+long-term impact. 
+Basic loan calculation 
+with limited interpretation 
+of long-term effects. 
+Minimal or absent 
+reflection; lacks 
+personal 
+engagement or 
+depth. 
+Task D3.6: 
+References (APA 
+7th Ed.) 
+All sources cited correctly in APA 7th; 
+includes page numbers or deep URL links; 
+sources are authoritative and clearly 
+integrated; only acceptable sources used.  
+AI-generated citations with clear in-text 
+citations.  
+Most sources cited 
+correctly; minor APA or 
+formatting errors; some 
+non-acceptable sources 
+used. AI-generated 
+citations with some or 
+unclear in-text citations. 
+Citations incomplete, 
+inconsistently formatted, 
+or missing required 
+details; non-acceptable 
+sources used. AI-
+generated citations with 
+little or very unclear in-
+text citations. 
+Little or no citation 
+provided or non-
+acceptable sources 
+used. AI-generated 
+citations with no in-
+text citations. 
+ 
+Click here to go back to Deliverable Three Requirements 
+ 
+ 
+ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+34 
+ 
+Deliverable Four Grading Rubrics 
+Criteria 
+Accomplished (100 pts) 
+Proficient (80 pts) 
+Developing (60 
+pts) 
+Beginning (0 pts) 
+Task D4.1: 
+Presentation of 
+Deliverable One 
+(Financial Data 
+Gathering and 
+Firehouse 
+Identification) 
+Clearly integrates two or more specific D1 
+experiences with two or more relevant nonprofit 
+accounting/finance theories; explanations are 
+accurate, explicit, and decision-oriented, 
+showing how theory informs real financial 
+implications. 
+Connects at least one 
+D1 experience with at 
+least one relevant 
+theory; explanation is 
+generally correct, but 
+lacks depth, clarity, or 
+strong linkage to 
+financial decision-
+making. 
+Mentions experiences 
+or theories but 
+provides unclear, 
+incomplete, or 
+partially incorrect 
+explanations; weak or 
+inconsistent 
+connection between 
+theory and 
+experience. 
+Fails to 
+meaningfully 
+reference D1 
+experiences or 
+identify relevant 
+theories; no clear 
+explanation of how 
+theory relates to 
+practice. 
+Task D4.2: 
+Presentation of 
+Deliverable Two 
+(Financial Analysis 
+and Firehouse 
+Visitation) 
+Accurately presents two or more quantitative 
+results and provides clear, correct, and decision-
+focused interpretations demonstrating how 
+results inform financial or operational decisions. 
+Presents at least one 
+quantitative result with 
+a generally correct 
+interpretation, though 
+explanation may lack 
+depth or include minor 
+errors. 
+Presents results but 
+explanations are 
+limited, unclear, or 
+partially incorrect; 
+weak connection to 
+decision-making. 
+Quantitative results 
+are missing, 
+incorrect, or not 
+interpreted, with no 
+connection to 
+decisions. 
+ 
+Click here to go back to Deliverable Four Requirements 
+ 
+ 
+ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+35 
+ 
+Criteria 
+Accomplished (100 pts) 
+Proficient (80 pts) 
+Developing (60 pts) 
+Beginning (0 pts) 
+Task D4.3: 
+Presentation of 
+Deliverable Three 
+(Funding Scenarios 
+Simulation 
+Evaluation) 
+Clearly presents valuation results 
+and provides a logical, accurate, 
+and well-supported explanation 
+linking results to a specific 
+financial recommendation. 
+Presents at least one 
+valuation metric and 
+attempts to connect it to a 
+recommendation; 
+explanation is generally 
+correct but incomplete. 
+Mentions valuation results 
+but provides minimal or 
+unclear explanation; 
+connection to decisions is 
+weak or partially incorrect. 
+Does not meaningfully 
+present or use valuation 
+results; no connection 
+to financial decisions. 
+Task D4.4:  
+Communicating 
+Results (Integration 
+Across 
+Deliverables) 
+Effectively integrates multiple 
+accounting/finance theories across 
+D1, D2, and D3, demonstrating 
+clear, accurate, and cohesive 
+application to explain business 
+outcomes. 
+Applies at least one theory 
+across multiple deliverables 
+with generally correct 
+interpretation, though 
+integration lacks depth or 
+completeness. 
+Mentions theories but 
+application is inconsistent, 
+superficial, or partially 
+incorrect; weak integration 
+across deliverables. 
+No meaningful 
+application of theory 
+across deliverables; no 
+integration present. 
+Task D4.5: 
+Professional 
+Narrative & Timing 
+Presentation follows a clear, 
+logical, and compelling storyline 
+(experience → analysis → 
+decision); stays within time limit; 
+narration is organized, polished, 
+and easy to follow. 
+Presentation has a 
+recognizable structure with 
+minor sequencing or clarity 
+issues; narration is 
+understandable but may 
+include pacing or emphasis 
+inconsistencies. 
+Presentation shows partial 
+or inconsistent 
+organization; narration has 
+noticeable clarity, pacing, 
+or sequencing issues that 
+reduce effectiveness. 
+Presentation lacks a 
+clear structure; exceeds 
+time limit; narration is 
+unclear, incomplete, or 
+missing, making 
+content difficult to 
+understand.  
+ 
+Click here to go back to Deliverable Four Requirements 
+ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+36 
+ 
+Criteria 
+Accomplished (100 pts) 
+Proficient (80 pts) 
+Developing (60 pts) 
+Beginning (0 pts) 
+Task D4.6: 
+References 
+All sources cited correctly in APA 
+7th; includes page numbers or deep 
+URL links; sources are 
+authoritative and clearly integrated; 
+only acceptable sources used.  AI-
+generated citations with clear in-
+text citations.  
+Most sources cited 
+correctly; minor APA or 
+formatting errors; some 
+non-acceptable sources 
+used. AI-generated citations 
+with some or unclear in-text 
+citations. 
+Citations incomplete, 
+inconsistently formatted, 
+or missing required details; 
+non-acceptable sources 
+used. AI-generated 
+citations with little or very 
+unclear in-text citations. 
+Little or no citation provided 
+or non-acceptable sources 
+used. AI-generated citations 
+with no in-text citations. 
+ 
+Click here to go back to Deliverable Four Requirements 
+ 
+ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+37 
+ 
+Deliverable Five Grading Rubrics 
+Criteria 
+Accomplished (100 pts) 
+Proficient (80 pts) 
+Developing (60 
+pts) 
+Beginning (0 pts) 
+Task D5.1: Written 
+Reflection: Create 
+an individual 
+reflection about the 
+Project 
+Reflection explicitly explains how learning 
+progressed from D1 → D2 → D3 → D4, and 
+provides specific examples of skill 
+development. 
+Reflection generally 
+explains the learning 
+progression across 
+deliverables with 
+general examples. 
+Reflection describes 
+activities completed, 
+but does not clearly 
+explain learning 
+progression. 
+Reflection is vague, 
+minimal, or missing. 
+Task D5.2:  
+Written Reflection: 
+Competency 
+Development 
+Clearly explains growth in all competencies 
+listed in deliverable one, such as critical 
+thinking, adaptability, communication, and 
+financial reasoning; provides specific examples. 
+Reflects on the 
+development of the 
+majority of 
+competencies with 
+clear, relevant 
+examples. 
+Mentions some 
+competencies without 
+clear explanation or 
+examples. 
+No meaningful 
+reflection on 
+competencies; lacks 
+insight or relevance. 
+Task D5.3:  
+Oral Reflection: 
+Two to three-
+minute 
+VoiceThread 
+business story 
+about the Project 
+Synthesizes the full scope of the project 
+(experiences, theories, quantitative analyses, 
+decisions, and reflections) into a convincing, 
+employer-focused business story that clearly 
+demonstrates how the work enhanced multiple 
+employer-desired competencies, communicated 
+with passion and clarity appropriate for a job 
+interview. 
+Integrates multiple 
+elements of the project 
+to explain how 
+learning developed at 
+least one employer-
+desired competency, 
+but the business value 
+or persuasive impact is 
+only partially 
+developed. 
+Describes what was 
+done across the 
+project but focuses on 
+activities or isolated 
+experiences without 
+clearly translating 
+learning into 
+employer-desired 
+competencies or 
+business value. 
+Summarizes tasks or 
+personal impressions 
+with no meaningful 
+integration of 
+project learning or 
+connection to 
+employer-desired 
+competencies. 
+Click here to go back to Deliverable Five Requirements 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+38 
+ 
+Appendix D - Student Confidentiality Statement 
+ 
+Research Project Confidentiality Form 
+ 
+I hereby pledge to keep confidential, any information about persons, situations, or documents, 
+that I may be privy to during my involvement with the Volunteer Fire Department listed below.  
+ 
+I will not distribute or use any information obtained during this involvement. I will not be paid 
+for any volunteer work encountered in this project. 
+ 
+This project is part of the course work of [INSERT COURSE NUMBER], [INSERT 
+COURSE NAME], at [INSERT ACADEMIC INSTITUTIONAL NAME].  
+ 
+WHEREFORE, I acknowledge that I have read and understand this Agreement and voluntarily 
+accept the duties and obligations set forth herein. 
+ 
+ 
+Student Name 
+ 
+ 
+Name of Business_________________________________________________________ 
+ 
+ 
+Date 
+______________________________________________________________________________ 
+ 
+ 
+
+
+===== PAGE BREAK =====
+
+Click here to go back to Table of Contents 
+ 
+ 
+ 
+ 
+ 
+39 
+ 
+Resources 
+ 
+To be filled in as needed. 
+References 
+ 
+Foy, J., et al. 2024. Teaching Financial Accounting and Reporting Through A Venue-Based 
+Experiential Learning Approach. Accounting Educators' Journal. 34(1), 1–15, 
+https://www.aejournal.com/ojs/index.php/aej/article/view/1140  
+Foy, J., et al. 2025. The Terrorism Financing Investigation Case: An Experiential Learning 
+Exercise. Journal of forensic accounting research, 1–21, https://doi.org/10.2308/JFAR-
+2024-013  
+The Volunteer Firemen’s Association of the City of New York. (2025). History. 
+https://vfanyc.org/about/history/#:~:text=The%20organization%20has%20organized%20
+events,of%20fire%20and%20other%20emergencies. 
+ 
+ 
+ 
+ 
