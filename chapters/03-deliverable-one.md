@@ -64,7 +64,7 @@ revenue by tax year where Form 990 filings report it.
 
 :::{iframe} ../widgets/revenue.html
 :width: 100%
-:height: 640px
+:class: revenue-chart-frame
 :title: Program service revenue by department
 :::
 

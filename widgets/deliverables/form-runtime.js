@@ -10,6 +10,7 @@
 
   const STORAGE_KEY = `vfd-deliverable-draft:${cfg.taskId}`;
   const DEPTS_URL = new URL("../../data/departments.json", window.location.href).href;
+  const includeReferences = !!cfg.includeReferences;
 
   const $ = (id) => document.getElementById(id);
 
@@ -45,10 +46,12 @@
       courseSection: $("course-section").value.trim(),
       date: $("date").value,
       department: $("department").value.trim(),
-      references: $("references").value.trim(),
       sections: {}
     };
-    cfg.sections.forEach((sec, i) => {
+    if (includeReferences) {
+      data.references = ($("references")?.value || "").trim();
+    }
+    cfg.sections.forEach((sec) => {
       data.sections[sec.id] = ($(`sec-${sec.id}`) || { value: "" }).value.trim();
     });
     return data;
@@ -60,7 +63,9 @@
     if (data.courseSection != null) $("course-section").value = data.courseSection;
     if (data.date != null) $("date").value = data.date;
     if (data.department != null) $("department").value = data.department;
-    if (data.references != null) $("references").value = data.references;
+    if (includeReferences && data.references != null && $("references")) {
+      $("references").value = data.references;
+    }
     cfg.sections.forEach((sec) => {
       const el = $(`sec-${sec.id}`);
       if (el && data.sections && data.sections[sec.id] != null) {
@@ -116,61 +121,66 @@
     setTimeout(() => URL.revokeObjectURL(url), 1500);
   }
 
+  /** docx half-points: 22 = 11pt body, 24 = 12pt section, 26 = 13pt title */
+  function bodyLines(text, TextRun, Paragraph) {
+    return String(text || "")
+      .split(/\n/)
+      .map((line) => new Paragraph({
+        spacing: { after: 60 },
+        children: [new TextRun({ text: line || " ", size: 22 })]
+      }));
+  }
+
   async function generateWord() {
     if (!window.docx) {
       setStatus("Word library failed to load.", true);
       return;
     }
     const data = collect();
-    const {
-      Document, Packer, Paragraph, TextRun, HeadingLevel
-    } = window.docx;
+    const { Document, Packer, Paragraph, TextRun } = window.docx;
 
     const children = [
       new Paragraph({
-        heading: HeadingLevel.TITLE,
-        children: [new TextRun({ text: cfg.title, bold: true })]
+        spacing: { after: 80 },
+        children: [new TextRun({ text: cfg.title, bold: true, size: 26 })]
       }),
       new Paragraph({
-        children: [new TextRun({ text: `Task ID: ${cfg.taskId}`, italics: true })]
+        spacing: { after: 160 },
+        children: [new TextRun({ text: `Task ID: ${cfg.taskId}`, italics: true, size: 20 })]
       }),
-      new Paragraph({ children: [] }),
-      new Paragraph({ children: [new TextRun({ text: `Student name: ${data.studentName || "—"}` })] }),
-      new Paragraph({ children: [new TextRun({ text: `Course section: ${data.courseSection || "—"}` })] }),
-      new Paragraph({ children: [new TextRun({ text: `Date: ${data.date || "—"}` })] }),
-      new Paragraph({ children: [new TextRun({ text: `Department analyzed: ${data.department || "—"}` })] }),
+      new Paragraph({
+        spacing: { after: 40 },
+        children: [new TextRun({ text: `Student name: ${data.studentName || "—"}`, size: 22 })]
+      }),
+      new Paragraph({
+        spacing: { after: 40 },
+        children: [new TextRun({ text: `Course section: ${data.courseSection || "—"}`, size: 22 })]
+      }),
+      new Paragraph({
+        spacing: { after: 40 },
+        children: [new TextRun({ text: `Date: ${data.date || "—"}`, size: 22 })]
+      }),
+      new Paragraph({
+        spacing: { after: 200 },
+        children: [new TextRun({ text: `Department analyzed: ${data.department || "—"}`, size: 22 })]
+      }),
     ];
 
     cfg.sections.forEach((sec) => {
-      children.push(new Paragraph({ children: [] }));
       children.push(new Paragraph({
-        heading: HeadingLevel.HEADING_1,
-        children: [new TextRun(sec.label)]
+        spacing: { before: 160, after: 80 },
+        children: [new TextRun({ text: sec.label, bold: true, size: 24 })]
       }));
-      const body = data.sections[sec.id] || "";
-      body.split(/\n/).forEach((line) => {
-        children.push(new Paragraph({
-          children: [new TextRun(line || " ")]
-        }));
-      });
+      children.push(...bodyLines(data.sections[sec.id], TextRun, Paragraph));
     });
 
-    children.push(new Paragraph({ children: [] }));
-    children.push(new Paragraph({
-      heading: HeadingLevel.HEADING_1,
-      children: [new TextRun("References")]
-    }));
-    children.push(new Paragraph({
-      children: [new TextRun({
-        text: "APA 7th edition. List all sources with page numbers or deep hyperlinks.",
-        italics: true
-      })]
-    }));
-    (data.references || "").split(/\n/).forEach((line) => {
+    if (includeReferences) {
       children.push(new Paragraph({
-        children: [new TextRun(line || " ")]
+        spacing: { before: 160, after: 80 },
+        children: [new TextRun({ text: "References (APA 7th edition)", bold: true, size: 24 })]
       }));
-    });
+      children.push(...bodyLines(data.references, TextRun, Paragraph));
+    }
 
     const doc = new Document({
       sections: [{
@@ -207,33 +217,34 @@
     function writeWrapped(text, opts) {
       const size = opts?.size || 11;
       const bold = !!opts?.bold;
-      const gap = opts?.gap ?? 8;
+      const gap = opts?.gap ?? 6;
       doc.setFont("helvetica", bold ? "bold" : "normal");
       doc.setFontSize(size);
       const lines = doc.splitTextToSize(text || " ", maxWidth);
       lines.forEach((line) => {
         ensureSpace(size + 4);
         doc.text(line, margin, y);
-        y += size + 3;
+        y += size + 2;
       });
       y += gap;
     }
 
-    writeWrapped(cfg.title, { size: 16, bold: true, gap: 4 });
-    writeWrapped(`Task ID: ${cfg.taskId}`, { size: 11, gap: 10 });
+    writeWrapped(cfg.title, { size: 13, bold: true, gap: 2 });
+    writeWrapped(`Task ID: ${cfg.taskId}`, { size: 10, gap: 10 });
     writeWrapped(`Student name: ${data.studentName || "—"}`);
     writeWrapped(`Course section: ${data.courseSection || "—"}`);
     writeWrapped(`Date: ${data.date || "—"}`);
-    writeWrapped(`Department analyzed: ${data.department || "—"}`, { gap: 14 });
+    writeWrapped(`Department analyzed: ${data.department || "—"}`, { gap: 12 });
 
     cfg.sections.forEach((sec) => {
-      writeWrapped(sec.label, { size: 13, bold: true, gap: 6 });
-      writeWrapped(data.sections[sec.id] || " ", { gap: 12 });
+      writeWrapped(sec.label, { size: 11.5, bold: true, gap: 4 });
+      writeWrapped(data.sections[sec.id] || " ", { gap: 10 });
     });
 
-    writeWrapped("References", { size: 13, bold: true, gap: 6 });
-    writeWrapped("APA 7th edition. List all sources with page numbers or deep hyperlinks.", { size: 10, gap: 6 });
-    writeWrapped(data.references || " ", { gap: 8 });
+    if (includeReferences) {
+      writeWrapped("References (APA 7th edition)", { size: 11.5, bold: true, gap: 4 });
+      writeWrapped(data.references || " ", { gap: 8 });
+    }
 
     doc.save(filename("pdf"));
     setStatus(`Downloaded ${filename("pdf")}. Upload it to the assignment in Brightspace.`);
@@ -296,6 +307,10 @@
     $("task-id-label").textContent = cfg.taskId;
     if (cfg.intro) $("intro").textContent = cfg.intro;
     buildSectionFields();
+
+    const refsField = $("references-field");
+    if (refsField) refsField.hidden = !includeReferences;
+
     if (!$("date").value) $("date").value = todayISO();
 
     $("save-draft").addEventListener("click", saveDraft);

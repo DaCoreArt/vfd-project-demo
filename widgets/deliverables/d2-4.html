@@ -130,10 +130,10 @@
 
     <div id="sections"></div>
 
-    <div class="field">
+    <div class="field" id="references-field" hidden>
       <label for="references">References (APA 7th edition)</label>
       <p class="hint">Cite textbooks, journals, 990 filings, interviews, and other sources. Include page numbers or deep hyperlinks.</p>
-      <textarea id="references" rows="5" placeholder="Author, A. A. (Year). Title. Publisher. https://..."></textarea>
+      <textarea id="references" rows="8" placeholder="Author, A. A. (Year). Title. Publisher. https://..."></textarea>
     </div>
 
     <div class="actions">
@@ -149,14 +149,15 @@
 window.DELIVERABLE_CONFIG = {
   "taskId": "D2.4",
   "title": "Task D2.4 \u2014 References (APA 7th Edition)",
-  "intro": "Compile references for Deliverable Two.",
+  "intro": "Compile references for Deliverable Two in the References field.",
   "sections": [
     {
       "id": "source-notes",
       "label": "Source evaluation notes",
       "rows": 5
     }
-  ]
+  ],
+  "includeReferences": true
 };
 </script>
 <script src="form-runtime.js"></script>

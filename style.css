@@ -1,0 +1,13 @@
+/* MyST book-theme wraps iframes in a 60%-of-width aspect box (~400px).
+   Tall widgets need an explicit override so the full chart is visible. */
+.revenue-chart-frame > .relative.inline-block {
+  padding-bottom: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 780px !important;
+}
+
+.revenue-chart-frame iframe {
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -97,7 +97,8 @@ CONFIGS = [
         "taskId": "D1.4",
         "file": "d1-4.html",
         "title": "Task D1.4 — References (APA 7th Edition)",
-        "intro": "Compile your references for Deliverable One. Use the References field below; add notes on source evaluation if needed.",
+        "intro": "Compile your references for Deliverable One in the References field. Add source-evaluation notes if needed.",
+        "includeReferences": True,
         "sections": [
             {
                 "id": "source-notes",
@@ -193,7 +194,8 @@ CONFIGS = [
         "taskId": "D2.4",
         "file": "d2-4.html",
         "title": "Task D2.4 — References (APA 7th Edition)",
-        "intro": "Compile references for Deliverable Two.",
+        "intro": "Compile references for Deliverable Two in the References field.",
+        "includeReferences": True,
         "sections": [
             {
                 "id": "source-notes",
@@ -262,7 +264,8 @@ CONFIGS = [
         "taskId": "D3.3",
         "file": "d3-3.html",
         "title": "Task D3.3 — References (APA 7th Edition)",
-        "intro": "Compile references for Deliverable Three.",
+        "intro": "Compile references for Deliverable Three in the References field.",
+        "includeReferences": True,
         "sections": [
             {
                 "id": "source-notes",
@@ -275,7 +278,7 @@ CONFIGS = [
         "taskId": "D4.1",
         "file": "d4-1.html",
         "title": "Task D4.1 — Presentation Storyboard and Talking Points",
-        "intro": "Deliverable Four is submitted as a narrated PowerPoint. Use this form for your storyboard, talking points, and references before recording.",
+        "intro": "Deliverable Four is submitted as a narrated PowerPoint. Use this form for your storyboard and talking points before recording.",
         "sections": [
             {
                 "id": "storyboard",
@@ -358,15 +361,15 @@ CONFIGS = [
 
 
 def render(config: dict) -> str:
-    cfg_json = json.dumps(
-        {
-            "taskId": config["taskId"],
-            "title": config["title"],
-            "intro": config.get("intro", ""),
-            "sections": config["sections"],
-        },
-        indent=2,
-    )
+    payload = {
+        "taskId": config["taskId"],
+        "title": config["title"],
+        "intro": config.get("intro", ""),
+        "sections": config["sections"],
+    }
+    if config.get("includeReferences"):
+        payload["includeReferences"] = True
+    cfg_json = json.dumps(payload, indent=2)
     block = f"""<script>
 window.DELIVERABLE_CONFIG = {cfg_json};
 </script>

@@ -130,10 +130,10 @@
 
     <div id="sections"></div>
 
-    <div class="field">
+    <div class="field" id="references-field" hidden>
       <label for="references">References (APA 7th edition)</label>
       <p class="hint">Cite textbooks, journals, 990 filings, interviews, and other sources. Include page numbers or deep hyperlinks.</p>
-      <textarea id="references" rows="5" placeholder="Author, A. A. (Year). Title. Publisher. https://..."></textarea>
+      <textarea id="references" rows="8" placeholder="Author, A. A. (Year). Title. Publisher. https://..."></textarea>
     </div>
 
     <div class="actions">
@@ -149,7 +149,7 @@
 window.DELIVERABLE_CONFIG = {
   "taskId": "D1.4",
   "title": "Task D1.4 \u2014 References (APA 7th Edition)",
-  "intro": "Compile your references for Deliverable One. Use the References field below; add notes on source evaluation if needed.",
+  "intro": "Compile your references for Deliverable One in the References field. Add source-evaluation notes if needed.",
   "sections": [
     {
       "id": "source-notes",
@@ -157,7 +157,8 @@ window.DELIVERABLE_CONFIG = {
       "hint": "Note any AI tools used as research aids, interviews, and why aggregator sites were avoided.",
       "rows": 5
     }
-  ]
+  ],
+  "includeReferences": true
 };
 </script>
 <script src="form-runtime.js"></script>
