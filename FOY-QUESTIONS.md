@@ -49,11 +49,22 @@ left as in the PDF where flagged; please confirm intended corrections.
 
 ## VFA Response Area Google My Maps share link
 
-- Introduction still has `MY_MAPS_EMBED_URL_TODO` for the Google My Maps
-  iframe.
+- Introduction uses an interim Leaflet map until a Google My Maps embed
+  URL is available.
 - Please share the published **VFA Response Area** Google My Maps embed /
-  share URL so the placeholder can be replaced (interim Leaflet map
-  remains until then).
+  share URL so it can replace the interim map.
+
+## Media Gallery videos (three sections still empty)
+
+Please send YouTube (or other embed) URLs + short titles/sources for:
+
+1. **Firehouse operations**
+2. **Apparatus and equipment**
+3. **Funding and nonprofit finance**
+
+Presentation-skills videos (Gharani + narration) are already embedded from
+the course PDF. Until the three URLs arrive, those sections show “Video
+pending instructor selection” notes instead of broken placeholders.
 
 ## Spelling note (not changed)
 

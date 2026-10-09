@@ -13,12 +13,11 @@ it for inclusion. See the submission note at the bottom of this page.
 
 ## Firehouse operations
 
-:::{iframe} https://www.youtube.com/embed/VIDEO_ID
-:width: 100%
-:title: Firehouse operations video placeholder
-
-**[Video title]** — [One sentence on what it shows and why it matters to
-the project.] Source: [department or channel name], [year].
+:::{note} Video pending instructor selection
+A firehouse-operations video will be embedded here once Dr. Foy provides
+a YouTube (or course-hosted) URL. Students who record a permitted visit
+may also submit footage for this section — see **Submitting a video**
+below.
 :::
 
 ## Apparatus and equipment
@@ -27,11 +26,10 @@ Footage covering the equipment students will encounter and later analyze
 as capital purchases in Deliverable Three — pumpers, ladder trucks,
 ambulances, turnout gear, and communications equipment.
 
-:::{iframe} https://www.youtube.com/embed/VIDEO_ID
-:width: 100%
-:title: Apparatus and equipment video placeholder
-
-**[Video title]** — [Description.] Source: [name], [year].
+:::{note} Video pending instructor selection
+An apparatus-and-equipment video will be embedded here once a URL is
+provided. Use department websites and the virtual visitation option
+until then.
 :::
 
 ## Funding and nonprofit finance
@@ -39,11 +37,9 @@ ambulances, turnout gear, and communications equipment.
 Material on how volunteer departments fund operations: grants,
 fundraising, community donations, and financing.
 
-:::{iframe} https://www.youtube.com/embed/VIDEO_ID
-:width: 100%
-:title: Funding and nonprofit finance video placeholder
-
-**[Video title]** — [Description.] Source: [name], [year].
+:::{note} Video pending instructor selection
+A funding / nonprofit-finance video will be embedded here once a URL is
+provided.
 :::
 
 ## Presentation skills
@@ -97,4 +93,4 @@ Videos used as evidence in any deliverable must be cited in APA 7th
 edition, as with any other source:
 
 > Department Name. (2026, March 14). *Title of video* [Video]. YouTube.
-> https://www.youtube.com/watch?v=VIDEO_ID
+> https://www.youtube.com/watch?v=xxxxxxxx

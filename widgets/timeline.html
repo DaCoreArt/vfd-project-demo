@@ -31,19 +31,20 @@
   }
   .stage {
     position: relative;
-    min-height: 120px;
     margin-bottom: 8px;
   }
   .logos {
     position: relative;
-    height: 88px;
-    margin: 0 8px 6px;
+    height: 100px;
+    margin: 0 8px;
   }
+  .logos.top { margin-bottom: 2px; }
+  .logos.bottom { margin-top: 2px; }
   .logo-marker {
     position: absolute;
     top: 0;
     transform: translateX(-50%);
-    width: 64px;
+    width: 72px;
     text-align: center;
     opacity: 0.22;
     filter: grayscale(1);
@@ -52,7 +53,12 @@
   .logo-marker.active {
     opacity: 1;
     filter: none;
+  }
+  .logos.top .logo-marker.active {
     transform: translateX(-50%) translateY(-2px);
+  }
+  .logos.bottom .logo-marker.active {
+    transform: translateX(-50%) translateY(2px);
   }
   .logo-marker img,
   .logo-marker .ph {
@@ -63,6 +69,15 @@
     background: #fff;
     display: block;
     margin: 0 auto 4px;
+  }
+  .logos.bottom .logo-marker {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .logos.bottom .logo-marker img,
+  .logos.bottom .logo-marker .ph {
+    margin: 4px auto 0;
   }
   .logo-marker .ph {
     font-size: 0.58rem;
@@ -77,11 +92,28 @@
     color: var(--ink);
     line-height: 1.2;
   }
-  .track-wrap { padding: 0 8px; }
+  .track-wrap {
+    padding: 0 8px;
+    position: relative;
+  }
+  .track-line {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 50%;
+    height: 2px;
+    background: var(--rule);
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 0;
+  }
   input[type="range"] {
+    position: relative;
+    z-index: 1;
     width: 100%;
     accent-color: var(--ember);
     height: 2rem;
+    margin: 0;
   }
   .year-readout {
     text-align: center;
@@ -101,6 +133,11 @@
     color: var(--steel);
     margin: 0.5rem 0 1rem;
   }
+  .hint {
+    font-size: 0.78rem;
+    color: var(--steel);
+    margin: 0 0 0.75rem;
+  }
   .sr-only {
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0,0,0,0); border: 0;
@@ -109,14 +146,17 @@
 </head>
 <body>
   <h1>Founding timeline</h1>
+  <p class="hint">Logos for the same founding year sit above and below the track so they do not overlap.</p>
   <p id="status" class="empty" hidden></p>
   <div class="stage">
-    <div class="logos" id="logos" aria-hidden="false"></div>
+    <div class="logos top" id="logos-top" aria-label="Departments above the timeline"></div>
     <div class="track-wrap">
+      <div class="track-line" aria-hidden="true"></div>
       <label class="sr-only" for="year-slider">Founding year</label>
       <input id="year-slider" type="range" min="1880" max="2030" value="1880" step="1" />
       <div class="year-readout" id="year-readout" aria-live="polite">1880</div>
     </div>
+    <div class="logos bottom" id="logos-bottom" aria-label="Departments below the timeline"></div>
   </div>
   <div class="pending" id="pending" hidden>
     <strong>Founding year pending</strong>
@@ -134,13 +174,55 @@ function parseYear(value) {
   return Number.isFinite(n) ? n : null;
 }
 
-function slugName(name) {
-  return String(name).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+/** Assign top/bottom lanes so same-year logos do not stack (1st above, 2nd below). */
+function assignLanes(known) {
+  const sorted = [...known].sort((a, b) => {
+    if (a.founded_year !== b.founded_year) return a.founded_year - b.founded_year;
+    return String(a.short_name || a.name).localeCompare(String(b.short_name || b.name));
+  });
+  const yearSlot = new Map();
+  return sorted.map((d) => {
+    const slot = yearSlot.get(d.founded_year) || 0;
+    yearSlot.set(d.founded_year, slot + 1);
+    return { ...d, lane: slot % 2 === 0 ? "top" : "bottom" };
+  });
+}
+
+function makeMarker(d, minY, maxY) {
+  const left = ((d.founded_year - minY) / (maxY - minY)) * 100;
+  const el = document.createElement("div");
+  el.className = "logo-marker";
+  el.style.left = `${left}%`;
+  el.dataset.year = String(d.founded_year);
+  el.title = `${d.name} (${d.founded_year})`;
+  el.setAttribute("role", "img");
+  el.setAttribute("aria-label", `${d.name}, founded ${d.founded_year}`);
+
+  const imgPath = new URL("../" + d.logo_path.replace(/^\/+/, ""), window.location.href).href;
+  const img = document.createElement("img");
+  img.alt = `${d.name} logo`;
+  img.src = imgPath;
+  img.addEventListener("error", () => {
+    const ph = document.createElement("div");
+    ph.className = "ph";
+    ph.textContent = d.short_name || d.name;
+    img.replaceWith(ph);
+  });
+
+  const label = document.createElement("div");
+  label.className = "label";
+  label.textContent = `${d.short_name || d.name}\n${d.founded_year}`;
+  label.style.whiteSpace = "pre-line";
+
+  el.appendChild(img);
+  el.appendChild(label);
+  return el;
 }
 
 async function main() {
   const status = document.getElementById("status");
-  const logos = document.getElementById("logos");
+  const logosTop = document.getElementById("logos-top");
+  const logosBottom = document.getElementById("logos-bottom");
   const slider = document.getElementById("year-slider");
   const readout = document.getElementById("year-readout");
   const pending = document.getElementById("pending");
@@ -186,41 +268,16 @@ async function main() {
   slider.value = String(minY);
   readout.textContent = String(minY);
 
-  known.forEach(d => {
-    const left = ((d.founded_year - minY) / (maxY - minY)) * 100;
-    const el = document.createElement("div");
-    el.className = "logo-marker";
-    el.style.left = `${left}%`;
-    el.dataset.year = String(d.founded_year);
-    el.title = `${d.name} (${d.founded_year})`;
-    el.setAttribute("role", "img");
-    el.setAttribute("aria-label", `${d.name}, founded ${d.founded_year}`);
-
-    const imgPath = new URL("../" + d.logo_path.replace(/^\/+/, ""), window.location.href).href;
-    const img = document.createElement("img");
-    img.alt = `${d.name} logo`;
-    img.src = imgPath;
-    img.addEventListener("error", () => {
-      const ph = document.createElement("div");
-      ph.className = "ph";
-      ph.textContent = d.short_name || d.name;
-      img.replaceWith(ph);
-    });
-
-    const label = document.createElement("div");
-    label.className = "label";
-    label.textContent = `${d.short_name || d.name}\n${d.founded_year}`;
-    label.style.whiteSpace = "pre-line";
-
-    el.appendChild(img);
-    el.appendChild(label);
-    logos.appendChild(el);
+  const placed = assignLanes(known);
+  placed.forEach(d => {
+    const el = makeMarker(d, minY, maxY);
+    (d.lane === "bottom" ? logosBottom : logosTop).appendChild(el);
   });
 
   function render() {
     const y = Number(slider.value);
     readout.textContent = String(y);
-    logos.querySelectorAll(".logo-marker").forEach(el => {
+    document.querySelectorAll(".logo-marker").forEach(el => {
       const fy = Number(el.dataset.year);
       el.classList.toggle("active", y >= fy);
     });
