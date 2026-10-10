@@ -77,18 +77,12 @@ the communities they serve.
 Locations of the eight NYC volunteer fire departments. Each pin lists the
 Chief and Key Personnel (Board of Directors).
 
-:::{iframe} ../assets/interactive/vfd-map.html
+:::{iframe} https://www.google.com/maps/d/u/0/embed?mid=16W0bLy29p1tn9_Fjm_tW9H_GE7obAvw&ehbc=2E312F
 :width: 100%
-:title: VFA Response Area Map (interim Leaflet map)
-Interim local map of the eight NYC volunteer fire departments. Replace
-with the published Google My Maps embed when the share link is available.
-:::
-
-:::{note} Google My Maps embed pending
+:class: my-maps-frame
+:title: VFA Response Area Map
 Personnel shown in map pop-ups are as of the source filing year listed in
-`data/departments.json` (`key_personnel_source`). Import pins from
-`data/my-maps-import.csv` into Google My Maps, then replace the interim
-iframe above with the published embed URL (see `FOY-QUESTIONS.md`).
+`data/departments.json` (`key_personnel_source`).
 :::
 
 | Department | Learn more |

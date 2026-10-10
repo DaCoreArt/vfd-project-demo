@@ -49,10 +49,8 @@ left as in the PDF where flagged; please confirm intended corrections.
 
 ## VFA Response Area Google My Maps share link
 
-- Introduction uses an interim Leaflet map until a Google My Maps embed
-  URL is available.
-- Please share the published **VFA Response Area** Google My Maps embed /
-  share URL so it can replace the interim map.
+- Resolved: Introduction embeds
+  `https://www.google.com/maps/d/u/0/embed?mid=16W0bLy29p1tn9_Fjm_tW9H_GE7obAvw&ehbc=2E312F`.
 
 ## Media Gallery videos (three sections still empty)
 
