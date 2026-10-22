@@ -28,3 +28,17 @@ figure.my-maps-frame iframe,
   width: 100% !important;
   height: 100% !important;
 }
+
+/* Tall enough for top + bottom logo lanes without iframe scrollbars. */
+.timeline-frame > .relative.inline-block,
+.timeline-frame .relative.inline-block {
+  padding-bottom: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 460px !important;
+}
+
+.timeline-frame iframe {
+  width: 100% !important;
+  height: 100% !important;
+}

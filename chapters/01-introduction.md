@@ -103,6 +103,7 @@ department logo appears above the line when its founding year is reached.
 
 :::{iframe} ../widgets/timeline.html
 :width: 100%
+:class: timeline-frame
 :title: NYC volunteer fire department founding timeline
 :::
 
