@@ -153,8 +153,8 @@
     <div class="track-wrap">
       <div class="track-line" aria-hidden="true"></div>
       <label class="sr-only" for="year-slider">Founding year</label>
-      <input id="year-slider" type="range" min="1880" max="2030" value="1880" step="1" />
-      <div class="year-readout" id="year-readout" aria-live="polite">1880</div>
+      <input id="year-slider" type="range" min="1905" max="1928" value="1905" step="1" />
+      <div class="year-readout" id="year-readout" aria-live="polite">1905</div>
     </div>
     <div class="logos bottom" id="logos-bottom" aria-label="Departments below the timeline"></div>
   </div>
@@ -260,9 +260,9 @@ async function main() {
     return;
   }
 
-  const years = known.map(d => d.founded_year);
-  const minY = Math.min(...years) - 5;
-  const maxY = Math.max(...years) + 5;
+  // Fixed scale matching the earliest/latest known founding years.
+  const minY = 1905;
+  const maxY = 1928;
   slider.min = String(minY);
   slider.max = String(maxY);
   slider.value = String(minY);
