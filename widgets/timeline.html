@@ -12,6 +12,8 @@
     --ember: #c8322b;
     --rule: #dcd7cf;
     --active: #1f4b3f;
+    /* Half of .logo-marker width so 1905/1928 logos stay fully in view. */
+    --edge-pad: 40px;
   }
   * { box-sizing: border-box; }
   body {
@@ -20,7 +22,8 @@
     background: var(--paper);
     color: var(--ink);
     line-height: 1.45;
-    padding: 12px 14px 18px;
+    padding: 12px 8px 18px;
+    overflow-x: visible;
   }
   h1 {
     font-size: 0.78rem;
@@ -32,11 +35,13 @@
   .stage {
     position: relative;
     margin-bottom: 8px;
+    overflow: visible;
   }
   .logos {
     position: relative;
     height: 100px;
-    margin: 0 8px;
+    margin: 0 var(--edge-pad);
+    overflow: visible;
   }
   .logos.top { margin-bottom: 2px; }
   .logos.bottom { margin-top: 2px; }
@@ -93,19 +98,25 @@
     line-height: 1.2;
   }
   .track-wrap {
-    padding: 0 8px;
+    padding: 0 var(--edge-pad);
     position: relative;
   }
   .track-line {
     position: absolute;
-    left: 8px;
-    right: 8px;
+    left: var(--edge-pad);
+    right: var(--edge-pad);
     top: 50%;
     height: 2px;
     background: var(--rule);
     transform: translateY(-50%);
     pointer-events: none;
     z-index: 0;
+  }
+  .year-ends {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.72rem;
+    color: var(--steel);
   }
   input[type="range"] {
     position: relative;
@@ -154,6 +165,10 @@
       <div class="track-line" aria-hidden="true"></div>
       <label class="sr-only" for="year-slider">Founding year</label>
       <input id="year-slider" type="range" min="1905" max="1928" value="1905" step="1" />
+      <div class="year-ends" aria-hidden="true">
+        <span>1905</span>
+        <span>1928</span>
+      </div>
       <div class="year-readout" id="year-readout" aria-live="polite">1905</div>
     </div>
     <div class="logos bottom" id="logos-bottom" aria-label="Departments below the timeline"></div>
